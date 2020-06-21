@@ -1,20 +1,18 @@
 //
 //  SceneDelegate.m
-//  Test
+//  SuperDemo
 //
-//  Created by yanghe on 2020/6/12.
+//  Created by yanghe on 2020/6/21.
 //  Copyright © 2020 yanghe. All rights reserved.
 //
 
 #import "SceneDelegate.h"
-
 
 @interface SceneDelegate ()
 
 @end
 
 @implementation SceneDelegate
-
 
 
 - (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions {

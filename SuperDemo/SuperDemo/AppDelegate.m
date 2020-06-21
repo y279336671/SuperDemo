@@ -1,13 +1,12 @@
 //
 //  AppDelegate.m
-//  Test
+//  SuperDemo
 //
-//  Created by yanghe on 2020/6/12.
+//  Created by yanghe on 2020/6/21.
 //  Copyright © 2020 yanghe. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,16 +15,11 @@
 @implementation AppDelegate
 
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    self.window =  [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    UIViewController *mainVC = [[ViewController alloc]init];
-    [mainVC.view setFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:mainVC];
-    [self.window makeKeyAndVisible];
     return YES;
 }
+
 
 #pragma mark - UISceneSession lifecycle
 
