@@ -14,6 +14,7 @@
 		572E40FB249F062600D531B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 572E40FA249F062600D531B8 /* Assets.xcassets */; };
 		572E40FE249F062600D531B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 572E40FC249F062600D531B8 /* LaunchScreen.storyboard */; };
 		572E4101249F062600D531B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 572E4100249F062600D531B8 /* main.m */; };
+		D404DB12C8E44528A10255A4 /* TestOC.m in Sources */ = {isa = PBXBuildFile; fileRef = D404D6F7F1D096EDA3DB3BCA /* TestOC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		572E40FD249F062600D531B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		572E40FF249F062600D531B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		572E4100249F062600D531B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D404D6F7F1D096EDA3DB3BCA /* TestOC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestOC.m; sourceTree = "<group>"; };
+		D404DCD2C75A4C29A5ED3000 /* TestOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestOC.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,8 @@
 				572E40FC249F062600D531B8 /* LaunchScreen.storyboard */,
 				572E40FF249F062600D531B8 /* Info.plist */,
 				572E4100249F062600D531B8 /* main.m */,
+				D404D6F7F1D096EDA3DB3BCA /* TestOC.m */,
+				D404DCD2C75A4C29A5ED3000 /* TestOC.h */,
 			);
 			path = SuperDemo;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 				572E40F0249F062500D531B8 /* AppDelegate.m in Sources */,
 				572E4101249F062600D531B8 /* main.m in Sources */,
 				572E40F3249F062500D531B8 /* SceneDelegate.m in Sources */,
+				D404DB12C8E44528A10255A4 /* TestOC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +298,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QQGC6FGPZU;
 				INFOPLIST_FILE = SuperDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +316,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QQGC6FGPZU;
 				INFOPLIST_FILE = SuperDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
