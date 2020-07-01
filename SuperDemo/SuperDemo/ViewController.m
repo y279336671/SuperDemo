@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "TestOC.h"
+
 
 @interface ViewController ()
 
@@ -18,28 +18,32 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    NSObject *object1 = [[NSObject alloc]init];
-
-    NSObject *object2 = [[NSObject alloc]init];
-
-    UIColor *color1 = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:1.0];
-    UIColor *color2 = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:1.0];
-    TestOC *testOc1 = [[TestOC alloc] init];
-    TestOC *testOc2= [[TestOC alloc] init];
-
-    if(testOc1==testOc2){
-        NSLog(@"==");
-    }
-    if([color1 isEqual:color2]){
-        NSLog(@"isEqual");
-    }
-//    if([object1 isMemberOfClass:[testOc class]]){
-//        NSLog(@"isMemberOfClass");
+//    NSObject *object1 = [[NSObject alloc]init];
+//    NSObject *object2 = [[NSObject alloc]init];
+//    if([object1 isEqual:object2]){
+//        NSLog(@"isEqual");
 //    }
-//    if([testOc isKindOfClass:[object1 class]]){
-//        NSLog(@"isKindOfClass");
+
+    NSString *str1= @"1";
+    NSString *str2= @"2";
+    NSString *str3 = @"1";
+    if([str1 isEqual:str2]){
+        NSLog(@">>>>isEqual");
+    }
+
+    if([str1 isEqual:str3]){
+        NSLog(@"isEqual<<<<<");
+    }
+
+//    TestOC *test1 = [[TestOC alloc] init];
+//    TestOC *test2 = [[TestOC alloc] init];
+//
+//    if([test1 isEqual:test2]){
+//        NSLog(@"isEqual");
 //    }
-    // Do any additional setup after loading the view.
+//    if(test1 == test2){
+//        NSLog(@"isEqual");
+//    }
 }
 
 

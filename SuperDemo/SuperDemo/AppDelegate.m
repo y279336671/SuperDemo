@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "TestOC.h"
+
 #import "ViewController.h"
 
 @interface AppDelegate ()
