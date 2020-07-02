@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Person.h"
 
 
 @interface ViewController ()
@@ -17,33 +18,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.view setBackgroundColor:UIColor.whiteColor];
 
-//    NSObject *object1 = [[NSObject alloc]init];
-//    NSObject *object2 = [[NSObject alloc]init];
-//    if([object1 isEqual:object2]){
-//        NSLog(@"isEqual");
-//    }
 
-    NSString *str1= @"1";
-    NSString *str2= @"2";
-    NSString *str3 = @"1";
-    if([str1 isEqual:str2]){
-        NSLog(@">>>>isEqual");
-    }
+    Person *person = [[Person alloc] init];
+    [person initWithName:@"yh"];
+    NSLog(@"%@===%@",person.name,person);
 
-    if([str1 isEqual:str3]){
-        NSLog(@"isEqual<<<<<");
-    }
-
-//    TestOC *test1 = [[TestOC alloc] init];
-//    TestOC *test2 = [[TestOC alloc] init];
-//
-//    if([test1 isEqual:test2]){
-//        NSLog(@"isEqual");
-//    }
-//    if(test1 == test2){
-//        NSLog(@"isEqual");
-//    }
 }
 
 

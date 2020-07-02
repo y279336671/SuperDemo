@@ -5,23 +5,21 @@
 
 #import "Person.h"
 @interface Person()
-{
-    NSMutableDictionary *_info;//info对外不可变，对内可变
-}
-
-@property(nonatomic,copy,readwrite) NSString *name;
 
 @end
 
-//判断如果name相等就认为person相等
 @implementation Person
 
+
+// @synthesize语句只能被用在 @implementation 代码段中
+// @synthesize的作用就是让编译器为你自动生成setter与getter方法
+// @synthesize还有一个作用，可以指定与属性对应的实例变量，例如@synthesize name = xxx
 - (instancetype)initWithName:(NSString *)name{
-    if (self = [super init]) {
-        self.name = name;
+    if (self = [super init]) {   //这行代码的作用？？？？？？？？？？
+
     }
 
     return self;
-
 }
+
 @end
