@@ -12,6 +12,7 @@
 		572E40FB249F062600D531B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 572E40FA249F062600D531B8 /* Assets.xcassets */; };
 		572E40FE249F062600D531B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 572E40FC249F062600D531B8 /* LaunchScreen.storyboard */; };
 		572E4101249F062600D531B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 572E4100249F062600D531B8 /* main.m */; };
+		D404D7269EC76FFE859E76FB /* Person+man.m in Sources */ = {isa = PBXBuildFile; fileRef = D404D0F03EC765D55D27723F /* Person+man.m */; };
 		D404DC878079D897DCA9EDDD /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = D404D96634B098650B491B8F /* Person.m */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,8 @@
 		572E40FD249F062600D531B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		572E40FF249F062600D531B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		572E4100249F062600D531B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D404D0F03EC765D55D27723F /* Person+man.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+man.m"; sourceTree = "<group>"; };
+		D404D14973B60442FF067AEB /* Person+man.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person+man.h"; sourceTree = "<group>"; };
 		D404D96634B098650B491B8F /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		D404DBBF55D20C979DA96D7F /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,6 +72,8 @@
 				572E4100249F062600D531B8 /* main.m */,
 				D404D96634B098650B491B8F /* Person.m */,
 				D404DBBF55D20C979DA96D7F /* Person.h */,
+				D404D0F03EC765D55D27723F /* Person+man.m */,
+				D404D14973B60442FF067AEB /* Person+man.h */,
 			);
 			path = SuperDemo;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 				572E40F0249F062500D531B8 /* AppDelegate.m in Sources */,
 				572E4101249F062600D531B8 /* main.m in Sources */,
 				D404DC878079D897DCA9EDDD /* Person.m in Sources */,
+				D404D7269EC76FFE859E76FB /* Person+man.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

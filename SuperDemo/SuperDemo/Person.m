@@ -5,7 +5,9 @@
 
 #import "Person.h"
 @interface Person()
-
+{
+    NSString *_name;
+}
 @end
 
 @implementation Person
@@ -25,7 +27,7 @@
 
 - (instancetype)initWithName:(NSString *)name{
     if (self = [super init]) {
-        _name = name;
+//        _name = name;
     }
 
     return self;
@@ -34,7 +36,7 @@
 - (BOOL)isEqual:(id)other {
     if (other == self)
         return YES;
-    if (!other || ![[other class] isEqual:[self class]])
+    if (!other || ![[other class] isKindOfClass:[self class]])
         return NO;
 
     return [self isEqualToPerson:other];
