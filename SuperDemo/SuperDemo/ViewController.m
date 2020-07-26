@@ -10,6 +10,7 @@
 #import "ViewController.h"
 #import "Person.h"
 #import "Person+man.h"
+#import "MemoryDemoViewController.h"
 
 @interface ViewController ()
 
@@ -21,6 +22,7 @@
     [super viewDidLoad];
     [self.view setBackgroundColor:UIColor.whiteColor];
 
+    [self memoryDemo];
 
 //    unsigned int outCount = 0;
 //    objc_property_t* propertys = class_copyPropertyList([Person class], &outCount);
@@ -50,5 +52,14 @@
     NSLog(@"%@%@",str1,str2);
 }
 
-
+//todo
+-(void)memoryDemo{
+    UIButton *memoryDemo = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    [memoryDemo addTarget:self action:@selector(showMemoryDemo) forControlEvents:UIControlEventTouchUpInside];
+    [memoryDemo setTitle:@"memory" forState:UIControlStateNormal];
+    [self.view addSubview:memoryDemo];
+}
+-(void)showMemoryDemo{
+    [self.navigationController pushViewController:[[MemoryDemoViewController alloc] init] animated:YES];
+}
 @end
