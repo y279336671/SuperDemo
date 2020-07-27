@@ -7,32 +7,48 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "1414C94E-BC6F-4B1D-81B8-8D0CD6F38A42"
+            uuid = "8DAF5513-29D2-4E45-9F80-65250FFD2869"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SuperDemo/main.m"
+            filePath = "SuperDemo/MemoryDemoViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "main(argc, argv)"
-            landmarkType = "9">
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "-doTask"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "4BA3F182-34BC-4931-9BAF-F6117D10BDF8"
+            uuid = "1B8C07F6-C6C4-45C3-8455-7B35555F17BA"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SuperDemo/AppDelegate.m"
+            filePath = "SuperDemo/ViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "-application:didFinishLaunchingWithOptions:"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "-memoryDemo"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "08AF0BF7-1FF8-48B0-BCAD-729FFFB7D2FE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SuperDemo/ViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "-showMemoryDemo"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

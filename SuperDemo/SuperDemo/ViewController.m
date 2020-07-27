@@ -20,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.view setBackgroundColor:UIColor.whiteColor];
+    [self.view setBackgroundColor:UIColor.redColor];
 
     [self memoryDemo];
 
@@ -44,15 +44,16 @@
 
 //    NSLog(@">>>%@<<<",person.sex);
 
-    NSString *str1 = [[NSString alloc] initWithString:@"123"];
-
-
-    NSString *str2 = @"123";
-
-    NSLog(@"%@%@",str1,str2);
+//    NSString *str1 = [[NSString alloc] initWithString:@"123"];
+//
+//
+//    NSString *str2 = @"123";
+//
+//    NSLog(@"%@%@",str1,str2);
+//    [self memoryDemo];
 }
 
-//todo
+//测试timer
 -(void)memoryDemo{
     UIButton *memoryDemo = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
     [memoryDemo addTarget:self action:@selector(showMemoryDemo) forControlEvents:UIControlEventTouchUpInside];
@@ -60,6 +61,8 @@
     [self.view addSubview:memoryDemo];
 }
 -(void)showMemoryDemo{
-    [self.navigationController pushViewController:[[MemoryDemoViewController alloc] init] animated:YES];
+    MemoryDemoViewController *memoryDemo = [[MemoryDemoViewController alloc] init];
+    [memoryDemo.view setBackgroundColor:UIColor.yellowColor];
+    [self.navigationController pushViewController:memoryDemo animated:YES];
 }
 @end
