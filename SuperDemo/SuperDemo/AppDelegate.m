@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 
 #import "ViewController.h"
+#import "TaggedPointerViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,12 +19,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+
     UINavigationController *rootNav = [[UINavigationController alloc] initWithRootViewController: [[ViewController alloc] init]];
+//    UINavigationController *rootNav = [[UINavigationController alloc] initWithRootViewController: [[TaggedPointerViewController alloc] init]];
     self.window.rootViewController =rootNav;
     [self.window makeKeyAndVisible];
-
 
     return YES;
 }

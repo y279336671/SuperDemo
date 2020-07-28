@@ -14,6 +14,7 @@
 		572E4101249F062600D531B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 572E4100249F062600D531B8 /* main.m */; };
 		57B525E424CDB149000F8D1D /* MemoryDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B525E324CDB149000F8D1D /* MemoryDemoViewController.m */; };
 		57FF280924CEAA6400BA4D41 /* MJTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FF280724CEAA6400BA4D41 /* MJTimer.m */; };
+		57FF280D24CFA2AA00BA4D41 /* TaggedPointerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FF280C24CFA2AA00BA4D41 /* TaggedPointerViewController.m */; };
 		D404D7269EC76FFE859E76FB /* Person+man.m in Sources */ = {isa = PBXBuildFile; fileRef = D404D0F03EC765D55D27723F /* Person+man.m */; };
 		D404D98733525262CE3D5D12 /* YHProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = D404D0D59528E13C88FE5DE9 /* YHProxy.m */; };
 		D404DC878079D897DCA9EDDD /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = D404D96634B098650B491B8F /* Person.m */; };
@@ -34,6 +35,8 @@
 		57B525E324CDB149000F8D1D /* MemoryDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryDemoViewController.m; sourceTree = "<group>"; };
 		57FF280724CEAA6400BA4D41 /* MJTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJTimer.m; sourceTree = "<group>"; };
 		57FF280824CEAA6400BA4D41 /* MJTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJTimer.h; sourceTree = "<group>"; };
+		57FF280B24CFA2AA00BA4D41 /* TaggedPointerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaggedPointerViewController.h; sourceTree = "<group>"; };
+		57FF280C24CFA2AA00BA4D41 /* TaggedPointerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaggedPointerViewController.m; sourceTree = "<group>"; };
 		D404D0D59528E13C88FE5DE9 /* YHProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHProxy.m; sourceTree = "<group>"; };
 		D404D0F03EC765D55D27723F /* Person+man.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+man.m"; sourceTree = "<group>"; };
 		D404D14973B60442FF067AEB /* Person+man.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person+man.h"; sourceTree = "<group>"; };
@@ -74,6 +77,7 @@
 		572E40ED249F062500D531B8 /* SuperDemo */ = {
 			isa = PBXGroup;
 			children = (
+				57FF280A24CFA28F00BA4D41 /* TaggedPointer */,
 				57FF280624CEAA6400BA4D41 /* Timers */,
 				57B525E224CDB149000F8D1D /* MemoryDemoViewController.h */,
 				57B525E324CDB149000F8D1D /* MemoryDemoViewController.m */,
@@ -104,6 +108,15 @@
 				D404D56CF95820ABB8E41E7D /* YHProxyBetter.m */,
 			);
 			path = Timers;
+			sourceTree = "<group>";
+		};
+		57FF280A24CFA28F00BA4D41 /* TaggedPointer */ = {
+			isa = PBXGroup;
+			children = (
+				57FF280B24CFA2AA00BA4D41 /* TaggedPointerViewController.h */,
+				57FF280C24CFA2AA00BA4D41 /* TaggedPointerViewController.m */,
+			);
+			path = TaggedPointer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57FF280D24CFA2AA00BA4D41 /* TaggedPointerViewController.m in Sources */,
 				572E40F6249F062500D531B8 /* ViewController.m in Sources */,
 				572E40F0249F062500D531B8 /* AppDelegate.m in Sources */,
 				57B525E424CDB149000F8D1D /* MemoryDemoViewController.m in Sources */,

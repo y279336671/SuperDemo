@@ -11,6 +11,7 @@
 #import "Person.h"
 #import "Person+man.h"
 #import "MemoryDemoViewController.h"
+#import "TaggedPointerViewController.h"
 
 @interface ViewController ()
 
@@ -18,39 +19,26 @@
 
 @implementation ViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view setBackgroundColor:UIColor.redColor];
+    [self taggedpointerDemo];
 
-    [self memoryDemo];
+}
 
-//    unsigned int outCount = 0;
-//    objc_property_t* propertys = class_copyPropertyList([Person class], &outCount);
-//    for (unsigned i = 0; i < outCount; i++) {
-//        objc_property_t property = propertys[i];
-//        assert(property != nil);
-//        const char* name = property_getName(property);
-//        NSLog(@"name: %s", name);
-//
-//        NSString* attrs = @(property_getAttributes(property));
-//        NSLog(@"code: %@", attrs);
-//    }
+//测试tagged pointer
+-(void)taggedpointerDemo{
+    UIButton *test = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    [test addTarget:self action:@selector(testEvent) forControlEvents:UIControlEventTouchUpInside];
+    [test setTitle:@"testbutton" forState:UIControlStateNormal];
+    [self.view addSubview:test];
+}
+-(void)testEvent{
+    TaggedPointerViewController *tg = [[TaggedPointerViewController alloc] init];
 
-
-//    Person *person = [[Person alloc] init];
-//    [person performSelector:@selector(hahaha)];
-//    person.sex = @"man";
-//    property_getAttributes(person.sex);
-
-//    NSLog(@">>>%@<<<",person.sex);
-
-//    NSString *str1 = [[NSString alloc] initWithString:@"123"];
-//
-//
-//    NSString *str2 = @"123";
-//
-//    NSLog(@"%@%@",str1,str2);
-//    [self memoryDemo];
+    [tg.view setBackgroundColor:UIColor.yellowColor];
+    [self.navigationController pushViewController:tg animated:YES];
 }
 
 //测试timer
