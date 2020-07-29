@@ -1,0 +1,16 @@
+PODS:
+  - A4LoadMeasure (0.1.1)
+
+DEPENDENCIES:
+  - A4LoadMeasure
+
+SPEC REPOS:
+  trunk:
+    - A4LoadMeasure
+
+SPEC CHECKSUMS:
+  A4LoadMeasure: 08bc687689d587908a182c2cf4be070fea02055a
+
+PODFILE CHECKSUM: cdb6fc1dcfd618f3acfdb908be554905f38003c3
+
+COCOAPODS: 1.9.3
