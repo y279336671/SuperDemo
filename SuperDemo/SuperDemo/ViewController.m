@@ -12,7 +12,6 @@
 #import "Person+man.h"
 #import "MemoryDemoViewController.h"
 #import "TaggedPointerViewController.h"
-
 @interface ViewController ()
 
 @end
@@ -22,6 +21,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"测试函数地址1");
+    NSLog(@"测试函数地址2");
+    
+//    int double_num_times_asm(int num, int times);
+    // 1. 0x00000001002d0000
+    // 2. 0x00000001028bc000        0x1028c4200      00008020
+    //0x00000001005e0000+0x8020
     [self.view setBackgroundColor:UIColor.redColor];
     [self taggedpointerDemo];
 
