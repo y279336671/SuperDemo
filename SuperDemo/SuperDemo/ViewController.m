@@ -11,9 +11,10 @@
 #import "Person.h"
 #import "Person+man.h"
 #import "MemoryDemoViewController.h"
-#import "TaggedPointerViewController.h"
+#import "TaggedPointer/TaggedPointerViewController.h"
 @interface ViewController ()
 
+//@property(nonatomic, copy) int (^testBlcok)(int n);
 @end
 
 @implementation ViewController
@@ -23,14 +24,24 @@
     [super viewDidLoad];
     NSLog(@"测试函数地址1");
     NSLog(@"测试函数地址2");
-    
+
 //    int double_num_times_asm(int num, int times);
     // 1. 0x00000001002d0000
     // 2. 0x00000001028bc000        0x1028c4200      00008020
     //0x00000001005e0000+0x8020
-    [self.view setBackgroundColor:UIColor.redColor];
-    [self taggedpointerDemo];
+//    [self.view setBackgroundColor:UIColor.redColor];
+//    [self taggedpointerDemo];
+//    [self exeBlock];
+}
 
+
+
+-(void)exeBlock{
+    void (^block)(void)=^{
+        NSLog(@"------%p",self,_cmd);// 方法默认会传递self _cmd参数，参数属于局部变量，所以会捕获
+        NSLog(@"------%p",_str);   // 也会捕获，_str 相当于self->_str  ,self是局部两变量，所以也会捕获_str
+        NSLog(@"------%p",[self str]);//转成 objc_msgSend(self,@selector(str))   ,同理还是会捕获self
+    };
 }
 
 //测试tagged pointer
