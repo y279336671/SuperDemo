@@ -12,6 +12,7 @@
 #import "Person+man.h"
 #import "MemoryDemoViewController.h"
 #import "TaggedPointer/TaggedPointerViewController.h"
+#import "ExposureViewController.h"
 @interface ViewController ()
 
 //@property(nonatomic, copy) int (^testBlcok)(int n);
@@ -32,6 +33,7 @@
 //    [self.view setBackgroundColor:UIColor.redColor];
 //    [self taggedpointerDemo];
 //    [self exeBlock];
+
 }
 
 

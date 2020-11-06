@@ -10,7 +10,7 @@
 
 #import "ViewController.h"
 #import "TaggedPointerViewController.h"
-
+#import "ExposureViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -23,7 +23,7 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-    UINavigationController *rootNav = [[UINavigationController alloc] initWithRootViewController: [[ViewController alloc] init]];
+    UINavigationController *rootNav = [[UINavigationController alloc] initWithRootViewController: [[ExposureViewController alloc] init]];
 //    UINavigationController *rootNav = [[UINavigationController alloc] initWithRootViewController: [[TaggedPointerViewController alloc] init]];
     self.window.rootViewController =rootNav;
     [self.window makeKeyAndVisible];
