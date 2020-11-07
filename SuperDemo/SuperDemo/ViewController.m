@@ -22,9 +22,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"测试函数地址1");
-    NSLog(@"测试函数地址2");
-
+//    NSLog(@"测试函数地址1");
+//    NSLog(@"测试函数地址2");
 //    int double_num_times_asm(int num, int times);
     // 1. 0x00000001002d0000
     // 2. 0x00000001028bc000        0x1028c4200      00008020
@@ -32,8 +31,98 @@
 //    [self.view setBackgroundColor:UIColor.redColor];
 //    [self taggedpointerDemo];
 //    [self exeBlock];
+
+
+//    [self interview1];
+//    [self interview2];
+//    [self interview3];
+//    [self interview4];
+//    [self interview5];
+//    [self interview6];
+    [self interview7];
 }
 
+- (void)interview1{
+    NSLog(@"0---%@",[NSThread currentThread]);
+    dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
+    dispatch_async(queue, ^{
+        NSLog(@"1---%@",[NSThread currentThread]);
+        [self performSelector:@selector(test1) withObject:nil afterDelay:.0f];
+        NSLog(@"3---%@",[NSThread currentThread]);
+    });
+}
+- (void)test1{
+    NSLog(@"2---%@",[NSThread currentThread]);
+}
+
+- (void)interview2{
+    NSThread *thread = [[NSThread alloc] initWithBlock:^{
+        NSLog(@"1---%@",[NSThread currentThread]);
+    }];
+    [thread start];
+    [self performSelector:@selector(test2) onThread:thread withObject:nil waitUntilDone:YES];
+}
+- (void)test2{
+    NSLog(@"2---%@",[NSThread currentThread]);
+}
+- (void)interview3{
+    NSLog(@"执行任务1--%@",[NSThread currentThread]);
+    dispatch_queue_t queue = dispatch_get_main_queue();
+    dispatch_sync(queue, ^{
+        NSLog(@"执行任务2--%@",[NSThread currentThread]);
+    });
+    NSLog(@"执行任务3--%@",[NSThread currentThread]);
+}
+
+- (void)interview4{
+    NSLog(@"执行任务1--%@",[NSThread currentThread]);
+    dispatch_queue_t queue = dispatch_get_main_queue();
+    dispatch_async(queue, ^{
+        NSLog(@"执行任务2--%@",[NSThread currentThread]);
+    });
+    NSLog(@"执行任务3--%@",[NSThread currentThread]);
+}
+- (void)interview5{
+    NSLog(@"执行任务1--%@",[NSThread currentThread]);
+    dispatch_queue_t queue = dispatch_queue_create("myqueu", DISPATCH_QUEUE_SERIAL);
+    dispatch_async(queue, ^{
+        NSLog(@"执行任务2--%@",[NSThread currentThread]);
+        dispatch_sync(queue, ^{
+            NSLog(@"执行任务3--%@",[NSThread currentThread]);
+        });
+        NSLog(@"执行任务4--%@",[NSThread currentThread]);
+    });
+    NSLog(@"执行任务5--%@",[NSThread currentThread]);
+}
+
+- (void)interview6{
+    NSLog(@"执行任务1--%@",[NSThread currentThread]);
+    dispatch_queue_t queue = dispatch_queue_create("myqueu", DISPATCH_QUEUE_SERIAL);
+    dispatch_queue_t queue2 = dispatch_queue_create("myqueu2", DISPATCH_QUEUE_SERIAL);
+    dispatch_async(queue, ^{
+        NSLog(@"执行任务2--%@",[NSThread currentThread]);
+
+        dispatch_sync(queue2, ^{
+            NSLog(@"执行任务3--%@",[NSThread currentThread]);
+        });
+
+        NSLog(@"执行任务4--%@",[NSThread currentThread]);
+    });
+    NSLog(@"执行任务5--%@",[NSThread currentThread]);
+}
+- (void)interview7{
+    NSLog(@"执行任务1--%@",[NSThread currentThread]);
+    dispatch_queue_t queue = dispatch_queue_create("myqueu", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_async(queue, ^{
+        NSLog(@"执行任务2--%@",[NSThread currentThread]);
+        dispatch_sync(queue, ^{
+            NSLog(@"执行任务3--%@",[NSThread currentThread]);
+        });
+        NSLog(@"执行任务4--%@",[NSThread currentThread]);
+    });
+    NSLog(@"执行任务5--%@",[NSThread currentThread]);
+    // 15234
+}
 
 
 -(void)exeBlock{
