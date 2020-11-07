@@ -15,6 +15,7 @@
 		57B525E424CDB149000F8D1D /* MemoryDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B525E324CDB149000F8D1D /* MemoryDemoViewController.m */; };
 		57FF280924CEAA6400BA4D41 /* MJTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FF280724CEAA6400BA4D41 /* MJTimer.m */; };
 		57FF280D24CFA2AA00BA4D41 /* TaggedPointerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FF280C24CFA2AA00BA4D41 /* TaggedPointerViewController.m */; };
+		58603F109AA1359705D4C196 /* ExposureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5860353274DFB854B1389021 /* ExposureViewController.m */; };
 		9F7047070C9F9A6343ACB509 /* Pods_SuperDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C1620D0217C7F519677217 /* Pods_SuperDemo.framework */; };
 		D404D7269EC76FFE859E76FB /* Person+man.m in Sources */ = {isa = PBXBuildFile; fileRef = D404D0F03EC765D55D27723F /* Person+man.m */; };
 		D404D98733525262CE3D5D12 /* YHProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = D404D0D59528E13C88FE5DE9 /* YHProxy.m */; };
@@ -39,6 +40,8 @@
 		57FF280824CEAA6400BA4D41 /* MJTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJTimer.h; sourceTree = "<group>"; };
 		57FF280B24CFA2AA00BA4D41 /* TaggedPointerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaggedPointerViewController.h; sourceTree = "<group>"; };
 		57FF280C24CFA2AA00BA4D41 /* TaggedPointerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaggedPointerViewController.m; sourceTree = "<group>"; };
+		586030C7F68560EDC60832C7 /* ExposureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExposureViewController.h; sourceTree = "<group>"; };
+		5860353274DFB854B1389021 /* ExposureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExposureViewController.m; sourceTree = "<group>"; };
 		91963985C4DE2F55EC643302 /* Pods-SuperDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperDemo.debug.xcconfig"; path = "Target Support Files/Pods-SuperDemo/Pods-SuperDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D404D0D59528E13C88FE5DE9 /* YHProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHProxy.m; sourceTree = "<group>"; };
 		D404D0F03EC765D55D27723F /* Person+man.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+man.m"; sourceTree = "<group>"; };
@@ -91,6 +94,8 @@
 				D404DBBF55D20C979DA96D7F /* Person.h */,
 				D404D0F03EC765D55D27723F /* Person+man.m */,
 				D404D14973B60442FF067AEB /* Person+man.h */,
+				5860353274DFB854B1389021 /* ExposureViewController.m */,
+				586030C7F68560EDC60832C7 /* ExposureViewController.h */,
 			);
 			path = SuperDemo;
 			sourceTree = "<group>";
@@ -240,6 +245,7 @@
 				D404D7269EC76FFE859E76FB /* Person+man.m in Sources */,
 				D404D98733525262CE3D5D12 /* YHProxy.m in Sources */,
 				D404DFB6EB8733A26A96379F /* YHProxyBetter.m in Sources */,
+				58603F109AA1359705D4C196 /* ExposureViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
