@@ -11,6 +11,9 @@
 #import "ViewController.h"
 #import "TaggedPointerViewController.h"
 #import "ExposureViewController.h"
+#import <Aspects.h>
+#import <Aspects/Aspects.h>
+
 @interface AppDelegate ()
 
 @end
@@ -19,7 +22,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
+    [UIView aspect_hookSelector:@selector(setFrame:) withOptions:AspectPositionAfter usingBlock:^(){
+        NSLog(@"");
+    } error:NULL];
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 

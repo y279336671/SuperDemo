@@ -38,6 +38,7 @@
 
 
 
+
 -(void)exeBlock{
     void (^block)(void)=^{
         NSLog(@"------%p",self,_cmd);// 方法默认会传递self _cmd参数，参数属于局部变量，所以会捕获

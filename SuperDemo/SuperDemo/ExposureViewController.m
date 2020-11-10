@@ -4,7 +4,10 @@
 //
 
 
+#import <SDCycleScrollView/SDCycleScrollView.h>
 #import "ExposureViewController.h"
+#import "../Pods/SDCycleScrollView/SDCycleScrollView/Lib/SDCycleScrollView/SDCycleScrollView.h"
+
 #define random(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/255.0]
 
 #define randomColor random(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
@@ -14,27 +17,37 @@
 @end
 
 @implementation ExposureViewController
++ (void)load {
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.view addSubview:self.tableView];
+//    // 网络加载图片的轮播器
+//
+//    SDCycleScrollView *cycleScrollView = [cycleScrollViewWithFrame :frame delegate:delegate placeholderImage:placeholderImage];
+//    cycleScrollView.imageURLStringsGroup = imagesURLStrings;
+
+// 本地加载图片的轮播器
+//    SDCycleScrollView *cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, UIScreen.mainScreen.bounds.size.width, 300) imageNamesGroup:@[@"1.jpg",@"2.jpg",@"3.jpg"]];
+//    [self.view addSubview:cycleScrollView];
+//    [self.view addSubview:self.tableView];
+//  [self.view addSubview:self.tableView];
 }
 
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 200;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [[UITableViewCell alloc] initWithFrame:CGRectMake(0, 0, UIScreen.mainScreen.bounds.size.width, 100)];
     cell.backgroundColor = randomColor;
-    return  cell;
+    return cell;
 }
 
 - (UITableView *)tableView {
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, UIScreen.mainScreen.bounds.size.width, UIScreen.mainScreen.bounds.size.height)];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 344, UIScreen.mainScreen.bounds.size.width, UIScreen.mainScreen.bounds.size.height)];
         _tableView.delegate = self;
         _tableView.dataSource = self;
     }
