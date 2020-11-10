@@ -33,6 +33,8 @@
 //    [self.view addSubview:cycleScrollView];
 //    [self.view addSubview:self.tableView];
 //  [self.view addSubview:self.tableView];
+
+
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
