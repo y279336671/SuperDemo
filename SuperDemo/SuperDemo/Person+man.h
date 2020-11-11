@@ -9,5 +9,5 @@
 @interface Person (man)
 
 @property(nonatomic, copy) NSString *sex;
-
+@property (nonatomic, weak) id weakObject;
 @end

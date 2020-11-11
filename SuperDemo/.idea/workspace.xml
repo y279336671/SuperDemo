@@ -2,197 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d9ba4b5-bc7f-43c6-a209-6914afa02054" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/Podfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Podfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Manifest.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Manifest.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDCycleScrollView/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDCycleScrollView/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDCycleScrollView/SDCycleScrollView/Lib/SDCycleScrollView/PageControl/TAAbstractDotView.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDCycleScrollView/SDCycleScrollView/Lib/SDCycleScrollView/PageControl/TAAbstractDotView.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDCycleScrollView/SDCycleScrollView/Lib/SDCycleScrollView/PageControl/TAAnimatedDotView.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDCycleScrollView/SDCycleScrollView/Lib/SDCycleScrollView/PageControl/TAAnimatedDotView.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDCycleScrollView/SDCycleScrollView/Lib/SDCycleScrollView/PageControl/TADotView.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDCycleScrollView/SDCycleScrollView/Lib/SDCycleScrollView/PageControl/TADotView.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDCycleScrollView/SDCycleScrollView/Lib/SDCycleScrollView/PageControl/TAPageControl.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDCycleScrollView/SDCycleScrollView/Lib/SDCycleScrollView/PageControl/TAPageControl.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDCycleScrollView/SDCycleScrollView/Lib/SDCycleScrollView/SDCollectionViewCell.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDCycleScrollView/SDCycleScrollView/Lib/SDCycleScrollView/SDCollectionViewCell.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDCycleScrollView/SDCycleScrollView/Lib/SDCycleScrollView/SDCycleScrollView.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDCycleScrollView/SDCycleScrollView/Lib/SDCycleScrollView/SDCycleScrollView.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDCycleScrollView/SDCycleScrollView/Lib/SDCycleScrollView/UIView+SDExtension.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDCycleScrollView/SDCycleScrollView/Lib/SDCycleScrollView/UIView+SDExtension.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/NSButton+WebCache.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/NSButton+WebCache.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/NSData+ImageContentType.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/NSData+ImageContentType.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/NSImage+Compatibility.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/NSImage+Compatibility.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDAnimatedImage.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDAnimatedImage.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDAnimatedImagePlayer.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDAnimatedImagePlayer.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDAnimatedImageRep.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDAnimatedImageRep.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDAnimatedImageView+WebCache.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDAnimatedImageView+WebCache.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDAnimatedImageView.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDAnimatedImageView.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDDiskCache.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDDiskCache.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDGraphicsImageRenderer.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDGraphicsImageRenderer.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDImageAPNGCoder.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDImageAPNGCoder.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDImageAWebPCoder.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDImageAWebPCoder.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDImageCache.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDImageCache.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDImageCacheConfig.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDImageCacheConfig.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDImageCacheDefine.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDImageCacheDefine.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDImageCachesManager.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDImageCachesManager.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDImageCoder.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDImageCoder.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDImageCoderHelper.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDImageCoderHelper.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDImageCodersManager.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDImageCodersManager.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDImageFrame.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDImageFrame.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDImageGIFCoder.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDImageGIFCoder.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDImageGraphics.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDImageGraphics.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDImageHEICCoder.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDImageHEICCoder.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDImageIOAnimatedCoder.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDImageIOAnimatedCoder.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDImageIOCoder.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDImageIOCoder.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDImageLoader.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDImageLoader.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDImageLoadersManager.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDImageLoadersManager.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDImageTransformer.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDImageTransformer.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDMemoryCache.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDMemoryCache.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDWebImageCacheKeyFilter.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDWebImageCacheKeyFilter.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDWebImageCacheSerializer.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDWebImageCacheSerializer.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDWebImageCompat.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDWebImageCompat.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDWebImageDefine.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDWebImageDefine.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDWebImageDownloader.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDWebImageDownloader.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDWebImageDownloaderConfig.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDWebImageDownloaderConfig.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDWebImageDownloaderDecryptor.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDWebImageDownloaderDecryptor.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDWebImageDownloaderOperation.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDWebImageDownloaderOperation.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDWebImageDownloaderRequestModifier.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDWebImageDownloaderRequestModifier.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDWebImageDownloaderResponseModifier.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDWebImageDownloaderResponseModifier.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDWebImageError.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDWebImageError.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDWebImageIndicator.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDWebImageIndicator.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDWebImageManager.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDWebImageManager.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDWebImageOperation.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDWebImageOperation.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDWebImageOptionsProcessor.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDWebImageOptionsProcessor.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDWebImagePrefetcher.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDWebImagePrefetcher.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDWebImageTransition.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/SDWebImageTransition.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/UIButton+WebCache.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/UIButton+WebCache.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/UIImage+ExtendedCacheData.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/UIImage+ExtendedCacheData.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/UIImage+ForceDecode.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/UIImage+ForceDecode.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/UIImage+GIF.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/UIImage+GIF.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/UIImage+MemoryCacheCost.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/UIImage+MemoryCacheCost.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/UIImage+Metadata.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/UIImage+Metadata.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/UIImage+MultiFormat.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/UIImage+MultiFormat.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/UIImage+Transform.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/UIImage+Transform.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/UIImageView+HighlightedWebCache.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/UIImageView+HighlightedWebCache.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/UIImageView+WebCache.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/UIImageView+WebCache.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/UIView+WebCache.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/UIView+WebCache.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/UIView+WebCacheOperation.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Core/UIView+WebCacheOperation.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Private/NSBezierPath+SDRoundedCorners.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Private/NSBezierPath+SDRoundedCorners.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Private/SDAssociatedObject.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Private/SDAssociatedObject.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Private/SDAsyncBlockOperation.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Private/SDAsyncBlockOperation.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Private/SDDeviceHelper.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Private/SDDeviceHelper.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Private/SDDisplayLink.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Private/SDDisplayLink.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Private/SDFileAttributeHelper.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Private/SDFileAttributeHelper.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Private/SDImageAssetManager.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Private/SDImageAssetManager.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Private/SDImageCachesManagerOperation.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Private/SDImageCachesManagerOperation.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Private/SDImageIOAnimatedCoderInternal.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Private/SDInternalMacros.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Private/SDInternalMacros.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Private/SDWeakProxy.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Private/SDWeakProxy.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Private/SDWebImageTransitionInternal.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Private/SDmetamacros.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Private/UIColor+SDHexString.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/SDWebImage/Private/UIColor+SDHexString.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/SDWebImage/WebImage/SDWebImage.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SuperDemo/Pods-SuperDemo-acknowledgements.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SuperDemo/Pods-SuperDemo-acknowledgements.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SuperDemo/Pods-SuperDemo-acknowledgements.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SuperDemo/Pods-SuperDemo-acknowledgements.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SuperDemo/Pods-SuperDemo-frameworks-Debug-input-files.xcfilelist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SuperDemo/Pods-SuperDemo-frameworks-Debug-input-files.xcfilelist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SuperDemo/Pods-SuperDemo-frameworks-Debug-output-files.xcfilelist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SuperDemo/Pods-SuperDemo-frameworks-Debug-output-files.xcfilelist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SuperDemo/Pods-SuperDemo-frameworks-Release-input-files.xcfilelist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SuperDemo/Pods-SuperDemo-frameworks-Release-input-files.xcfilelist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SuperDemo/Pods-SuperDemo-frameworks-Release-output-files.xcfilelist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SuperDemo/Pods-SuperDemo-frameworks-Release-output-files.xcfilelist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SuperDemo/Pods-SuperDemo-frameworks.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SuperDemo/Pods-SuperDemo-frameworks.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SuperDemo/Pods-SuperDemo.debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SuperDemo/Pods-SuperDemo.debug.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SuperDemo/Pods-SuperDemo.release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SuperDemo/Pods-SuperDemo.release.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/SDCycleScrollView/SDCycleScrollView-Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/SDCycleScrollView/SDCycleScrollView-dummy.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/SDCycleScrollView/SDCycleScrollView-prefix.pch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/SDCycleScrollView/SDCycleScrollView-umbrella.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/SDCycleScrollView/SDCycleScrollView.debug.xcconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/SDCycleScrollView/SDCycleScrollView.modulemap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/SDCycleScrollView/SDCycleScrollView.release.xcconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/SDWebImage/SDWebImage-Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/SDWebImage/SDWebImage-dummy.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/SDWebImage/SDWebImage-prefix.pch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/SDWebImage/SDWebImage-umbrella.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/SDWebImage/SDWebImage.debug.xcconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/SDWebImage/SDWebImage.modulemap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/SDWebImage/SDWebImage.release.xcconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo.xcworkspace/xcuserdata/admin.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo.xcworkspace/xcuserdata/admin.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SuperDemo/AppDelegate.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/AppDelegate.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo/ExposureViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/ExposureViewController.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo/Person.h" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Person.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/Person+man.h" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Person+man.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/Person+man.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Person+man.m" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SuperDemo/ViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/ViewController.m" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -253,52 +66,52 @@
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
     <state x="-1234" y="478" key="GitCloneDialog/-1920.23.1920.1057/0.23.1792.1097@-1920.23.1920.1057" timestamp="1604542918103" />
-    <state width="1899" height="446" key="GridCell.Tab.0.bottom" timestamp="1605062918275">
+    <state width="1899" height="446" key="GridCell.Tab.0.bottom" timestamp="1605095351510">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state width="1899" height="446" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1344.817@-1920.23.1920.1057" timestamp="1605062918275" />
+    <state width="1899" height="446" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1344.817@-1920.23.1920.1057" timestamp="1605095351510" />
     <state width="1899" height="358" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1536.937@-1920.23.1920.1057" timestamp="1604630162714" />
     <state width="1899" height="358" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1792.1097@-1920.23.1920.1057" timestamp="1604630054532" />
-    <state width="1899" height="446" key="GridCell.Tab.0.center" timestamp="1605062918275">
+    <state width="1899" height="446" key="GridCell.Tab.0.center" timestamp="1605095351509">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state width="1899" height="446" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1344.817@-1920.23.1920.1057" timestamp="1605062918275" />
+    <state width="1899" height="446" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1344.817@-1920.23.1920.1057" timestamp="1605095351509" />
     <state width="1899" height="358" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1536.937@-1920.23.1920.1057" timestamp="1604630162714" />
     <state width="1899" height="358" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1792.1097@-1920.23.1920.1057" timestamp="1604630054530" />
-    <state width="1899" height="446" key="GridCell.Tab.0.left" timestamp="1605062918274">
+    <state width="1899" height="446" key="GridCell.Tab.0.left" timestamp="1605095351508">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state width="1899" height="446" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1344.817@-1920.23.1920.1057" timestamp="1605062918274" />
+    <state width="1899" height="446" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1344.817@-1920.23.1920.1057" timestamp="1605095351508" />
     <state width="1899" height="358" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1536.937@-1920.23.1920.1057" timestamp="1604630162714" />
     <state width="1899" height="358" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1792.1097@-1920.23.1920.1057" timestamp="1604630054530" />
-    <state width="1899" height="446" key="GridCell.Tab.0.right" timestamp="1605062918275">
+    <state width="1899" height="446" key="GridCell.Tab.0.right" timestamp="1605095351509">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state width="1899" height="446" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1344.817@-1920.23.1920.1057" timestamp="1605062918275" />
+    <state width="1899" height="446" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1344.817@-1920.23.1920.1057" timestamp="1605095351509" />
     <state width="1899" height="358" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1536.937@-1920.23.1920.1057" timestamp="1604630162714" />
     <state width="1899" height="358" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1792.1097@-1920.23.1920.1057" timestamp="1604630054531" />
-    <state width="1899" height="446" key="GridCell.Tab.1.bottom" timestamp="1605062918276">
+    <state width="1899" height="446" key="GridCell.Tab.1.bottom" timestamp="1605095351511">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state width="1899" height="446" key="GridCell.Tab.1.bottom/-1920.23.1920.1057/0.23.1344.817@-1920.23.1920.1057" timestamp="1605062918276" />
+    <state width="1899" height="446" key="GridCell.Tab.1.bottom/-1920.23.1920.1057/0.23.1344.817@-1920.23.1920.1057" timestamp="1605095351511" />
     <state width="1899" height="358" key="GridCell.Tab.1.bottom/-1920.23.1920.1057/0.23.1536.937@-1920.23.1920.1057" timestamp="1604630162715" />
     <state width="1899" height="358" key="GridCell.Tab.1.bottom/-1920.23.1920.1057/0.23.1792.1097@-1920.23.1920.1057" timestamp="1604630054342" />
-    <state width="1899" height="446" key="GridCell.Tab.1.center" timestamp="1605062918276">
+    <state width="1899" height="446" key="GridCell.Tab.1.center" timestamp="1605095351510">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state width="1899" height="446" key="GridCell.Tab.1.center/-1920.23.1920.1057/0.23.1344.817@-1920.23.1920.1057" timestamp="1605062918276" />
+    <state width="1899" height="446" key="GridCell.Tab.1.center/-1920.23.1920.1057/0.23.1344.817@-1920.23.1920.1057" timestamp="1605095351510" />
     <state width="1899" height="358" key="GridCell.Tab.1.center/-1920.23.1920.1057/0.23.1536.937@-1920.23.1920.1057" timestamp="1604630162715" />
     <state width="1899" height="358" key="GridCell.Tab.1.center/-1920.23.1920.1057/0.23.1792.1097@-1920.23.1920.1057" timestamp="1604630054341" />
-    <state width="1899" height="446" key="GridCell.Tab.1.left" timestamp="1605062918276">
+    <state width="1899" height="446" key="GridCell.Tab.1.left" timestamp="1605095351510">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state width="1899" height="446" key="GridCell.Tab.1.left/-1920.23.1920.1057/0.23.1344.817@-1920.23.1920.1057" timestamp="1605062918276" />
+    <state width="1899" height="446" key="GridCell.Tab.1.left/-1920.23.1920.1057/0.23.1344.817@-1920.23.1920.1057" timestamp="1605095351510" />
     <state width="1899" height="358" key="GridCell.Tab.1.left/-1920.23.1920.1057/0.23.1536.937@-1920.23.1920.1057" timestamp="1604630162715" />
     <state width="1899" height="358" key="GridCell.Tab.1.left/-1920.23.1920.1057/0.23.1792.1097@-1920.23.1920.1057" timestamp="1604630054340" />
-    <state width="1899" height="446" key="GridCell.Tab.1.right" timestamp="1605062918276">
+    <state width="1899" height="446" key="GridCell.Tab.1.right" timestamp="1605095351511">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state width="1899" height="446" key="GridCell.Tab.1.right/-1920.23.1920.1057/0.23.1344.817@-1920.23.1920.1057" timestamp="1605062918276" />
+    <state width="1899" height="446" key="GridCell.Tab.1.right/-1920.23.1920.1057/0.23.1344.817@-1920.23.1920.1057" timestamp="1605095351511" />
     <state width="1899" height="358" key="GridCell.Tab.1.right/-1920.23.1920.1057/0.23.1536.937@-1920.23.1920.1057" timestamp="1604630162715" />
     <state width="1899" height="358" key="GridCell.Tab.1.right/-1920.23.1920.1057/0.23.1792.1097@-1920.23.1920.1057" timestamp="1604630054341" />
     <state x="-1547" y="200" key="SettingsEditor" timestamp="1604632181091">
@@ -306,13 +119,39 @@
     </state>
     <state x="-1547" y="200" key="SettingsEditor/-1920.23.1920.1057/0.23.1344.817@-1920.23.1920.1057" timestamp="1604632181091" />
     <state x="-1547" y="200" key="SettingsEditor/-1920.23.1920.1057/0.23.1792.1097@-1920.23.1920.1057" timestamp="1604459722362" />
-    <state x="-1259" y="306" width="683" height="490" key="find.popup" timestamp="1605062141022">
+    <state x="-1259" y="306" width="683" height="490" key="find.popup" timestamp="1605095492775">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state x="-1259" y="306" width="683" height="490" key="find.popup/-1920.23.1920.1057/0.23.1344.817@-1920.23.1920.1057" timestamp="1605062141022" />
+    <state x="-1259" y="306" width="683" height="490" key="find.popup/-1920.23.1920.1057/0.23.1344.817@-1920.23.1920.1057" timestamp="1605095492775" />
     <state x="-1295" y="258" key="search.everywhere.popup" timestamp="1604628628937">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
     <state x="-1295" y="258" key="search.everywhere.popup/-1920.23.1920.1057/0.23.1792.1097@-1920.23.1920.1057" timestamp="1604628628937" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/SuperDemo/ViewController.m</url>
+          <line>154</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/SuperDemo/ViewController.m</url>
+          <line>161</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/SuperDemo/ViewController.m</url>
+          <line>163</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/SuperDemo/ViewController.m</url>
+          <line>40</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

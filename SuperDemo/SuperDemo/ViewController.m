@@ -32,8 +32,13 @@
 //    [self.view setBackgroundColor:UIColor.redColor];
 //    [self taggedpointerDemo];
 //    [self exeBlock];
-        UIButton *
 
+    NSMutableArray *array = [[NSMutableArray alloc] init];
+    [array addObject:@"1"];
+    [array addObject:@"2"];
+    [array addObject:@"3"];
+    id mutableObject =  [array mutableCopy];
+    NSLog(@"%@",mutableObject);
 //    [self interview1];
 //    [self interview2];
 //    [self interview3];
@@ -41,7 +46,8 @@
 //    [self interview5];
 //    [self interview6];
 //    [self interview7];
-    [self testKVO];
+//    [self interview8];
+//    [self testKVO];
 
 }
 
@@ -85,6 +91,7 @@
 - (void)test2{
     NSLog(@"2---%@",[NSThread currentThread]);
 }
+
 - (void)interview3{
     NSLog(@"执行任务1--%@",[NSThread currentThread]);
     dispatch_queue_t queue = dispatch_get_main_queue();
@@ -148,7 +155,7 @@
     NSLog(@"执行任务1--%@",[NSThread currentThread]);
     dispatch_queue_t queue = dispatch_queue_create("myqueu", DISPATCH_QUEUE_SERIAL);
     dispatch_async(queue, ^{
-        NSLog(@"执行任务2--%@",[NSThread currentThread]);
+        NSLog(@"执行任务2--%@",[NSThread currentThread]);//????这个为什么是空
     });
     sleep(3);
     dispatch_sync(queue, ^{
