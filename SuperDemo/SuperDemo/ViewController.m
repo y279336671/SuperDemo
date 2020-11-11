@@ -14,7 +14,7 @@
 #import "TaggedPointer/TaggedPointerViewController.h"
 #import "ExposureViewController.h"
 @interface ViewController ()
-
+@property (nonatomic, strong)Person *person;
 //@property(nonatomic, copy) int (^testBlcok)(int n);
 @end
 
@@ -32,7 +32,7 @@
 //    [self.view setBackgroundColor:UIColor.redColor];
 //    [self taggedpointerDemo];
 //    [self exeBlock];
-
+        UIButton *
 
 //    [self interview1];
 //    [self interview2];
@@ -40,7 +40,26 @@
 //    [self interview4];
 //    [self interview5];
 //    [self interview6];
-    [self interview7];
+//    [self interview7];
+    [self testKVO];
+
+}
+
+// 多次对同一个属性kvo，只是多次创建了不同的子类，所以会执行多次
+-(void)testKVO{
+    self.person = [[Person alloc] init];
+    self.person.sex = @"girl";
+    [self.person addObserver:self forKeyPath:@"sex" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:@"unknow"];
+    [self.person addObserver:self forKeyPath:@"sex" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:@"unknow1"];
+    [self.person addObserver:self forKeyPath:@"sex" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:@"unknow2"];
+    [self.person addObserver:self forKeyPath:@"sex" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:@"unknow3"];
+    self.person.sex = @"boy";
+}
+
+-(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey, id> *)change context:(void *)context {
+    NSLog(@"old >>>>> %@",change[NSKeyValueChangeOldKey]);
+    NSLog(@"new >>>>> %@",change[NSKeyValueChangeNewKey]);
+    NSLog(@"context >>>> %@",context);
 }
 
 - (void)interview1{
@@ -125,7 +144,18 @@
     // 15234
 }
 
-
+- (void)interview8{
+    NSLog(@"执行任务1--%@",[NSThread currentThread]);
+    dispatch_queue_t queue = dispatch_queue_create("myqueu", DISPATCH_QUEUE_SERIAL);
+    dispatch_async(queue, ^{
+        NSLog(@"执行任务2--%@",[NSThread currentThread]);
+    });
+    sleep(3);
+    dispatch_sync(queue, ^{
+        NSLog(@"执行任务3--%@",[NSThread currentThread]);
+    });
+    NSLog(@"执行任务4--%@",[NSThread currentThread]);
+}
 
 -(void)exeBlock{
     void (^block)(void)=^{

@@ -27,6 +27,7 @@
 // NSString、NSArray、NSDictionary 经常使用copy关键字,为避免他们的可变子类，比如NSMutableString NSMutableArray、NSMutableDictionary在赋值的时候，引起不必要的改变。而copy会复制一份新内存指向可变对象。Strong只会增加引用计数器
 @property(nonatomic, copy, readonly) NSString *name;  // @property它将自动创建一个以下划线开头的实例变量
 
+@property(nonatomic, copy) NSString *sex;
 
 // assign一般用于修饰基本数据类型，原因是基本数据类型会被分配到栈上，栈上的内存是系统自动管理，不会产生野指针，assign也可以修饰对象类型，但是会产生野指针。而weak修饰的对象在释放时会被指向nil，就不会产生野指针。
 @property(nonatomic, assign) NSInteger age;

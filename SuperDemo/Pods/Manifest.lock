@@ -1,26 +1,16 @@
 PODS:
   - Aspects (1.4.1)
-  - SDCycleScrollView (1.82):
-    - SDWebImage (>= 5.0.0)
-  - SDWebImage (5.9.4):
-    - SDWebImage/Core (= 5.9.4)
-  - SDWebImage/Core (5.9.4)
 
 DEPENDENCIES:
   - Aspects
-  - SDCycleScrollView (>= 1.82)
 
 SPEC REPOS:
   trunk:
     - Aspects
-    - SDCycleScrollView
-    - SDWebImage
 
 SPEC CHECKSUMS:
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
-  SDCycleScrollView: a0d74c3384caa72bdfc81470bdbc8c14b3e1fbcf
-  SDWebImage: b69257f4ab14e9b6a2ef53e910fdf914d8f757c1
 
-PODFILE CHECKSUM: 66fe8fbcfb844f5f4e5bda6d1ba7fbec3315ea21
+PODFILE CHECKSUM: 3ebef39a9e8adc29e45b954018012b748344bddb
 
 COCOAPODS: 1.10.0
