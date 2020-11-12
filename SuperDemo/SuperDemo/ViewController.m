@@ -33,12 +33,7 @@
 //    [self taggedpointerDemo];
 //    [self exeBlock];
 
-    NSMutableArray *array = [[NSMutableArray alloc] init];
-    [array addObject:@"1"];
-    [array addObject:@"2"];
-    [array addObject:@"3"];
-    id mutableObject =  [array mutableCopy];
-    NSLog(@"%@",mutableObject);
+
 //    [self interview1];
 //    [self interview2];
 //    [self interview3];
@@ -48,6 +43,30 @@
 //    [self interview7];
 //    [self interview8];
 //    [self testKVO];
+
+    [self testCopyAndMutableCopy];
+}
+
+-(void)testCopyAndMutableCopy{
+    // 1. 可变数组 mutableCopy
+//    可变数组的mutableCopy是深拷贝，数组指针会被重新创建，但是内部的内容不会被重新创建,数组内部的对象引用计数器+1，地址不变
+    Person *person = [[Person alloc] init];
+    person.age = 1;
+    Person *person1 = [[Person alloc] init];
+    person1.age = 2;
+    Person *person2 = [[Person alloc] init];
+    person2.age = 3;
+    NSMutableArray *array = [[NSMutableArray alloc] init];
+    [array addObject:person];
+    [array addObject:person1];
+    [array addObject:person2];
+    id mutableObject =  [array mutableCopy]; // 可变数组的指针会被复制，但是内部的对象类型的值不会
+    Person *temp = array[0];
+    temp.age = 4;
+    NSLog(@"%@,%@",array,mutableObject);
+
+    //todo 接着测试代码
+
 
 }
 

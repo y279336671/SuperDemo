@@ -18,10 +18,10 @@ static NSString *sexKey = @"sexKey";
     return objc_getAssociatedObject(self, &sexKey);
 }
 
--(void)setWeakObject:(id)weakObject {
-//    void *block =
-}
--(id)weakObject {
-
-}
+//-(void)setWeakObject:(id)weakObject {
+////    void *block =
+//}
+//-(id)weakObject {
+//
+//}
 @end
