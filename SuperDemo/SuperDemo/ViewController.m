@@ -16,6 +16,7 @@
 @interface ViewController ()
 @property (nonatomic, strong)Person *person;
 //@property(nonatomic, copy) int (^testBlcok)(int n);
+
 @end
 
 @implementation ViewController
@@ -44,12 +45,16 @@
 //    [self interview8];
 //    [self testKVO];
 
-    [self testCopyAndMutableCopy];
+//    [self testCopyAndMutableCopy];
+
+    Person *personNSTimer = [[Person alloc] initWithName:@"测试timer 循环引用问题"];
 }
+
+
 
 -(void)testCopyAndMutableCopy{
     // 1. 可变数组 mutableCopy
-//    可变数组的mutableCopy是深拷贝，数组指针会被重新创建，但是内部的内容不会被重新创建,数组内部的对象引用计数器+1，地址不变
+//    可变数组的mutableCopy是深拷贝，创建新的数组指针，但是内部的内容不会被重新创建,数组内部的对象引用计数器+1，地址不变
     Person *person = [[Person alloc] init];
     person.age = 1;
     Person *person1 = [[Person alloc] init];
@@ -64,9 +69,6 @@
     Person *temp = array[0];
     temp.age = 4;
     NSLog(@"%@,%@",array,mutableObject);
-
-    //todo 接着测试代码
-
 
 }
 
