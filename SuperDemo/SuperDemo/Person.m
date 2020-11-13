@@ -29,7 +29,7 @@
 - (instancetype)initWithName:(NSString *)name{
     if (self = [super init]) {
 //        _name = name;
-//        [self circleNSTimer];
+        [self circleNSTimer];
     }
 
     return self;
@@ -68,16 +68,16 @@
 // 如果两个对象相等，那么他们hash值一定相等
 // 如果两个对象hash值相等(hash算法不完美导致)，他们不一定相等，还要继续通过isEqual进行判断是否真的相等
 
-//-(void)circleNSTimer{
-//    self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timerDo) userInfo:nil repeats:NO];
-//}
-//
-//-(void)timerDo{
-//    NSLog(@"timer do");
-//}
-//
-//- (void)dealloc {
-//    [self.timer invalidate];
-//    NSLog(@"%s，%@",__func__,self.timer);
-//}
+-(void)circleNSTimer{
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timerDo) userInfo:nil repeats:NO];
+}
+
+-(void)timerDo{
+    NSLog(@"timer do");
+}
+
+- (void)dealloc {
+    [self.timer invalidate];
+    NSLog(@"%s，%@",__func__,self.timer);
+}
 @end

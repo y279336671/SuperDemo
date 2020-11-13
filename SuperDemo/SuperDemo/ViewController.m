@@ -16,7 +16,8 @@
 @interface ViewController ()
 @property (nonatomic, strong)Person *person;
 //@property(nonatomic, copy) int (^testBlcok)(int n);
-
+@property (nonatomic, strong)Person *personNSTimer;
+@property (copy, nonatomic) dispatch_block_t block;
 @end
 
 @implementation ViewController
@@ -47,10 +48,11 @@
 
 //    [self testCopyAndMutableCopy];
 
-    Person *personNSTimer = [[Person alloc] initWithName:@"测试timer 循环引用问题"];
+//    self.personNSTimer = [[Person alloc] initWithName:@"测试timer 循环引用问题"];
+    self.block = ^{
+        NSLog(@"%@", self);
+    };
 }
-
-
 
 -(void)testCopyAndMutableCopy{
     // 1. 可变数组 mutableCopy
@@ -176,11 +178,11 @@
     NSLog(@"执行任务1--%@",[NSThread currentThread]);
     dispatch_queue_t queue = dispatch_queue_create("myqueu", DISPATCH_QUEUE_SERIAL);
     dispatch_async(queue, ^{
-        NSLog(@"执行任务2--%@",[NSThread currentThread]);//????这个为什么是空
+        NSLog(@"执行任务2--%@",[NSThread currentThread]);// 开启新线程没有定义名字，所以输出为空
     });
-    sleep(3);
+    sleep(3);//sleep()函数阻塞的是当前进程。
     dispatch_sync(queue, ^{
-        NSLog(@"执行任务3--%@",[NSThread currentThread]);
+        NSLog(@"执行任务3--%@",[NSThread currentThread]); //同步提交到串行队列上，不会死锁，同步提交到主队列上才会死锁。
     });
     NSLog(@"执行任务4--%@",[NSThread currentThread]);
 }

@@ -7,4 +7,5 @@ target 'SuperDemo' do
 #  pod 'SDCycleScrollView','>= 1.82'
   # Pods for SuperDemo
   pod "Aspects"
+  pod "MLeaksFinder"
 end
