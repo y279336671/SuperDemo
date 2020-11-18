@@ -12,7 +12,7 @@
 #import "Person+man.h"
 #import "MemoryDemoViewController.h"
 #import "TaggedPointer/TaggedPointerViewController.h"
-#import "ExposureViewController.h"
+//#import "ExposureViewController.h"
 @interface ViewController ()
 @property (nonatomic, strong)Person *person;
 //@property(nonatomic, copy) int (^testBlcok)(int n);
@@ -44,6 +44,8 @@
 //    [self interview6];
 //    [self interview7];
 //    [self interview8];
+//    [self interview9];
+    [self interview10];
 //    [self testKVO];
 
 //    [self testCopyAndMutableCopy];
@@ -118,7 +120,7 @@
 - (void)interview3{
     NSLog(@"执行任务1--%@",[NSThread currentThread]);
     dispatch_queue_t queue = dispatch_get_main_queue();
-    dispatch_sync(queue, ^{
+    dispatch_sync(queue, ^{   //dispatch_async 不会死锁，虽然在主队列执行，但是不要求立即执行
         NSLog(@"执行任务2--%@",[NSThread currentThread]);
     });
     NSLog(@"执行任务3--%@",[NSThread currentThread]);
@@ -173,7 +175,7 @@
     NSLog(@"执行任务5--%@",[NSThread currentThread]);
     // 15234
 }
-
+/***重点***/
 - (void)interview8{
     NSLog(@"执行任务1--%@",[NSThread currentThread]);
     dispatch_queue_t queue = dispatch_queue_create("myqueu", DISPATCH_QUEUE_SERIAL);
@@ -185,6 +187,29 @@
         NSLog(@"执行任务3--%@",[NSThread currentThread]); //同步提交到串行队列上，不会死锁，同步提交到主队列上才会死锁。
     });
     NSLog(@"执行任务4--%@",[NSThread currentThread]);
+}
+/***重点***/
+- (void)interview9{
+    NSLog(@"执行任务1--%@",[NSThread currentThread]);
+    dispatch_queue_t queue = dispatch_get_global_queue(0, 0);// 同步在当前线程，异步在新线程
+    dispatch_async(queue, ^{
+        NSLog(@"执行任务2--%@",[NSThread currentThread]);// 开启新线程没有定义名字，所以输出为空
+    });
+}
+/***重点***/
+- (void)interview10{
+    NSLog(@"执行任务1--%@",[NSThread currentThread]);
+    dispatch_queue_t queue = dispatch_get_global_queue(0, 0);// 同步在当前线程，异步在新线程
+    dispatch_async(queue, ^{
+        for (int i = 0; i < 10; ++i) {
+            NSLog(@"执行任务2--%@",[NSThread currentThread]);
+        }
+    });
+    dispatch_async(queue, ^{
+        for (int i = 0; i < 10; ++i) {
+            NSLog(@"执行任务3--%@",[NSThread currentThread]);
+        }
+    });
 }
 
 -(void)exeBlock{
