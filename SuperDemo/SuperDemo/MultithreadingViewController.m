@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [self interview1];
+//    [self interview1];
 //    [self interview2];
 //    [self interview3];
 //    [self interview4];
@@ -39,10 +39,10 @@
         //GNUstep  -> NSFuncation  源码
         [self performSelector:@selector(test1) withObject:nil afterDelay:.0f];//默认GCD不会启动runloop，afterDelay需要runloop支持
         NSLog(@"3---%@",[NSThread currentThread]);
-        // 添加以下两行才能执行
-        [[NSRunLoop currentRunLoop] addPort:[[NSPort alloc] init] forMode:NSDefaultRunLoopMode];
-        // 只添加这一行也可以，因为performSelector底层已经被加入runloop，只是没有启动
-        [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
+//        // 添加以下两行才能执行
+//        [[NSRunLoop currentRunLoop] addPort:[[NSPort alloc] init] forMode:NSDefaultRunLoopMode];
+//        // 只添加这一行也可以，因为performSelector底层已经被加入runloop，只是没有启动
+//        [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
 
 //        同理NSTimer 也不能执行
     });
@@ -59,6 +59,10 @@
 - (void)interview2{
     NSThread *thread = [[NSThread alloc] initWithBlock:^{
         NSLog(@"1---%@",[NSThread currentThread]);
+        //        // 添加以下两行才能执行
+//        [[NSRunLoop currentRunLoop] addPort:[[NSPort alloc] init] forMode:NSDefaultRunLoopMode];
+        // 只添加这一行也可以，因为performSelector底层已经被加入runloop，只是没有启动
+//        [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
     }];
     [thread start];
     [self performSelector:@selector(test2) onThread:thread withObject:nil waitUntilDone:YES];
