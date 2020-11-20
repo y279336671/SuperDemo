@@ -37,7 +37,7 @@
     dispatch_async(queue, ^{
         NSLog(@"1---%@",[NSThread currentThread]);
         //GNUstep  -> NSFuncation  源码
-        [self performSelector:@selector(test1) withObject:nil afterDelay:.0f];//默认GCD不会启动runloop，afterDelay需要runloop支持
+        [self performSelector:@selector(test1) withObject:nil afterDelay:.0f];//添加一个timer到runloop，但是没有启动执行
         NSLog(@"3---%@",[NSThread currentThread]);
 //        // 添加以下两行才能执行
 //        [[NSRunLoop currentRunLoop] addPort:[[NSPort alloc] init] forMode:NSDefaultRunLoopMode];
