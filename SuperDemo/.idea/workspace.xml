@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d9ba4b5-bc7f-43c6-a209-6914afa02054" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/SuperDemo/CYLUser.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SuperDemo/CYLUser.m" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo.xcworkspace/contents.xcworkspacedata" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo.xcworkspace/contents.xcworkspacedata" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SuperDemo.xcworkspace/xcuserdata/admin.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo.xcworkspace/xcuserdata/admin.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -117,10 +122,11 @@
     </state>
     <state x="-1547" y="200" key="SettingsEditor/-1920.23.1920.1057/0.23.1344.817@-1920.23.1920.1057" timestamp="1605860396242" />
     <state x="-1547" y="200" key="SettingsEditor/-1920.23.1920.1057/0.23.1792.1097@-1920.23.1920.1057" timestamp="1604459722362" />
-    <state x="-1259" y="306" width="683" height="490" key="find.popup" timestamp="1605700149446">
+    <state x="-1259" y="306" width="683" height="490" key="find.popup" timestamp="1606128096572">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
     <state x="-1259" y="306" width="683" height="490" key="find.popup/-1920.23.1920.1057/0.23.1344.817@-1920.23.1920.1057" timestamp="1605700149446" />
+    <state x="-1259" y="306" width="683" height="490" key="find.popup/-1920.23.1920.1057/0.23.1536.937@-1920.23.1920.1057" timestamp="1606128096572" />
     <state x="-1295" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1605185784648">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
