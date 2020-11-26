@@ -29,8 +29,8 @@
 
 //    UINavigationController *rootNav = [[UINavigationController alloc] initWithRootViewController: [[ExposureViewController alloc] init]];
 //    UINavigationController *rootNav = [[UINavigationController alloc] initWithRootViewController: [[TaggedPointerViewController alloc] init]];
-//    UINavigationController *rootNav = [[UINavigationController alloc] initWithRootViewController: [[ViewController alloc] init]];
-    UINavigationController *rootNav = [[UINavigationController alloc] initWithRootViewController: [[MultithreadingViewController alloc] init]];
+    UINavigationController *rootNav = [[UINavigationController alloc] initWithRootViewController: [[ViewController alloc] init]];
+//    UINavigationController *rootNav = [[UINavigationController alloc] initWithRootViewController: [[MultithreadingViewController alloc] init]];
     self.window.rootViewController =rootNav;
     [self.window makeKeyAndVisible];
 

@@ -4,12 +4,14 @@
 //
 
 #import "Person.h"
+
 @interface Person()
 {
     NSString *_name;
 }
 @property (nonatomic, strong)NSTimer *timer;
 @end
+
 
 @implementation Person
 
@@ -29,7 +31,7 @@
 - (instancetype)initWithName:(NSString *)name{
     if (self = [super init]) {
 //        _name = name;
-        [self circleNSTimer];
+//        [self circleNSTimer];
     }
 
     return self;

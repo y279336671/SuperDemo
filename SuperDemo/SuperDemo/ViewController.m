@@ -12,6 +12,8 @@
 #import "Person+man.h"
 #import "MemoryDemoViewController.h"
 #import "TaggedPointer/TaggedPointerViewController.h"
+#import "ManualKVO.h"
+
 //#import "ExposureViewController.h"
 @interface ViewController ()
 @property (nonatomic, strong)Person *person;
@@ -35,20 +37,16 @@
 //    [self taggedpointerDemo];
 //    [self exeBlock];
 
-
-//    [self testKVO];
+    [self testKVO];
 
 //    [self testCopyAndMutableCopy];
 
 //    self.personNSTimer = [[Person alloc] initWithName:@"测试timer 循环引用问题"];
-    self.block = ^{
-        NSLog(@"%@", self);
-    };
+//    self.block = ^{
+//        NSLog(@"%@", self);
+//    };
 }
 
--(void)setPerson:(Person *)person {
-
-}
 
 -(void)testCopyAndMutableCopy{
 
@@ -75,10 +73,10 @@
 -(void)testKVO{
     self.person = [[Person alloc] init];
     self.person.sex = @"girl";
-    [self.person addObserver:self forKeyPath:@"sex" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:@"unknow"];
-    [self.person addObserver:self forKeyPath:@"sex" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:@"unknow1"];
-    [self.person addObserver:self forKeyPath:@"sex" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:@"unknow2"];
-    [self.person addObserver:self forKeyPath:@"sex" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:@"unknow3"];
+//    [self.person addObserver:self forKeyPath:@"sex" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:@"unknow"];
+//    [self.person addObserver:self forKeyPath:@"sex" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:@"unknow1"];
+//    [self.person addObserver:self forKeyPath:@"sex" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:@"unknow2"];
+//    [self.person addObserver:self forKeyPath:@"sex" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:@"unknow3"];
     self.person.sex = @"boy";
 }
 
@@ -87,6 +85,7 @@
     NSLog(@"new >>>>> %@",change[NSKeyValueChangeNewKey]);
     NSLog(@"context >>>> %@",context);
 }
+
 
 
 
