@@ -46,7 +46,12 @@
     };
 }
 
+-(void)setPerson:(Person *)person {
+
+}
+
 -(void)testCopyAndMutableCopy{
+
     // 1. 可变数组 mutableCopy
 //    可变数组的mutableCopy是深拷贝，创建新的数组指针，但是内部的内容不会被重新创建,数组内部的对象引用计数器+1，地址不变
     Person *person = [[Person alloc] init];

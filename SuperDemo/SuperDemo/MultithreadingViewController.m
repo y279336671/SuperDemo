@@ -39,6 +39,7 @@
         //GNUstep  -> NSFuncation  源码
         [self performSelector:@selector(test1) withObject:nil afterDelay:.0f];//添加一个timer到runloop，但是没有启动执行
         NSLog(@"3---%@",[NSThread currentThread]);
+        //[NSRunLoop currentRunLoop] 获取当前线程的runloop，注意是当前线程，如果当前线程没有runloop就创建
 //        // 添加以下两行才能执行
 //        [[NSRunLoop currentRunLoop] addPort:[[NSPort alloc] init] forMode:NSDefaultRunLoopMode];
 //        // 只添加这一行也可以，因为performSelector底层已经被加入runloop，只是没有启动
