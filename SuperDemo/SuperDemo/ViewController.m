@@ -13,6 +13,15 @@
 #import "MemoryDemoViewController.h"
 #import "TaggedPointer/TaggedPointerViewController.h"
 #import "ManualKVO.h"
+#import <malloc/malloc.h>
+
+@interface HTPerson : NSObject
+@property (nonatomic, copy) NSString *name;
+- (void)sayHello;
+@end
+@implementation HTPerson
+- (void)sayHello { NSLog(@"%s: 你好,%@", __func__, self.name); }
+@end
 
 //#import "ExposureViewController.h"
 @interface ViewController ()
@@ -37,7 +46,7 @@
 //    [self taggedpointerDemo];
 //    [self exeBlock];
 
-    [self testKVO];
+//    [self testKVO];
 
 //    [self testCopyAndMutableCopy];
 
@@ -45,7 +54,28 @@
 //    self.block = ^{
 //        NSLog(@"%@", self);
 //    };
+
+
+//   //指针读取类地址，强转为对象，调用sayHello。
+//    Class cls = [HTPerson class];
+//    void * ht = &cls;
+//    [(__bridge id)ht sayHello];    // 添加属性name后，通过内存平移去查找
+//    // 实例化对象，调用sayHello
+//    HTPerson * person = [HTPerson new];
+//    [person sayHello]; // 添加属性name后，
+
+    [self getMemory];
+
 }
+
+// 指针 64位系统占用8字节  32位系统占用4字节
+// iOS内存对齐是16的倍数
+-(void)getMemory{
+    NSObject *objc= [[NSObject alloc] init];
+    NSLog(@"%zd", class_getInstanceSize([NSObject class]));//获取NSObject类的实例对象的成员变量所占用的大小
+    NSLog(@"%zd", malloc_size((__bridge const void*) objc));//获取objc指针指向的内存的大小，即实际分配的内存
+}
+
 
 
 -(void)testCopyAndMutableCopy{

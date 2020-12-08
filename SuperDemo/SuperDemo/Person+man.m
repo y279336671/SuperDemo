@@ -21,6 +21,7 @@ static NSString *sexKey = @"sexKey";
 //-(void)setWeakObject:(id)weakObject {
 ////    void *block =
 //}
+
 //-(id)weakObject {
 //
 //}
