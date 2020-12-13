@@ -6,6 +6,6 @@ target 'SuperDemo' do
   use_frameworks!
 #  pod 'SDCycleScrollView','>= 1.82'
   # Pods for SuperDemo
-  pod "Aspects"
-  pod "MLeaksFinder"
+#  pod "Aspects"
+#  pod "MLeaksFinder"
 end

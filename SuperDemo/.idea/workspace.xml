@@ -2,24 +2,119 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d9ba4b5-bc7f-43c6-a209-6914afa02054" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/SuperDemo/ManualKVO.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SuperDemo/ManualKVO.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/Podfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Podfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Aspects/Aspects.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Aspects/Aspects.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Aspects/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Aspects/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Associations/FBAssociationManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Associations/FBAssociationManager.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Associations/Internal/FBAssociationManager+Internal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Detector/FBNodeEnumerator.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Detector/FBRetainCycleDetector+Internal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Detector/FBRetainCycleDetector.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Detector/FBRetainCycleDetector.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/FBRetainCycleUtils.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Filtering/FBStandardGraphEdgeFilters.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Filtering/FBStandardGraphEdgeFilters.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Graph/FBObjectGraphConfiguration.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Graph/FBObjectGraphConfiguration.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Graph/FBObjectiveCBlock.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Graph/FBObjectiveCBlock.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Graph/FBObjectiveCGraphElement.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Graph/FBObjectiveCGraphElement.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Graph/FBObjectiveCObject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Graph/FBObjectiveCObject.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Graph/Internal/FBObjectiveCGraphElement+Internal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Graph/Specialization/FBObjectiveCNSCFTimer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Graph/Specialization/FBObjectiveCNSCFTimer.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Blocks/FBBlockInterface.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Blocks/FBBlockStrongLayout.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Blocks/FBBlockStrongLayout.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Blocks/FBBlockStrongRelationDetector.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Blocks/FBBlockStrongRelationDetector.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Classes/FBClassStrongLayout.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Classes/FBClassStrongLayout.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Classes/FBClassStrongLayoutHelpers.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Classes/FBClassStrongLayoutHelpers.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Classes/Parser/BaseType.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Classes/Parser/FBStructEncodingParser.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Classes/Parser/FBStructEncodingParser.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Classes/Parser/Struct.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Classes/Parser/Struct.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Classes/Reference/FBIvarReference.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Classes/Reference/FBIvarReference.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Classes/Reference/FBObjectInStructReference.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Classes/Reference/FBObjectInStructReference.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Classes/Reference/FBObjectReference.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/fishhook/fishhook.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/fishhook/fishhook.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/MLeakedObjectProxy.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/MLeakedObjectProxy.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/MLeaksFinder.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/MLeaksMessenger.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/MLeaksMessenger.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/NSObject+MemoryLeak.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/NSObject+MemoryLeak.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/UIApplication+MemoryLeak.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/UIApplication+MemoryLeak.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/UINavigationController+MemoryLeak.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/UINavigationController+MemoryLeak.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/UIPageViewController+MemoryLeak.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/UIPageViewController+MemoryLeak.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/UISplitViewController+MemoryLeak.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/UISplitViewController+MemoryLeak.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/UITabBarController+MemoryLeak.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/UITabBarController+MemoryLeak.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/UITouch+MemoryLeak.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/UITouch+MemoryLeak.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/UIView+MemoryLeak.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/UIView+MemoryLeak.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/UIViewController+MemoryLeak.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/UIViewController+MemoryLeak.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/README-CN.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Manifest.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Manifest.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Aspects/Aspects-Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Aspects/Aspects-dummy.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Aspects/Aspects-prefix.pch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Aspects/Aspects-umbrella.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Aspects/Aspects.debug.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Aspects/Aspects.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Aspects/Aspects.release.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/FBRetainCycleDetector/FBRetainCycleDetector-Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/FBRetainCycleDetector/FBRetainCycleDetector-dummy.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/FBRetainCycleDetector/FBRetainCycleDetector-prefix.pch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/FBRetainCycleDetector/FBRetainCycleDetector-umbrella.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/FBRetainCycleDetector/FBRetainCycleDetector.debug.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/FBRetainCycleDetector/FBRetainCycleDetector.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/FBRetainCycleDetector/FBRetainCycleDetector.release.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/MLeaksFinder/MLeaksFinder-Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/MLeaksFinder/MLeaksFinder-dummy.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/MLeaksFinder/MLeaksFinder-prefix.pch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/MLeaksFinder/MLeaksFinder-umbrella.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/MLeaksFinder/MLeaksFinder.debug.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/MLeaksFinder/MLeaksFinder.modulemap" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SuperDemo/Pods-SuperDemo-acknowledgements.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SuperDemo/Pods-SuperDemo-acknowledgements.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SuperDemo/Pods-SuperDemo-acknowledgements.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SuperDemo/Pods-SuperDemo-acknowledgements.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SuperDemo/Pods-SuperDemo.debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SuperDemo/Pods-SuperDemo.debug.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SuperDemo/Pods-SuperDemo.release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SuperDemo/Pods-SuperDemo.release.xcconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SuperDemo.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo.xcworkspace/contents.xcworkspacedata" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo.xcworkspace/contents.xcworkspacedata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo.xcworkspace/xcuserdata/admin.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo.xcworkspace/xcuserdata/admin.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo.xcworkspace/xcuserdata/yanghe.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo.xcworkspace/xcuserdata/yanghe.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo.xcworkspace/xcuserdata/yanghe.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo.xcworkspace/xcuserdata/yanghe.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SuperDemo/AppDelegate.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/AppDelegate.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo/Person.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Person.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo/ViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/ViewController.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/main.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/main.m" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_EF6EDD66-0D9F-4E79-A7F1-61B508D1D71D" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_04EB98BA-A79B-40D0-8218-C276B1FB1033" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>

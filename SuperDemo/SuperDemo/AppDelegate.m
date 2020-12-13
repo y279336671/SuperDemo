@@ -12,8 +12,8 @@
 #import "TaggedPointerViewController.h"
 #import "MultithreadingViewController.h"
 //#import "ExposureViewController.h"
-#import <Aspects.h>
-#import <Aspects/Aspects.h>
+//#import <Aspects.h>
+//#import <Aspects/Aspects.h>
 
 @interface AppDelegate ()
 
