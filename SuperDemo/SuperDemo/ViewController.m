@@ -29,6 +29,8 @@
 //@property(nonatomic, copy) int (^testBlcok)(int n);
 @property (nonatomic, strong)Person *personNSTimer;
 @property (copy, nonatomic) dispatch_block_t block;
+@property (nonatomic, strong) ManualKVO *manualKVO1;
+@property (nonatomic, strong) ManualKVO *manualKVO2;
 @end
 
 @implementation ViewController
@@ -46,7 +48,7 @@
 //    [self taggedpointerDemo];
 //    [self exeBlock];
 
-//    [self testKVO];
+    [self testKVO];
 
 //    [self testCopyAndMutableCopy];
 
@@ -99,15 +101,38 @@
 
 }
 
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [super touchesEnded:touches withEvent:event];
+
+
+    self.manualKVO1.name = @"11";
+    self.manualKVO2.name = @"22";
+    [self printMethodListForIns:object_getClass(self.manualKVO1)];
+    [self printMethodListForIns:object_getClass(self.manualKVO2)];
+}
+
+-(void)printMethodListForIns:(Class)class{
+    NSMutableArray *names = [[NSMutableArray alloc] init];
+    unsigned int outCount;
+    Method *methodList = class_copyMethodList(class, &outCount);
+    for (int i = 0; i < outCount; ++i) {
+      Method method =  methodList[i];
+      NSString *methodName = NSStringFromSelector(method_getName(method));
+      [names addObject:methodName];
+    }
+    free(methodList);
+    NSLog(@"names = %@", names);
+}
+
 // 多次对同一个属性kvo，只是多次创建了不同的子类，所以会执行多次
 -(void)testKVO{
-    self.person = [[Person alloc] init];
-    self.person.sex = @"girl";
-//    [self.person addObserver:self forKeyPath:@"sex" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:@"unknow"];
-//    [self.person addObserver:self forKeyPath:@"sex" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:@"unknow1"];
-//    [self.person addObserver:self forKeyPath:@"sex" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:@"unknow2"];
-//    [self.person addObserver:self forKeyPath:@"sex" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:@"unknow3"];
-    self.person.sex = @"boy";
+    self.manualKVO1  = [[ManualKVO alloc] init];
+    self.manualKVO2 = [[ManualKVO alloc] init];
+
+    self.manualKVO1.name = @"1";
+    self.manualKVO2.name = @"2";
+
+    [self.manualKVO1 addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionOld|NSKeyValueObservingOptionNew context:nil];
 }
 
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey, id> *)change context:(void *)context {

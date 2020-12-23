@@ -15,6 +15,8 @@
 //#import <Aspects.h>
 //#import <Aspects/Aspects.h>
 
+#import "ManualKVO.h"
+
 @interface AppDelegate ()
 
 @end
@@ -27,11 +29,16 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-//    UINavigationController *rootNav = [[UINavigationController alloc] initWithRootViewController: [[ExposureViewController alloc] init]];
-//    UINavigationController *rootNav = [[UINavigationController alloc] initWithRootViewController: [[TaggedPointerViewController alloc] init]];
-    UINavigationController *rootNav = [[UINavigationController alloc] initWithRootViewController: [[ViewController alloc] init]];
-//    UINavigationController *rootNav = [[UINavigationController alloc] initWithRootViewController: [[MultithreadingViewController alloc] init]];
-    self.window.rootViewController =rootNav;
+
+//    UIViewController *viewController = [[ExposureViewController alloc] init];
+//    UIViewController *viewController = [[TaggedPointerViewController alloc] init];
+//    UIViewController *viewController = [[MultithreadingViewController alloc] init];
+    UIViewController *viewController = [[ViewController alloc] init];
+    [viewController.view setFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
+    [viewController.view setBackgroundColor:[UIColor whiteColor]];
+    UINavigationController *rootNav = [[UINavigationController alloc] initWithRootViewController:viewController];
+
+    self.window.rootViewController = rootNav;
     [self.window makeKeyAndVisible];
 
     return YES;

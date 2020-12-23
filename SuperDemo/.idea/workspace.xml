@@ -2,111 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d9ba4b5-bc7f-43c6-a209-6914afa02054" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/Podfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Podfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Aspects/Aspects.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Aspects/Aspects.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Aspects/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Aspects/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Associations/FBAssociationManager.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Associations/FBAssociationManager.mm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Associations/Internal/FBAssociationManager+Internal.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Detector/FBNodeEnumerator.mm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Detector/FBRetainCycleDetector+Internal.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Detector/FBRetainCycleDetector.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Detector/FBRetainCycleDetector.mm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/FBRetainCycleUtils.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Filtering/FBStandardGraphEdgeFilters.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Filtering/FBStandardGraphEdgeFilters.mm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Graph/FBObjectGraphConfiguration.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Graph/FBObjectGraphConfiguration.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Graph/FBObjectiveCBlock.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Graph/FBObjectiveCBlock.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Graph/FBObjectiveCGraphElement.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Graph/FBObjectiveCGraphElement.mm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Graph/FBObjectiveCObject.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Graph/FBObjectiveCObject.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Graph/Internal/FBObjectiveCGraphElement+Internal.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Graph/Specialization/FBObjectiveCNSCFTimer.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Graph/Specialization/FBObjectiveCNSCFTimer.mm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Blocks/FBBlockInterface.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Blocks/FBBlockStrongLayout.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Blocks/FBBlockStrongLayout.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Blocks/FBBlockStrongRelationDetector.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Blocks/FBBlockStrongRelationDetector.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Classes/FBClassStrongLayout.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Classes/FBClassStrongLayout.mm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Classes/FBClassStrongLayoutHelpers.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Classes/FBClassStrongLayoutHelpers.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Classes/Parser/BaseType.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Classes/Parser/FBStructEncodingParser.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Classes/Parser/FBStructEncodingParser.mm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Classes/Parser/Struct.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Classes/Parser/Struct.mm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Classes/Reference/FBIvarReference.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Classes/Reference/FBIvarReference.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Classes/Reference/FBObjectInStructReference.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Classes/Reference/FBObjectInStructReference.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/FBRetainCycleDetector/Layout/Classes/Reference/FBObjectReference.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/fishhook/fishhook.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/FBRetainCycleDetector/fishhook/fishhook.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/MLeakedObjectProxy.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/MLeakedObjectProxy.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/MLeaksFinder.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/MLeaksMessenger.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/MLeaksMessenger.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/NSObject+MemoryLeak.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/NSObject+MemoryLeak.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/UIApplication+MemoryLeak.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/UIApplication+MemoryLeak.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/UINavigationController+MemoryLeak.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/UINavigationController+MemoryLeak.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/UIPageViewController+MemoryLeak.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/UIPageViewController+MemoryLeak.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/UISplitViewController+MemoryLeak.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/UISplitViewController+MemoryLeak.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/UITabBarController+MemoryLeak.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/UITabBarController+MemoryLeak.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/UITouch+MemoryLeak.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/UITouch+MemoryLeak.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/UIView+MemoryLeak.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/UIView+MemoryLeak.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/UIViewController+MemoryLeak.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/MLeaksFinder/UIViewController+MemoryLeak.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/MLeaksFinder/README-CN.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Manifest.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Manifest.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Aspects/Aspects-Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Aspects/Aspects-dummy.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Aspects/Aspects-prefix.pch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Aspects/Aspects-umbrella.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Aspects/Aspects.debug.xcconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Aspects/Aspects.modulemap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Aspects/Aspects.release.xcconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/FBRetainCycleDetector/FBRetainCycleDetector-Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/FBRetainCycleDetector/FBRetainCycleDetector-dummy.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/FBRetainCycleDetector/FBRetainCycleDetector-prefix.pch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/FBRetainCycleDetector/FBRetainCycleDetector-umbrella.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/FBRetainCycleDetector/FBRetainCycleDetector.debug.xcconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/FBRetainCycleDetector/FBRetainCycleDetector.modulemap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/FBRetainCycleDetector/FBRetainCycleDetector.release.xcconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/MLeaksFinder/MLeaksFinder-Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/MLeaksFinder/MLeaksFinder-dummy.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/MLeaksFinder/MLeaksFinder-prefix.pch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/MLeaksFinder/MLeaksFinder-umbrella.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/MLeaksFinder/MLeaksFinder.debug.xcconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/MLeaksFinder/MLeaksFinder.modulemap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SuperDemo/Pods-SuperDemo-acknowledgements.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SuperDemo/Pods-SuperDemo-acknowledgements.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SuperDemo/Pods-SuperDemo-acknowledgements.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SuperDemo/Pods-SuperDemo-acknowledgements.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SuperDemo/Pods-SuperDemo.debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SuperDemo/Pods-SuperDemo.debug.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SuperDemo/Pods-SuperDemo.release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SuperDemo/Pods-SuperDemo.release.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo.xcworkspace/xcuserdata/yanghe.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo.xcworkspace/xcuserdata/yanghe.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo.xcworkspace/xcuserdata/yanghe.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo.xcworkspace/xcuserdata/yanghe.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../arithmetic/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo.xcworkspace/xcuserdata/admin.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo.xcworkspace/xcuserdata/admin.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SuperDemo/AppDelegate.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/AppDelegate.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/ManualKVO.h" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/ManualKVO.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/ManualKVO.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/ManualKVO.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/ViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/ViewController.m" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SuperDemo/main.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/main.m" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -114,7 +16,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_04EB98BA-A79B-40D0-8218-C276B1FB1033" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_1642a884fc46dbc070dad7090d7f7b0b866da359" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -151,11 +53,11 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1177" y="265" key="#com.intellij.ide.util.MemberChooser" timestamp="1606359935810">
+    <state x="-1177" y="265" key="#com.intellij.ide.util.MemberChooser" timestamp="1608712850888">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
     <state x="-1177" y="265" key="#com.intellij.ide.util.MemberChooser/-1920.23.1920.1057/0.23.1344.817@-1920.23.1920.1057" timestamp="1604652208558" />
-    <state x="-1177" y="265" key="#com.intellij.ide.util.MemberChooser/-1920.23.1920.1057/0.23.1536.937@-1920.23.1920.1057" timestamp="1606359935810" />
+    <state x="-1177" y="265" key="#com.intellij.ide.util.MemberChooser/-1920.23.1920.1057/0.23.1536.937@-1920.23.1920.1057" timestamp="1608712850888" />
     <state x="-1177" y="265" key="#com.intellij.ide.util.MemberChooser/-1920.23.1920.1057/0.23.1792.1097@-1920.23.1920.1057" timestamp="1604627907992" />
     <state width="503" height="463" key="DebuggerActiveHint" timestamp="1605156459000">
       <screen x="-1920" y="23" width="1920" height="1057" />
@@ -169,69 +71,77 @@
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
     <state x="-1234" y="478" key="GitCloneDialog/-1920.23.1920.1057/0.23.1792.1097@-1920.23.1920.1057" timestamp="1604542918103" />
-    <state width="1899" height="376" key="GridCell.Tab.0.bottom" timestamp="1606361287891">
+    <state width="1899" height="376" key="GridCell.Tab.0.bottom" timestamp="1608723227455">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
     <state width="1899" height="317" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1344.817@-1920.23.1920.1057" timestamp="1605860398072" />
-    <state width="1899" height="376" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1536.937@-1920.23.1920.1057" timestamp="1606361287891" />
+    <state width="1899" height="376" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1536.937@-1920.23.1920.1057" timestamp="1608723227455" />
     <state width="1899" height="358" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1792.1097@-1920.23.1920.1057" timestamp="1604630054532" />
-    <state width="1899" height="376" key="GridCell.Tab.0.center" timestamp="1606361287890">
+    <state width="1899" height="376" key="GridCell.Tab.0.center" timestamp="1608723227454">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
     <state width="1899" height="317" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1344.817@-1920.23.1920.1057" timestamp="1605860398072" />
-    <state width="1899" height="376" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1536.937@-1920.23.1920.1057" timestamp="1606361287890" />
+    <state width="1899" height="376" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1536.937@-1920.23.1920.1057" timestamp="1608723227454" />
     <state width="1899" height="358" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1792.1097@-1920.23.1920.1057" timestamp="1604630054530" />
-    <state width="1899" height="376" key="GridCell.Tab.0.left" timestamp="1606361287889">
+    <state width="1899" height="376" key="GridCell.Tab.0.left" timestamp="1608723227454">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
     <state width="1899" height="317" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1344.817@-1920.23.1920.1057" timestamp="1605860398071" />
-    <state width="1899" height="376" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1536.937@-1920.23.1920.1057" timestamp="1606361287889" />
+    <state width="1899" height="376" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1536.937@-1920.23.1920.1057" timestamp="1608723227454" />
     <state width="1899" height="358" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1792.1097@-1920.23.1920.1057" timestamp="1604630054530" />
-    <state width="1899" height="376" key="GridCell.Tab.0.right" timestamp="1606361287891">
+    <state width="1899" height="376" key="GridCell.Tab.0.right" timestamp="1608723227454">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
     <state width="1899" height="317" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1344.817@-1920.23.1920.1057" timestamp="1605860398072" />
-    <state width="1899" height="376" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1536.937@-1920.23.1920.1057" timestamp="1606361287891" />
+    <state width="1899" height="376" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1536.937@-1920.23.1920.1057" timestamp="1608723227454" />
     <state width="1899" height="358" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1792.1097@-1920.23.1920.1057" timestamp="1604630054531" />
-    <state width="1899" height="376" key="GridCell.Tab.1.bottom" timestamp="1606361287892">
+    <state width="1899" height="376" key="GridCell.Tab.1.bottom" timestamp="1608723227456">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
     <state width="1899" height="317" key="GridCell.Tab.1.bottom/-1920.23.1920.1057/0.23.1344.817@-1920.23.1920.1057" timestamp="1605860398073" />
-    <state width="1899" height="376" key="GridCell.Tab.1.bottom/-1920.23.1920.1057/0.23.1536.937@-1920.23.1920.1057" timestamp="1606361287892" />
+    <state width="1899" height="376" key="GridCell.Tab.1.bottom/-1920.23.1920.1057/0.23.1536.937@-1920.23.1920.1057" timestamp="1608723227456" />
     <state width="1899" height="358" key="GridCell.Tab.1.bottom/-1920.23.1920.1057/0.23.1792.1097@-1920.23.1920.1057" timestamp="1604630054342" />
-    <state width="1899" height="376" key="GridCell.Tab.1.center" timestamp="1606361287892">
+    <state width="1899" height="376" key="GridCell.Tab.1.center" timestamp="1608723227455">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
     <state width="1899" height="317" key="GridCell.Tab.1.center/-1920.23.1920.1057/0.23.1344.817@-1920.23.1920.1057" timestamp="1605860398073" />
-    <state width="1899" height="376" key="GridCell.Tab.1.center/-1920.23.1920.1057/0.23.1536.937@-1920.23.1920.1057" timestamp="1606361287892" />
+    <state width="1899" height="376" key="GridCell.Tab.1.center/-1920.23.1920.1057/0.23.1536.937@-1920.23.1920.1057" timestamp="1608723227455" />
     <state width="1899" height="358" key="GridCell.Tab.1.center/-1920.23.1920.1057/0.23.1792.1097@-1920.23.1920.1057" timestamp="1604630054341" />
-    <state width="1899" height="376" key="GridCell.Tab.1.left" timestamp="1606361287891">
+    <state width="1899" height="376" key="GridCell.Tab.1.left" timestamp="1608723227455">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
     <state width="1899" height="317" key="GridCell.Tab.1.left/-1920.23.1920.1057/0.23.1344.817@-1920.23.1920.1057" timestamp="1605860398073" />
-    <state width="1899" height="376" key="GridCell.Tab.1.left/-1920.23.1920.1057/0.23.1536.937@-1920.23.1920.1057" timestamp="1606361287891" />
+    <state width="1899" height="376" key="GridCell.Tab.1.left/-1920.23.1920.1057/0.23.1536.937@-1920.23.1920.1057" timestamp="1608723227455" />
     <state width="1899" height="358" key="GridCell.Tab.1.left/-1920.23.1920.1057/0.23.1792.1097@-1920.23.1920.1057" timestamp="1604630054340" />
-    <state width="1899" height="376" key="GridCell.Tab.1.right" timestamp="1606361287892">
+    <state width="1899" height="376" key="GridCell.Tab.1.right" timestamp="1608723227455">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
     <state width="1899" height="317" key="GridCell.Tab.1.right/-1920.23.1920.1057/0.23.1344.817@-1920.23.1920.1057" timestamp="1605860398073" />
-    <state width="1899" height="376" key="GridCell.Tab.1.right/-1920.23.1920.1057/0.23.1536.937@-1920.23.1920.1057" timestamp="1606361287892" />
+    <state width="1899" height="376" key="GridCell.Tab.1.right/-1920.23.1920.1057/0.23.1536.937@-1920.23.1920.1057" timestamp="1608723227455" />
     <state width="1899" height="358" key="GridCell.Tab.1.right/-1920.23.1920.1057/0.23.1792.1097@-1920.23.1920.1057" timestamp="1604630054341" />
     <state x="-1547" y="200" key="SettingsEditor" timestamp="1605860396242">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
     <state x="-1547" y="200" key="SettingsEditor/-1920.23.1920.1057/0.23.1344.817@-1920.23.1920.1057" timestamp="1605860396242" />
     <state x="-1547" y="200" key="SettingsEditor/-1920.23.1920.1057/0.23.1792.1097@-1920.23.1920.1057" timestamp="1604459722362" />
-    <state x="-1430" y="279" width="978" height="641" key="find.popup" timestamp="1606360571152">
+    <state x="-1188" y="265" width="855" height="524" key="StructurePopup" timestamp="1608723217270">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state x="-1188" y="265" width="855" height="524" key="StructurePopup/-1920.23.1920.1057/0.23.1536.937@-1920.23.1920.1057" timestamp="1608723217270" />
+    <state width="580" height="445" key="SwitcherDM" timestamp="1608715498491">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state width="580" height="445" key="SwitcherDM/-1920.23.1920.1057/0.23.1536.937@-1920.23.1920.1057" timestamp="1608715498491" />
+    <state x="-1430" y="279" width="978" height="641" key="find.popup" timestamp="1608712646313">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
     <state x="-1259" y="306" width="683" height="490" key="find.popup/-1920.23.1920.1057/0.23.1344.817@-1920.23.1920.1057" timestamp="1605700149446" />
-    <state x="-1430" y="279" width="978" height="641" key="find.popup/-1920.23.1920.1057/0.23.1536.937@-1920.23.1920.1057" timestamp="1606360571152" />
-    <state x="-1295" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1606356703687">
+    <state x="-1430" y="279" width="978" height="641" key="find.popup/-1920.23.1920.1057/0.23.1536.937@-1920.23.1920.1057" timestamp="1608712646313" />
+    <state x="-1295" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1608712581856">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
     <state x="-1295" y="258" width="670" height="676" key="search.everywhere.popup/-1920.23.1920.1057/0.23.1344.817@-1920.23.1920.1057" timestamp="1605185784648" />
-    <state x="-1295" y="258" width="670" height="676" key="search.everywhere.popup/-1920.23.1920.1057/0.23.1536.937@-1920.23.1920.1057" timestamp="1606356703687" />
+    <state x="-1295" y="258" width="670" height="676" key="search.everywhere.popup/-1920.23.1920.1057/0.23.1536.937@-1920.23.1920.1057" timestamp="1608712581856" />
     <state x="-1295" y="258" key="search.everywhere.popup/-1920.23.1920.1057/0.23.1792.1097@-1920.23.1920.1057" timestamp="1604628628937" />
   </component>
   <component name="XDebuggerManager">
@@ -239,23 +149,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/SuperDemo/ViewController.m</url>
-          <line>67</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/SuperDemo/ViewController.m</url>
-          <line>83</line>
+          <line>85</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/SuperDemo/ManualKVO.m</url>
           <line>13</line>
           <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/SuperDemo/ManualKVO.m</url>
-          <line>21</line>
-          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
