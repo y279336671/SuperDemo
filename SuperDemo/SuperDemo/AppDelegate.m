@@ -14,7 +14,7 @@
 //#import "ExposureViewController.h"
 //#import <Aspects.h>
 //#import <Aspects/Aspects.h>
-
+#import "MemoryDemoViewController.h"
 #import "ManualKVO.h"
 
 @interface AppDelegate ()
@@ -27,20 +27,34 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
     // Override point for customization after application launch.
+
+    UIViewController *mainViewController = [[ViewController alloc] init];
+    [mainViewController.view setFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
+    [mainViewController.view setBackgroundColor:[UIColor whiteColor]];
+    UIViewController *mainNavigationController = [[UINavigationController alloc]
+            initWithRootViewController:mainViewController];
+    mainNavigationController.title = @"首页";
+
+    UIViewController *multithreadingViewController = [[MultithreadingViewController alloc] init];
+    UIViewController *multithreadingNavigationController = [[UINavigationController alloc]
+            initWithRootViewController:multithreadingViewController];
+    [multithreadingViewController.view setFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
+    [multithreadingViewController.view setBackgroundColor:[UIColor whiteColor]];
+    multithreadingNavigationController.title=@"多线程";
+
+    UIViewController *memoryDemoVC = [[MemoryDemoViewController alloc] init];
+    UIViewController *memoryDemoVCNavigationController = [[UINavigationController alloc]
+            initWithRootViewController:memoryDemoVC];
+    [memoryDemoVC.view setFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
+    [memoryDemoVC.view setBackgroundColor:[UIColor whiteColor]];
+    memoryDemoVC.title=@"内存";
+
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    tabBarController.tabBar.tintColor = [UIColor whiteColor];
+    [tabBarController setViewControllers:@[mainNavigationController, multithreadingNavigationController,memoryDemoVCNavigationController]];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-
-
-//    UIViewController *viewController = [[ExposureViewController alloc] init];
-//    UIViewController *viewController = [[TaggedPointerViewController alloc] init];
-//    UIViewController *viewController = [[MultithreadingViewController alloc] init];
-    UIViewController *viewController = [[ViewController alloc] init];
-    [viewController.view setFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
-    [viewController.view setBackgroundColor:[UIColor whiteColor]];
-    UINavigationController *rootNav = [[UINavigationController alloc] initWithRootViewController:viewController];
-
-    self.window.rootViewController = rootNav;
+    self.window.rootViewController = tabBarController;
     [self.window makeKeyAndVisible];
-
     return YES;
 }
 

@@ -28,7 +28,7 @@
 //    [self interview7];
 //    [self interview8];
 //    [self interview9];
-    [self interview10];
+//    [self interview10];
 }
 
 - (void)interview1{

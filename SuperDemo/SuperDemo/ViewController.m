@@ -38,6 +38,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
 //    NSLog(@"测试函数地址1");
 //    NSLog(@"测试函数地址2");
 //    int double_num_times_asm(int num, int times);
@@ -48,7 +49,7 @@
 //    [self taggedpointerDemo];
 //    [self exeBlock];
 
-    [self testKVO];
+//    [self testKVO];
 
 //    [self testCopyAndMutableCopy];
 
@@ -66,7 +67,8 @@
 //    HTPerson * person = [HTPerson new];
 //    [person sayHello]; // 添加属性name后，
 
-    [self getMemory];
+//    [self getMemory];
+
 
 }
 
@@ -103,12 +105,13 @@
 
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [super touchesEnded:touches withEvent:event];
+    ManualKVO * manualKvo = [[ManualKVO alloc] init];
+    [self.navigationController pushViewController:manualKvo animated:YES];
 
-
-    self.manualKVO1.name = @"11";
-    self.manualKVO2.name = @"22";
-    [self printMethodListForIns:object_getClass(self.manualKVO1)];
-    [self printMethodListForIns:object_getClass(self.manualKVO2)];
+//    self.manualKVO1.name = @"11";
+//    self.manualKVO2.name = @"22";
+//    [self printMethodListForIns:object_getClass(self.manualKVO1)];
+//    [self printMethodListForIns:object_getClass(self.manualKVO2)];
 }
 
 -(void)printMethodListForIns:(Class)class{
@@ -124,22 +127,9 @@
     NSLog(@"names = %@", names);
 }
 
-// 多次对同一个属性kvo，只是多次创建了不同的子类，所以会执行多次
--(void)testKVO{
-    self.manualKVO1  = [[ManualKVO alloc] init];
-    self.manualKVO2 = [[ManualKVO alloc] init];
 
-    self.manualKVO1.name = @"1";
-    self.manualKVO2.name = @"2";
 
-    [self.manualKVO1 addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionOld|NSKeyValueObservingOptionNew context:nil];
-}
 
--(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey, id> *)change context:(void *)context {
-    NSLog(@"old >>>>> %@",change[NSKeyValueChangeOldKey]);
-    NSLog(@"new >>>>> %@",change[NSKeyValueChangeNewKey]);
-    NSLog(@"context >>>> %@",context);
-}
 
 
 

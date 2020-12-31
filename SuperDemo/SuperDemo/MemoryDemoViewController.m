@@ -20,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    [self.view setBackgroundColor:[UIColor whiteColor]];
 //    // 保证调用频率和屏幕的刷帧频率一致，60FPS
 //    self.link = [CADisplayLink displayLinkWithTarget:[YHProxy proxyWithTarget:self] selector:@selector(linkTest)];
 //    [self.link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
@@ -33,12 +33,15 @@
 //    }];
 
     // 接口设计
-    self.task = [MJTimer execTask:self
-                         selector:@selector(doTask)
-                            start:2.0
-                         interval:1.0
-                          repeats:YES
-                            async:NO];
+//    self.task = [MJTimer execTask:self
+//                         selector:@selector(doTask)
+//                            start:2.0
+//                         interval:1.0
+//                          repeats:YES
+//                            async:NO];
+}
+-(void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    NSLog(@"%s", sel_getName(_cmd));
 }
 
 - (void)timerTest

@@ -25,7 +25,7 @@
 
 // copy 和 strong 的区别
 // NSString、NSArray、NSDictionary 经常使用copy关键字,为避免他们的可变子类，比如NSMutableString NSMutableArray、NSMutableDictionary在赋值的时候，引起不必要的改变。而copy会复制一份新内存指向可变对象。Strong只会增加引用计数器
-@property(nonatomic, copy, readonly) NSString *name;  // @property它将自动创建一个以下划线开头的实例变量
+@property(nonatomic, copy) NSString *name;  // @property它将自动创建一个以下划线开头的实例变量
 
 @property(nonatomic, copy) NSString *sex;
 
