@@ -22,7 +22,7 @@
     self.person = [[Person alloc] init];
     self.person.name=@"yyy";
     [self.person addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionOld|NSKeyValueObservingOptionNew context:nil];
-    [self.person addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionOld|NSKeyValueObservingOptionNew context:nil];
+//    [self.person addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionOld|NSKeyValueObservingOptionNew context:nil];
 }
 
 -(void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -30,10 +30,10 @@
 }
 
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey, id> *)change context:(void *)context {
-    id new = change[NSKeyValueChangeNewKey];
-    id old = change[NSKeyValueChangeOldKey];
-    NSLog(@"new = %@", new);
-    NSLog(@"old = %@", old);
+//    id new = change[NSKeyValueChangeNewKey];
+//    id old = change[NSKeyValueChangeOldKey];
+//    NSLog(@"new = %@", new);
+//    NSLog(@"old = %@", old);
 }
 
 -(void)dealloc{

@@ -8,4 +8,5 @@ target 'SuperDemo' do
   # Pods for SuperDemo
 #  pod "Aspects"
 #  pod "MLeaksFinder"
+    pod 'YYKit', '~> 1.0.9'
 end

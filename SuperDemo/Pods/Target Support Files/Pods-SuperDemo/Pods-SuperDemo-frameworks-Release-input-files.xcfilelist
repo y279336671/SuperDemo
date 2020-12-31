@@ -1,4 +1,2 @@
 ${PODS_ROOT}/Target Support Files/Pods-SuperDemo/Pods-SuperDemo-frameworks.sh
-${BUILT_PRODUCTS_DIR}/Aspects/Aspects.framework
-${BUILT_PRODUCTS_DIR}/FBRetainCycleDetector/FBRetainCycleDetector.framework
-${BUILT_PRODUCTS_DIR}/MLeaksFinder/MLeaksFinder.framework
+${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework
