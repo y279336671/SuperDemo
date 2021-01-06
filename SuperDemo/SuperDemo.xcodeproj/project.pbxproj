@@ -51,6 +51,7 @@
 		84C7A263256B5C10007AF5B6 /* CYLUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYLUser.m; sourceTree = "<group>"; };
 		84C7A28E256F526B007AF5B6 /* ManualKVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManualKVO.h; sourceTree = "<group>"; };
 		84C7A28F256F526B007AF5B6 /* ManualKVO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManualKVO.m; sourceTree = "<group>"; };
+		84DA9D6225A5826600033A37 /* MJClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJClassInfo.h; sourceTree = "<group>"; };
 		91963985C4DE2F55EC643302 /* Pods-SuperDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperDemo.debug.xcconfig"; path = "Target Support Files/Pods-SuperDemo/Pods-SuperDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D404D0D59528E13C88FE5DE9 /* YHProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHProxy.m; sourceTree = "<group>"; };
 		D404D0F03EC765D55D27723F /* Person+man.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+man.m"; sourceTree = "<group>"; };
@@ -88,6 +89,7 @@
 		572E40ED249F062500D531B8 /* SuperDemo */ = {
 			isa = PBXGroup;
 			children = (
+				84DA9D6225A5826600033A37 /* MJClassInfo.h */,
 				57FF280A24CFA28F00BA4D41 /* TaggedPointer */,
 				57FF280624CEAA6400BA4D41 /* Timers */,
 				57B525E224CDB149000F8D1D /* MemoryDemoViewController.h */,
