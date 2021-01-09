@@ -114,7 +114,6 @@
     [super touchesEnded:touches withEvent:event];
     ManualKVO * manualKvo = [[ManualKVO alloc] init];
     [self.navigationController pushViewController:manualKvo animated:YES];
-
 //    self.manualKVO1.name = @"11";
 //    self.manualKVO2.name = @"22";
 //    [self printMethodListForIns:object_getClass(self.manualKVO1)];

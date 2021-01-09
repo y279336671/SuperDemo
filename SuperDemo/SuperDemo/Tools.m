@@ -19,4 +19,15 @@
     free(methodList);
     NSLog(@"names = %@", names);
 }
+
+-(void)printIvars:(Class)class {
+        unsigned int count;
+        Ivar *ivars = class_copyIvarList(class, &count);
+        for (int i = 0; i < count; i++) {
+            // 取出i位置的成员变量
+            Ivar ivar = ivars[i];
+            NSLog(@"%s %s", ivar_getName(ivar), ivar_getTypeEncoding(ivar));
+        }
+        free(ivars);
+}
 @end

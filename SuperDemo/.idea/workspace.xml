@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4d9ba4b5-bc7f-43c6-a209-6914afa02054" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/yanghe.xcuserdatad/xcschemes/Pods-SuperDemo.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/yanghe.xcuserdatad/xcschemes/Pods-SuperDemo.xcscheme" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo/ViewController.h" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/ViewController.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/Tools.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Tools.m" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SuperDemo/ViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/ViewController.m" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
