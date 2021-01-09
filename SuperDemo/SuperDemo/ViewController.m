@@ -9,7 +9,6 @@
 #import <objc/runtime.h>
 #import "ViewController.h"
 #import "Person.h"
-#import "Person+man.h"
 #import "MemoryDemoViewController.h"
 #import "TaggedPointer/TaggedPointerViewController.h"
 #import "ManualKVO.h"
@@ -39,6 +38,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+//    self.str = @"yy";
+//    NSString *temp = self.str;
+//    NSLog(@"temp = %p", temp);
+//    NSLog(@"self.str = %p", self.str);
+//    self.block = ^{
+//        NSLog(@"temp = %p", temp);
+//    };
+//    self.block();
 //    NSLog(@"测试函数地址1");
 //    NSLog(@"测试函数地址2");
 //    int double_num_times_asm(int num, int times);

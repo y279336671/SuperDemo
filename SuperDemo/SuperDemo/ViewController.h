@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+typedef void (^MJBlock) (void);
 @interface ViewController : UIViewController
 
 @property(nonatomic, strong) NSString *str;
-
+@property(copy, nonatomic, readonly) MJBlock block;
 @end
 
