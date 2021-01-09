@@ -15,6 +15,7 @@
 		57B525E424CDB149000F8D1D /* MemoryDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B525E324CDB149000F8D1D /* MemoryDemoViewController.m */; };
 		57FF280924CEAA6400BA4D41 /* MJTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FF280724CEAA6400BA4D41 /* MJTimer.m */; };
 		57FF280D24CFA2AA00BA4D41 /* TaggedPointerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FF280C24CFA2AA00BA4D41 /* TaggedPointerViewController.m */; };
+		5860398ED9AC3B472B2EF221 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 5860357E8FFE8CF1F09649D8 /* Tools.m */; };
 		84183DA025626F0C007B7EB7 /* CategoryWeakProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 84183D9F25626F0C007B7EB7 /* CategoryWeakProperty.m */; };
 		849FD57525652339007D51BC /* MultithreadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849FD57425652339007D51BC /* MultithreadingViewController.m */; };
 		84C7A264256B5C10007AF5B6 /* CYLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C7A263256B5C10007AF5B6 /* CYLUser.m */; };
@@ -42,6 +43,8 @@
 		57FF280824CEAA6400BA4D41 /* MJTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJTimer.h; sourceTree = "<group>"; };
 		57FF280B24CFA2AA00BA4D41 /* TaggedPointerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaggedPointerViewController.h; sourceTree = "<group>"; };
 		57FF280C24CFA2AA00BA4D41 /* TaggedPointerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaggedPointerViewController.m; sourceTree = "<group>"; };
+		5860357E8FFE8CF1F09649D8 /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
+		58603F83A2AFB0338E3AAC46 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
 		84183D9C25626E82007B7EB7 /* SuperDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84183D9E25626F0C007B7EB7 /* CategoryWeakProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryWeakProperty.h; sourceTree = "<group>"; };
 		84183D9F25626F0C007B7EB7 /* CategoryWeakProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryWeakProperty.m; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		84C7A263256B5C10007AF5B6 /* CYLUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYLUser.m; sourceTree = "<group>"; };
 		84C7A28E256F526B007AF5B6 /* ManualKVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManualKVO.h; sourceTree = "<group>"; };
 		84C7A28F256F526B007AF5B6 /* ManualKVO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManualKVO.m; sourceTree = "<group>"; };
+		84DA9D6225A5826600033A37 /* MJClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJClassInfo.h; sourceTree = "<group>"; };
 		91963985C4DE2F55EC643302 /* Pods-SuperDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperDemo.debug.xcconfig"; path = "Target Support Files/Pods-SuperDemo/Pods-SuperDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D404D0D59528E13C88FE5DE9 /* YHProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHProxy.m; sourceTree = "<group>"; };
 		D404D0F03EC765D55D27723F /* Person+man.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+man.m"; sourceTree = "<group>"; };
@@ -88,6 +92,7 @@
 		572E40ED249F062500D531B8 /* SuperDemo */ = {
 			isa = PBXGroup;
 			children = (
+				84DA9D6225A5826600033A37 /* MJClassInfo.h */,
 				57FF280A24CFA28F00BA4D41 /* TaggedPointer */,
 				57FF280624CEAA6400BA4D41 /* Timers */,
 				57B525E224CDB149000F8D1D /* MemoryDemoViewController.h */,
@@ -112,6 +117,8 @@
 				84C7A263256B5C10007AF5B6 /* CYLUser.m */,
 				84C7A28E256F526B007AF5B6 /* ManualKVO.h */,
 				84C7A28F256F526B007AF5B6 /* ManualKVO.m */,
+				5860357E8FFE8CF1F09649D8 /* Tools.m */,
+				58603F83A2AFB0338E3AAC46 /* Tools.h */,
 			);
 			path = SuperDemo;
 			sourceTree = "<group>";
@@ -282,6 +289,7 @@
 				D404D98733525262CE3D5D12 /* YHProxy.m in Sources */,
 				84183DA025626F0C007B7EB7 /* CategoryWeakProperty.m in Sources */,
 				D404DFB6EB8733A26A96379F /* YHProxyBetter.m in Sources */,
+				5860398ED9AC3B472B2EF221 /* Tools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
