@@ -15,7 +15,7 @@ typedef void (^MJPermenantThreadTask)(void);
 /**
  开启线程
  */
-//- (void)run;
+- (void)run;
 
 /**
  在当前子线程执行一个任务
