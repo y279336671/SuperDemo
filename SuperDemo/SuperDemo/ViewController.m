@@ -38,6 +38,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
+    dic[@"fuck"]= @"必须是驼峰吗";
+    dic[@"fuck1"] = @"英文状态下必须是";
+    NSLog(@"dic = %@", dic);
+
+    NSString *string = @"不知道";
+    NSString *string1 = [string stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+    NSLog(@"string1 = %@", string1);
 //    self.str = @"yy";
 //    NSString *temp = self.str;
 //    NSLog(@"temp = %p", temp);

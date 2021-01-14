@@ -22,6 +22,7 @@
 		849FD57525652339007D51BC /* MultithreadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849FD57425652339007D51BC /* MultithreadingViewController.m */; };
 		84C7A264256B5C10007AF5B6 /* CYLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C7A263256B5C10007AF5B6 /* CYLUser.m */; };
 		84C7A290256F526B007AF5B6 /* ManualKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C7A28F256F526B007AF5B6 /* ManualKVO.m */; };
+		84E778CB25B05FE700287F2D /* MJTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E778CA25B05FE700287F2D /* MJTimer.m */; };
 		9F7047070C9F9A6343ACB509 /* Pods_SuperDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C1620D0217C7F519677217 /* Pods_SuperDemo.framework */; };
 		D404D7269EC76FFE859E76FB /* Person+man.m in Sources */ = {isa = PBXBuildFile; fileRef = D404D0F03EC765D55D27723F /* Person+man.m */; };
 		D404D98733525262CE3D5D12 /* YHProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = D404D0D59528E13C88FE5DE9 /* YHProxy.m */; };
@@ -73,6 +74,8 @@
 		84C7A263256B5C10007AF5B6 /* CYLUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYLUser.m; sourceTree = "<group>"; };
 		84C7A28E256F526B007AF5B6 /* ManualKVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManualKVO.h; sourceTree = "<group>"; };
 		84C7A28F256F526B007AF5B6 /* ManualKVO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManualKVO.m; sourceTree = "<group>"; };
+		84E778C925B05FE700287F2D /* MJTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJTimer.h; sourceTree = "<group>"; };
+		84E778CA25B05FE700287F2D /* MJTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJTimer.m; sourceTree = "<group>"; };
 		91963985C4DE2F55EC643302 /* Pods-SuperDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperDemo.debug.xcconfig"; path = "Target Support Files/Pods-SuperDemo/Pods-SuperDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D404D0D59528E13C88FE5DE9 /* YHProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHProxy.m; sourceTree = "<group>"; };
 		D404D0F03EC765D55D27723F /* Person+man.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+man.m"; sourceTree = "<group>"; };
@@ -181,6 +184,8 @@
 		846FE50F25AC357F004BF2ED /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				84E778C925B05FE700287F2D /* MJTimer.h */,
+				84E778CA25B05FE700287F2D /* MJTimer.m */,
 				846FE51125AC35AD004BF2ED /* MJClassInfo.h */,
 				846FE51325AC35AD004BF2ED /* MJPermenantThread.h */,
 				846FE51025AC35AD004BF2ED /* MJPermenantThread.m */,
@@ -342,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57FF280D24CFA2AA00BA4D41 /* TaggedPointerViewController.m in Sources */,
+				84E778CB25B05FE700287F2D /* MJTimer.m in Sources */,
 				846FE51525AC35AD004BF2ED /* MJPermenantThread.m in Sources */,
 				572E40F6249F062500D531B8 /* ViewController.m in Sources */,
 				846FE51625AC35AD004BF2ED /* Tools.m in Sources */,

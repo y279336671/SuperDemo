@@ -26,7 +26,7 @@
 //    [self interview555];
 //    [self interview6];
 //    [self interview7];
-//    [self interview8];
+    [self interview8];
 //    [self interview9];
 //    [self interview10];
 }
@@ -37,7 +37,7 @@
     dispatch_async(queue, ^{
         NSLog(@"1---%@",[NSThread currentThread]);
         //GNUstep  -> NSFuncation  源码
-        [self performSelector:@selector(test1) withObject:nil afterDelay:.0f];//添加一个timer到runloop，但是没有启动执行
+        [self performSelector:@selector(test1) withObject:nil afterDelay:.0f];////默认GCD不会启动runloop，afterDelay需要runloop支持，及时是0秒也是先输出 1 3 2，因为一般是runloop再次 被唤醒的时候才执行test1方法
         NSLog(@"3---%@",[NSThread currentThread]);
         //[NSRunLoop currentRunLoop] 获取当前线程的runloop，注意是当前线程，如果当前线程没有runloop就创建
 //        // 添加以下两行才能执行
@@ -50,7 +50,7 @@
 
 //    以下代码输出是 132，在主线程中默认有runloop。 runloop何时去处理timer事件？？？？？？？？？？？、
 //    NSLog(@"1---%@",[NSThread currentThread]);
-//    [self performSelector:@selector(test1) withObject:nil afterDelay:.0f];//默认GCD不会启动runloop，afterDelay需要runloop支持
+//    [self performSelector:@selector(test1) withObject:nil afterDelay:.0f];
 //    NSLog(@"3---%@",[NSThread currentThread]);
 }
 - (void)test1{
