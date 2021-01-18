@@ -9,6 +9,7 @@
 #import "MultithreadingViewController.h"
 
 @interface MultithreadingViewController ()
+@property(nonatomic, strong) NSString *name;
 
 @end
 
@@ -178,5 +179,45 @@
             NSLog(@"执行任务3--%@",[NSThread currentThread]);
         }
     });
+}
+
+//-(void)setName:(NSString *)name {
+//    if(_name!=name){
+//        [_name release];
+//        _name = [name retain];
+//    }
+//}
+
+- (void)interview11{
+
+// ------------------------------------------------------
+    dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
+
+    for (int i = 0; i < 1000; i++) {
+        dispatch_async(queue, ^{
+            // 加锁
+            self.name = [NSString stringWithFormat:@"abcdefghijk"];   // 这个位置会崩溃，因为多线程情况下，调用setName方法会造成多次[_name release]，所以会崩溃。
+            // 解锁
+            // 解决方案:
+            // 1. 使用atomic
+            // 2. 在这个位置使用锁，这个方式较优
+
+        });
+    }
+
+    dispatch_queue_t queue1 = dispatch_get_global_queue(0, 0);
+
+    for (int i = 0; i < 1000; i++) {
+        dispatch_async(queue1, ^{
+            self.name = [NSString stringWithFormat:@"abc"];  // 这个位置不会崩溃，因为直接存储在地址中，就不存在 release的过程
+        });
+    }
+
+//    NSString *str1 = [NSString stringWithFormat:@"abcdefghijk"];
+//    NSString *str2 = [NSString stringWithFormat:@"123abc"];
+
+//    NSLog(@"%@ %@", [str1 class], [str2 class]);
+//    NSLog(@"%p", str2);
+// ------------------------------------------------------
 }
 @end
