@@ -14,7 +14,6 @@
 #import "ManualKVO.h"
 #import "MJTimer.h"
 #import <malloc/malloc.h>
-#import <account_login_sdk_core/account_login_sdk_core.h>
 @interface HTPerson : NSObject
 @property (nonatomic, copy) NSString *name;
 - (void)sayHello;

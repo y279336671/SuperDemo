@@ -20,10 +20,6 @@
 		846FE51525AC35AD004BF2ED /* MJPermenantThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 846FE51025AC35AD004BF2ED /* MJPermenantThread.m */; };
 		846FE51625AC35AD004BF2ED /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 846FE51225AC35AD004BF2ED /* Tools.m */; };
 		849FD57525652339007D51BC /* MultithreadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849FD57425652339007D51BC /* MultithreadingViewController.m */; };
-		84C3EC9A25BA7CA000142A68 /* TYRZResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84C3EC9525BA7CA000142A68 /* TYRZResource.bundle */; };
-		84C3EC9B25BA7CA000142A68 /* TYRZUISDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C3EC9625BA7CA000142A68 /* TYRZUISDK.framework */; };
-		84C3EC9C25BA7CA000142A68 /* uni_account_login_res.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84C3EC9825BA7CA000142A68 /* uni_account_login_res.bundle */; };
-		84C3EC9D25BA7CA000142A68 /* account_login_sdk_core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C3EC9925BA7CA000142A68 /* account_login_sdk_core.framework */; };
 		84C7A264256B5C10007AF5B6 /* CYLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C7A263256B5C10007AF5B6 /* CYLUser.m */; };
 		84C7A290256F526B007AF5B6 /* ManualKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C7A28F256F526B007AF5B6 /* ManualKVO.m */; };
 		84E778CB25B05FE700287F2D /* MJTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E778CA25B05FE700287F2D /* MJTimer.m */; };
@@ -95,8 +91,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84C3EC9D25BA7CA000142A68 /* account_login_sdk_core.framework in Frameworks */,
-				84C3EC9B25BA7CA000142A68 /* TYRZUISDK.framework in Frameworks */,
 				9F7047070C9F9A6343ACB509 /* Pods_SuperDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -120,6 +114,7 @@
 				B2C1EC489D5B42F6A229DDA2 /* Frameworks */,
 				84183D9C25626E82007B7EB7 /* SuperDemo.app */,
 				842C71F225ABED5500AB0219 /* SuperDemoCommand */,
+				8487FE2F25BE93DB0079C397 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -174,8 +169,6 @@
 		846FE50F25AC357F004BF2ED /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				D404DA8CF6BA572568A9ADDC /* YHProxyBetter.h */,
-				D404D56CF95820ABB8E41E7D /* YHProxyBetter.m */,
 				84E778C925B05FE700287F2D /* MJTimer.h */,
 				84E778CA25B05FE700287F2D /* MJTimer.m */,
 				846FE51125AC35AD004BF2ED /* MJClassInfo.h */,
@@ -189,13 +182,15 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
-		84C3EC9425BA7CA000142A68 /* ChinaMobile */ = {
+		8487FE2F25BE93DB0079C397 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				84C3EC9525BA7CA000142A68 /* TYRZResource.bundle */,
+				84C3EC9925BA7CA000142A68 /* account_login_sdk_core.framework */,
 				84C3EC9625BA7CA000142A68 /* TYRZUISDK.framework */,
+				84C3EC9825BA7CA000142A68 /* uni_account_login_res.bundle */,
+				84C3EC9525BA7CA000142A68 /* TYRZResource.bundle */,
 			);
-			path = ChinaMobile;
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		B2C1EC489D5B42F6A229DDA2 /* Frameworks */ = {
@@ -296,8 +291,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				572E40FE249F062600D531B8 /* LaunchScreen.storyboard in Resources */,
-				84C3EC9C25BA7CA000142A68 /* uni_account_login_res.bundle in Resources */,
-				84C3EC9A25BA7CA000142A68 /* TYRZResource.bundle in Resources */,
 				572E40FB249F062600D531B8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,10 +358,7 @@
 				D404D7269EC76FFE859E76FB /* Person+man.m in Sources */,
 				84C7A290256F526B007AF5B6 /* ManualKVO.m in Sources */,
 				84183DA025626F0C007B7EB7 /* CategoryWeakProperty.m in Sources */,
-
-				D404DFB6EB8733A26A96379F /* YHProxyBetter.m in Sources */,
 				58603B72A399212B507E5E70 /* YHSafeMutableArray.m in Sources */,
-
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,9 +501,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QQGC6FGPZU;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = SuperDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -533,9 +521,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QQGC6FGPZU;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = SuperDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
