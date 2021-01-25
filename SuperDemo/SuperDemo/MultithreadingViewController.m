@@ -32,7 +32,11 @@
 //    [self interview8];
 //    [self interview9];
 //    [self interview10];
+
 [self interview12];
+
+//    [self interview12];
+
 }
 
 - (void)interview1{
@@ -160,6 +164,7 @@
     });
     NSLog(@"执行任务4--%@",[NSThread currentThread]);
 }
+
 /***重点***/
 - (void)interview9{
     NSLog(@"执行任务1--%@",[NSThread currentThread]);
@@ -190,6 +195,7 @@
 //        _name = [name retain];
 //    }
 //}
+
 
 - (void)interview11{
 
@@ -224,6 +230,7 @@
 // ------------------------------------------------------
 }
 
+
 - (void)interview12{
     self.safeMutableArray = [[YHSafeMutableArray alloc] init];
     dispatch_queue_t queue = dispatch_queue_create("test_safe_array", DISPATCH_QUEUE_CONCURRENT);
@@ -247,5 +254,29 @@
 //            NSLog(@"self.safeMutableArray = %ld", [self.safeMutableArray count]);
 //        });
 //    }
+}
+
+- (void)interview13{
+    dispatch_queue_t dispatchQueue = dispatch_queue_create("ted.queue.next1", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_queue_t globalQueue = dispatch_get_global_queue(0, 0);
+    dispatch_group_t dispatchGroup = dispatch_group_create();
+    dispatch_group_async(dispatchGroup, dispatchQueue, ^(){
+
+        sleep(5);
+        NSLog(@"任务一完成");
+    });
+    dispatch_group_async(dispatchGroup, dispatchQueue, ^(){
+
+        sleep(4);
+        NSLog(@"任务二完成");
+    });
+    dispatch_group_async(dispatchGroup, dispatchQueue, ^(){
+
+        sleep(9);
+        NSLog(@"任务三完成");
+    });
+    dispatch_group_notify(dispatchGroup, dispatch_get_main_queue(), ^(){
+        NSLog(@"notify：任务都完成了");
+    });
 }
 @end

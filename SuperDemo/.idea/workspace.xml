@@ -6,7 +6,9 @@
       <change afterPath="$PROJECT_DIR$/SuperDemo/Tools/YHSafeMutableArray.m" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SuperDemo.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo.xcodeproj/xcuserdata/yanghe.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo.xcodeproj/xcuserdata/yanghe.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SuperDemo.xcworkspace/xcuserdata/admin.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo.xcworkspace/xcuserdata/admin.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/SuperDemo/ManualKVO.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/ManualKVO.m" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SuperDemo/MemoryDemoViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/MemoryDemoViewController.m" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SuperDemo/MultithreadingViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/MultithreadingViewController.m" afterDir="false" />
@@ -15,6 +17,12 @@
       <change beforePath="$PROJECT_DIR$/SuperDemo/Timers/MJTimer.m" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/SuperDemo/Timers/YHProxyBetter.h" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Tools/YHProxyBetter.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SuperDemo/Timers/YHProxyBetter.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Tools/YHProxyBetter.m" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/SuperDemo/MemoryDemoViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/MemoryDemoViewController.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/MultithreadingViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/MultithreadingViewController.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/Tools/Timers/YHProxy.h" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Tools/Timers/YHProxy.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/Tools/Timers/YHProxy.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Tools/Timers/YHProxy.m" afterDir="false" />
+>>>>>>> b90721e94befdc874a436cf1e54163c53b48f5ea
       <change beforePath="$PROJECT_DIR$/SuperDemo/ViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/ViewController.m" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +30,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_A0A32B6E-E024-4B71-B731-C1A454A99534" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_E9113F39-426D-422C-963E-F5D499DC0F2A" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -34,9 +42,12 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+<<<<<<< HEAD
   <component name="OCResolveContextSettings">
     <option name="configuration" value="Pods-44-87265ED847C04DBD854164CCD8E46CCB-macosx11.1:iosmac:11.1-x86_64" />
   </component>
+=======
+>>>>>>> b90721e94befdc874a436cf1e54163c53b48f5ea
   <component name="ProjectId" id="1jo7sRFjzt7WqeCux1NjsWwrUKE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -71,11 +82,14 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.SuperDemo" />
       <item itemvalue="Application.SuperDemoCommand" />
+      <item itemvalue="Application.SuperDemo" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
