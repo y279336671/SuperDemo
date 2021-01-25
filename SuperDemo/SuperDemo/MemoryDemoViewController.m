@@ -7,7 +7,7 @@
 //
 
 #import "MemoryDemoViewController.h"
-#import "YHProxy.h"
+
 #import "MJTimer.h"
 
 @interface MemoryDemoViewController ()

@@ -2,12 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d9ba4b5-bc7f-43c6-a209-6914afa02054" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/SuperDemo/Tools/YHSafeMutableArray.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SuperDemo/Tools/YHSafeMutableArray.m" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SuperDemo.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo.xcodeproj/project.pbxproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SuperDemo.xcworkspace/xcuserdata/admin.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo.xcworkspace/xcuserdata/admin.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/ManualKVO.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/ManualKVO.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/MemoryDemoViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/MemoryDemoViewController.m" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SuperDemo/MultithreadingViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/MultithreadingViewController.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo/Timers/YHProxy.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo/Timers/YHProxy.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/Person.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Person.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/Timers/MJTimer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/Timers/MJTimer.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/Timers/YHProxyBetter.h" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Tools/YHProxyBetter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/Timers/YHProxyBetter.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Tools/YHProxyBetter.m" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SuperDemo/ViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/ViewController.m" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,6 +25,17 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_A0A32B6E-E024-4B71-B731-C1A454A99534" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="OCResolveContextSettings">
+    <option name="configuration" value="Pods-44-87265ED847C04DBD854164CCD8E46CCB-macosx11.1:iosmac:11.1-x86_64" />
   </component>
   <component name="ProjectId" id="1jo7sRFjzt7WqeCux1NjsWwrUKE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -36,6 +54,7 @@
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="SuperDemo" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="com.jetbrains.cidr.execution.build.XcodeBuildErrorTreeViewPanel.FilterMode" value="ErrorsOnly" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/SuperDemo" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
   </component>

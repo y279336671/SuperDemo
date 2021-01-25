@@ -14,7 +14,7 @@
 #import "ManualKVO.h"
 #import "MJTimer.h"
 #import <malloc/malloc.h>
-
+#import <account_login_sdk_core/account_login_sdk_core.h>
 @interface HTPerson : NSObject
 @property (nonatomic, copy) NSString *name;
 - (void)sayHello;
@@ -39,6 +39,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
 
 // ------------------------------------------------------
     // 接口设计   // 这个位置传入 self 不会产生强引用，因为只是blcok强持有self，self没有强持有block
@@ -106,6 +107,7 @@
     NSLog(@"%zd", class_getInstanceSize([NSObject class]));//获取NSObject类的实例对象的成员变量所占用的大小
     NSLog(@"%zd", malloc_size((__bridge const void*) objc));//获取objc指针指向的内存的大小，即实际分配的内存
 }
+
 
 
 -(void)testCopyAndMutableCopy{

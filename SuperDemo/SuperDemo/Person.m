@@ -37,6 +37,10 @@
     return self;
 }
 
+-(BOOL)accessInstanceVariablesDirectly {
+    return  YES;
+}
+
 - (BOOL)isEqual:(id)other {
     if (other == self)
         return YES;
