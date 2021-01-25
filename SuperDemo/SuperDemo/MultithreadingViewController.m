@@ -9,6 +9,7 @@
 #import "MultithreadingViewController.h"
 
 @interface MultithreadingViewController ()
+@property(nonatomic, strong) NSString *name;
 
 @end
 
@@ -26,9 +27,10 @@
 //    [self interview555];
 //    [self interview6];
 //    [self interview7];
-    [self interview8];
+//    [self interview8];
 //    [self interview9];
 //    [self interview10];
+//    [self interview12];
 }
 
 - (void)interview1{
@@ -156,6 +158,7 @@
     });
     NSLog(@"执行任务4--%@",[NSThread currentThread]);
 }
+
 /***重点***/
 - (void)interview9{
     NSLog(@"执行任务1--%@",[NSThread currentThread]);
@@ -177,6 +180,72 @@
         for (int i = 0; i < 10; ++i) {
             NSLog(@"执行任务3--%@",[NSThread currentThread]);
         }
+    });
+}
+
+//-(void)setName:(NSString *)name {
+//    if(_name!=name){
+//        [_name release];
+//        _name = [name retain];
+//    }
+//}
+
+
+- (void)interview11{
+
+// ------------------------------------------------------
+    dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
+
+    for (int i = 0; i < 1000; i++) {
+        dispatch_async(queue, ^{
+            // 加锁
+            self.name = [NSString stringWithFormat:@"abcdefghijk"];   // 这个位置会崩溃，因为多线程情况下，调用setName方法会造成多次[_name release]，所以会崩溃。
+            // 解锁
+            // 解决方案:
+            // 1. 使用atomic
+            // 2. 在这个位置使用锁，这个方式较优
+
+        });
+    }
+
+    dispatch_queue_t queue1 = dispatch_get_global_queue(0, 0);
+
+    for (int i = 0; i < 1000; i++) {
+        dispatch_async(queue1, ^{
+            self.name = [NSString stringWithFormat:@"abc"];  // 这个位置不会崩溃，因为直接存储在地址中，就不存在 release的过程
+        });
+    }
+
+//    NSString *str1 = [NSString stringWithFormat:@"abcdefghijk"];
+//    NSString *str2 = [NSString stringWithFormat:@"123abc"];
+
+//    NSLog(@"%@ %@", [str1 class], [str2 class]);
+//    NSLog(@"%p", str2);
+// ------------------------------------------------------
+}
+
+
+- (void)interview12{
+    dispatch_queue_t dispatchQueue = dispatch_queue_create("ted.queue.next1", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_queue_t globalQueue = dispatch_get_global_queue(0, 0);
+    dispatch_group_t dispatchGroup = dispatch_group_create();
+    dispatch_group_async(dispatchGroup, dispatchQueue, ^(){
+
+        sleep(5);
+        NSLog(@"任务一完成");
+    });
+    dispatch_group_async(dispatchGroup, dispatchQueue, ^(){
+
+        sleep(4);
+        NSLog(@"任务二完成");
+    });
+    dispatch_group_async(dispatchGroup, dispatchQueue, ^(){
+
+        sleep(9);
+        NSLog(@"任务三完成");
+    });
+    dispatch_group_notify(dispatchGroup, dispatch_get_main_queue(), ^(){
+        NSLog(@"notify：任务都完成了");
     });
 }
 @end

@@ -12,6 +12,7 @@
 #import "MemoryDemoViewController.h"
 #import "TaggedPointer/TaggedPointerViewController.h"
 #import "ManualKVO.h"
+#import "MJTimer.h"
 #import <malloc/malloc.h>
 
 @interface HTPerson : NSObject
@@ -30,6 +31,7 @@
 @property (copy, nonatomic) dispatch_block_t block;
 @property (nonatomic, strong) ManualKVO *manualKVO1;
 @property (nonatomic, strong) ManualKVO *manualKVO2;
+@property(nonatomic, strong) NSString *timerName;
 @end
 
 @implementation ViewController
@@ -38,14 +40,32 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
-    dic[@"fuck"]= @"必须是驼峰吗";
-    dic[@"fuck1"] = @"英文状态下必须是";
-    NSLog(@"dic = %@", dic);
+// ------------------------------------------------------
+    // 接口设计   // 这个位置传入 self 不会产生强引用，因为只是blcok强持有self，self没有强持有block
+    self.timerName = [MJTimer execTask:self
+                         selector:@selector(doTask)
+                            start:2.0
+                         interval:1.0
+                          repeats:YES
+                            async:NO];
 
-    NSString *string = @"不知道";
-    NSString *string1 = [string stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
-    NSLog(@"string1 = %@", string1);
+//    self.task = [MJTimer execTask:^{
+//        NSLog(@"111111 - %@", [NSThread currentThread]);
+//    } start:2.0 interval:-10 repeats:NO async:NO];
+// ------------------------------------------------------
+
+
+// ------------------------------------------------------
+//   //指针读取类地址，强转为对象，调用sayHello。
+//    Class cls = [HTPerson class];
+//    void * ht = &cls;
+//    [(__bridge id)ht sayHello];    // 添加属性name后，通过内存平移去查找
+//    // 实例化对象，调用sayHello
+//    HTPerson * person = [HTPerson new];
+//    [person sayHello]; // 添加属性name后，
+// ------------------------------------------------------
+
+
 //    self.str = @"yy";
 //    NSString *temp = self.str;
 //    NSLog(@"temp = %p", temp);
@@ -74,14 +94,6 @@
 //    };
 
 
-//   //指针读取类地址，强转为对象，调用sayHello。
-//    Class cls = [HTPerson class];
-//    void * ht = &cls;
-//    [(__bridge id)ht sayHello];    // 添加属性name后，通过内存平移去查找
-//    // 实例化对象，调用sayHello
-//    HTPerson * person = [HTPerson new];
-//    [person sayHello]; // 添加属性name后，
-
 //    [self getMemory];
 
 
@@ -94,7 +106,6 @@
     NSLog(@"%zd", class_getInstanceSize([NSObject class]));//获取NSObject类的实例对象的成员变量所占用的大小
     NSLog(@"%zd", malloc_size((__bridge const void*) objc));//获取objc指针指向的内存的大小，即实际分配的内存
 }
-
 
 
 -(void)testCopyAndMutableCopy{
