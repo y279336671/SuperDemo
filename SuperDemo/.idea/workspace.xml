@@ -3,8 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="4d9ba4b5-bc7f-43c6-a209-6914afa02054" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo.xcodeproj/xcuserdata/yanghe.xcuserdatad/xcschemes/SuperDemo.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo.xcodeproj/xcuserdata/yanghe.xcuserdatad/xcschemes/SuperDemo.xcscheme" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo.xcodeproj/xcuserdata/yanghe.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo.xcodeproj/xcuserdata/yanghe.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/Timers/MJTimer.h" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Tools/Timers/MJTimer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/Timers/MJTimer.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Tools/Timers/MJTimer.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/Timers/YHProxy.h" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Tools/Timers/YHProxy.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/Timers/YHProxy.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Tools/Timers/YHProxy.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/Timers/YHProxyBetter.h" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Tools/Timers/YHProxyBetter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/Timers/YHProxyBetter.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Tools/Timers/YHProxyBetter.m" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +38,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="com.jetbrains.cidr.execution.build.XcodeBuildErrorTreeViewPanel.FilterMode" value="ErrorsOnly" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -62,6 +67,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="测试 appcode commit and push" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试 appcode commit and push" />
   </component>
   <component name="XCUnloadedResolveContextsSettings">
     <option name="loadedSdks" value="Device" />
