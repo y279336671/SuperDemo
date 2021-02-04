@@ -8,6 +8,7 @@
 
 @interface Person (man)
 
-@property(nonatomic, copy) NSString *sex;
+@property(nonatomic, copy) NSString *nickName;
 @property (nonatomic, weak) id weakObject;
+@property (nonatomic, copy) id copyObject;
 @end
