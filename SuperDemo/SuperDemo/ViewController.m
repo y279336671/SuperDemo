@@ -14,7 +14,10 @@
 #import "ManualKVO.h"
 #import "Person+man.h"
 #import "MJTimer.h"
+#import "BlockViewController.h"
+#import "BlockSubClassViewController.h"
 #import <malloc/malloc.h>
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @interface HTPerson : NSObject
 @property(nonatomic, copy) NSString *name;
@@ -42,9 +45,9 @@
 @implementation ViewController
 
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-
 
 // ------------------------------------------------------
     // 接口设计   // 这个位置传入 self 不会产生强引用，因为只是blcok强持有self，self没有强持有block
@@ -112,6 +115,19 @@
 
 
 }
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [super touchesBegan:touches withEvent:event];
+//    BlockViewController *blockViewController = [[BlockViewController alloc] init];
+//    blockViewController.view.backgroundColor = [UIColor redColor];
+//    blockViewController.view.frame = CGRectMake(0, 0, UIScreen .mainScreen.bounds.size.width, UIScreen .mainScreen.bounds.size.height);
+//    [self.navigationController pushViewController:blockViewController animated:YES];
+    [BlockSubClassViewController alloc];
+
+//
+
+}
+
 
 // 指针 64位系统占用8字节  32位系统占用4字节
 // iOS内存对齐是16的倍数

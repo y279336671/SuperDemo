@@ -85,5 +85,6 @@
 - (void)dealloc {
     [self.timer invalidate];
     NSLog(@"%s，%@",__func__,self.timer);
+    NSLog(@"NSStringFromClass([self class]) dealloc = %@", NSStringFromClass([self class]));
 }
 @end

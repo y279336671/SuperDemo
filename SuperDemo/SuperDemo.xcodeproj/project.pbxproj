@@ -17,6 +17,8 @@
 		58603B72A399212B507E5E70 /* YHSafeMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 58603254E095641670D6047D /* YHSafeMutableArray.m */; };
 		84183DA025626F0C007B7EB7 /* CategoryWeakProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 84183D9F25626F0C007B7EB7 /* CategoryWeakProperty.m */; };
 		842C71F525ABED5500AB0219 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 842C71F425ABED5500AB0219 /* main.m */; };
+		84328D4A25D770A50070E1AA /* BlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84328D4925D770A50070E1AA /* BlockViewController.m */; };
+		84328D4F25D7FAD30070E1AA /* BlockSubClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84328D4E25D7FAD30070E1AA /* BlockSubClassViewController.m */; };
 		846FE51525AC35AD004BF2ED /* MJPermenantThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 846FE51025AC35AD004BF2ED /* MJPermenantThread.m */; };
 		846FE51625AC35AD004BF2ED /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 846FE51225AC35AD004BF2ED /* Tools.m */; };
 		849FD57525652339007D51BC /* MultithreadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849FD57425652339007D51BC /* MultithreadingViewController.m */; };
@@ -61,6 +63,10 @@
 		84183D9F25626F0C007B7EB7 /* CategoryWeakProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryWeakProperty.m; sourceTree = "<group>"; };
 		842C71F225ABED5500AB0219 /* SuperDemoCommand */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SuperDemoCommand; sourceTree = BUILT_PRODUCTS_DIR; };
 		842C71F425ABED5500AB0219 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84328D4825D770A50070E1AA /* BlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockViewController.h; sourceTree = "<group>"; };
+		84328D4925D770A50070E1AA /* BlockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockViewController.m; sourceTree = "<group>"; };
+		84328D4D25D7FAD30070E1AA /* BlockSubClassViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockSubClassViewController.h; sourceTree = "<group>"; };
+		84328D4E25D7FAD30070E1AA /* BlockSubClassViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockSubClassViewController.m; sourceTree = "<group>"; };
 		846FE51025AC35AD004BF2ED /* MJPermenantThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPermenantThread.m; sourceTree = "<group>"; };
 		846FE51125AC35AD004BF2ED /* MJClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJClassInfo.h; sourceTree = "<group>"; };
 		846FE51225AC35AD004BF2ED /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
@@ -145,6 +151,10 @@
 				84C7A263256B5C10007AF5B6 /* CYLUser.m */,
 				84C7A28E256F526B007AF5B6 /* ManualKVO.h */,
 				84C7A28F256F526B007AF5B6 /* ManualKVO.m */,
+				84328D4825D770A50070E1AA /* BlockViewController.h */,
+				84328D4925D770A50070E1AA /* BlockViewController.m */,
+				84328D4D25D7FAD30070E1AA /* BlockSubClassViewController.h */,
+				84328D4E25D7FAD30070E1AA /* BlockSubClassViewController.m */,
 			);
 			path = SuperDemo;
 			sourceTree = "<group>";
@@ -354,9 +364,11 @@
 				57B525E424CDB149000F8D1D /* MemoryDemoViewController.m in Sources */,
 				572E4101249F062600D531B8 /* main.m in Sources */,
 				849FD57525652339007D51BC /* MultithreadingViewController.m in Sources */,
+				84328D4A25D770A50070E1AA /* BlockViewController.m in Sources */,
 				D404DC878079D897DCA9EDDD /* Person.m in Sources */,
 				D404D7269EC76FFE859E76FB /* Person+man.m in Sources */,
 				84C7A290256F526B007AF5B6 /* ManualKVO.m in Sources */,
+				84328D4F25D7FAD30070E1AA /* BlockSubClassViewController.m in Sources */,
 				84183DA025626F0C007B7EB7 /* CategoryWeakProperty.m in Sources */,
 				58603B72A399212B507E5E70 /* YHSafeMutableArray.m in Sources */,
 			);

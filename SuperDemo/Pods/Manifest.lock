@@ -1,18 +1,24 @@
 PODS:
+  - SDWebImage (5.10.1):
+    - SDWebImage/Core (= 5.10.1)
+  - SDWebImage/Core (5.10.1)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
+  - SDWebImage (~> 5.10.1)
   - YYKit (~> 1.0.9)
 
 SPEC REPOS:
   trunk:
+    - SDWebImage
     - YYKit
 
 SPEC CHECKSUMS:
+  SDWebImage: f66a16b95183b92ed6b965ad21d33167bc07612d
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 2e928f36628f5f55d6e9e0be1af8d416773d28fa
+PODFILE CHECKSUM: 4943aa926139a575c8d61bbbd676090551127abd
 
 COCOAPODS: 1.10.0
