@@ -9,4 +9,6 @@ target 'SuperDemo' do
 #  pod "Aspects"
 #  pod "MLeaksFinder"
     pod 'YYKit', '~> 1.0.9'
+    pod 'SDWebImage', '~> 5.10.1'
+
 end

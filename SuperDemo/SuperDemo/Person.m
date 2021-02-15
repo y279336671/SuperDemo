@@ -37,6 +37,10 @@
     return self;
 }
 
+-(BOOL)accessInstanceVariablesDirectly {
+    return  YES;
+}
+
 - (BOOL)isEqual:(id)other {
     if (other == self)
         return YES;
@@ -81,5 +85,6 @@
 - (void)dealloc {
     [self.timer invalidate];
     NSLog(@"%s，%@",__func__,self.timer);
+    NSLog(@"NSStringFromClass([self class]) dealloc = %@", NSStringFromClass([self class]));
 }
 @end

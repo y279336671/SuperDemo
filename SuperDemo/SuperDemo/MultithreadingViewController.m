@@ -6,11 +6,13 @@
 //  Copyright © 2020 yanghe. All rights reserved.
 //
 
+#import <NSArray+YYAdd.h>
 #import "MultithreadingViewController.h"
+#import "YHSafeMutableArray.h"
 
 @interface MultithreadingViewController ()
 @property(nonatomic, strong) NSString *name;
-
+@property(nonatomic, strong) YHSafeMutableArray *safeMutableArray;
 @end
 
 @implementation MultithreadingViewController
@@ -30,7 +32,11 @@
 //    [self interview8];
 //    [self interview9];
 //    [self interview10];
+
+[self interview12];
+
 //    [self interview12];
+
 }
 
 - (void)interview1{
@@ -226,6 +232,31 @@
 
 
 - (void)interview12{
+    self.safeMutableArray = [[YHSafeMutableArray alloc] init];
+    dispatch_queue_t queue = dispatch_queue_create("test_safe_array", DISPATCH_QUEUE_CONCURRENT);
+    for (int i = 0; i < 20; ++i) {
+        dispatch_async(queue, ^{
+            [self.safeMutableArray addObject:@"qwe"];
+            [self.safeMutableArray addObject:@"qwe"];
+            [self.safeMutableArray removeObjectAtIndex:0];
+        });
+    }
+    NSLog(@"self.safeMutableArray = %@", self.safeMutableArray);
+    NSLog(@"self.safeMutableArray count = %ld", [self.safeMutableArray count]);
+//    for (int i = 0; i < 8; ++i) {
+//        dispatch_async(queue, ^{
+//            [self.safeMutableArray removeFirstObject];
+//            NSLog(@"self.safeMutableArray = %@", self.safeMutableArray);
+//        });
+//    }
+//    for (int i = 0; i < 8; ++i) {
+//        dispatch_async(queue, ^{
+//            NSLog(@"self.safeMutableArray = %ld", [self.safeMutableArray count]);
+//        });
+//    }
+}
+
+- (void)interview13{
     dispatch_queue_t dispatchQueue = dispatch_queue_create("ted.queue.next1", DISPATCH_QUEUE_CONCURRENT);
     dispatch_queue_t globalQueue = dispatch_get_global_queue(0, 0);
     dispatch_group_t dispatchGroup = dispatch_group_create();
