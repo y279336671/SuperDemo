@@ -39,6 +39,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+NSLog(@"%d", [NSObject isKindOfClass:[NSObject class]]); // 1  // 这句代码的方法调用者不管是哪个类（只要是NSObject体系下的），都返回YES
+NSLog(@"%d", [NSObject isMemberOfClass:[NSObject class]]); // 0   ？？？？
+NSLog(@"%d", [Person isKindOfClass:[Person class]]); // 0
+NSLog(@"%d", [Person isMemberOfClass:[Person class]]); // 0
 
 // ------------------------------------------------------
     // 接口设计   // 这个位置传入 self 不会产生强引用，因为只是blcok强持有self，self没有强持有block
