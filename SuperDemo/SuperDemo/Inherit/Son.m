@@ -12,10 +12,10 @@
     [Tools zb_betterMethodSwizzlingWithClass:[self class] oriSEL:@selector(testExchangeA) swizzledSEL:@selector(testExchangeB)];
 }
 
--(void)testExchangeA{
-    NSLog(@"testExchangA son");
-}
-//-(void)testExchangeB{
-//    NSLog(@"testExchangeB son");
+//-(void)testExchangeA{
+//    NSLog(@"testExchangA son");
 //}
+-(void)testExchangeB{
+    NSLog(@"testExchangeB son");
+}
 @end

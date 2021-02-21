@@ -62,9 +62,9 @@
     return [self.name hash];
 }
 
--(void)testExchangeA{
-    NSLog(@"testExchangA person");
-}
+//-(void)testExchangeA{
+//    NSLog(@"testExchangA person");
+//}
 -(void)testExchangeB{
     NSLog(@"testExchangeB person");
 }

@@ -51,8 +51,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    Son *son = [[Son alloc] init];
-    [son performSelector:@selector(testExchangeA)];
+//-----------------------method_exchangeImplementations-------------------------------
+//    Son *son = [[Son alloc] init];
+//    [son performSelector:@selector(testExchangeA)];
+//    Person *person = [[Person alloc] init];
+//    [Person performSelector:@selector(testExchangeA)];
+
+// ------------------------------------------------------
+
 //    [self testLoad];
 
 // ------------------------------------------------------
