@@ -7,7 +7,7 @@
 //
 
 #import "BlockViewController.h"
-#import "Person.h"
+#import "Inherit/Person.h"
 #import "ViewController.h"
 
 @interface BlockViewController ()

@@ -26,8 +26,14 @@
 		84C7A290256F526B007AF5B6 /* ManualKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C7A28F256F526B007AF5B6 /* ManualKVO.m */; };
 		84E778CB25B05FE700287F2D /* MJTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E778CA25B05FE700287F2D /* MJTimer.m */; };
 		9F7047070C9F9A6343ACB509 /* Pods_SuperDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C1620D0217C7F519677217 /* Pods_SuperDemo.framework */; };
-		D404D7269EC76FFE859E76FB /* Person+man.m in Sources */ = {isa = PBXBuildFile; fileRef = D404D0F03EC765D55D27723F /* Person+man.m */; };
-		D404DC878079D897DCA9EDDD /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = D404D96634B098650B491B8F /* Person.m */; };
+		D404D2252501615548DC74DA /* Person+man.m in Sources */ = {isa = PBXBuildFile; fileRef = D404D6AC65384BCB3F63E43A /* Person+man.m */; };
+		D404D32AE7F222298633495D /* SubLoadTest+SubLoadTestCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = D404D6FA8592759062F367BF /* SubLoadTest+SubLoadTestCategory.m */; };
+		D404D60ED7C524BDCFFA3D27 /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = D404D4BB287F5E8A907EE6AF /* Son.m */; };
+		D404DA9D700C16A3AAB79C4E /* LoadTest+LoadTestCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = D404DDD268D8443819B6D55E /* LoadTest+LoadTestCategory.m */; };
+		D404DC0800AE5D4F15573181 /* MessagesForwarding.m in Sources */ = {isa = PBXBuildFile; fileRef = D404D7DFDF809CE0749124C7 /* MessagesForwarding.m */; };
+		D404DCEB9C9958E8D74BD5C6 /* SubLoadTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D404D80048A99469494624C8 /* SubLoadTest.m */; };
+		D404DF7179345FD756131E43 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = D404D13B72C81F453A2F9030 /* Person.m */; };
+		D404DF931CCE3610A9830B8D /* LoadTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D404DDDD457E8F0609E88566 /* LoadTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -85,10 +91,22 @@
 		84E778C925B05FE700287F2D /* MJTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJTimer.h; sourceTree = "<group>"; };
 		84E778CA25B05FE700287F2D /* MJTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJTimer.m; sourceTree = "<group>"; };
 		91963985C4DE2F55EC643302 /* Pods-SuperDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperDemo.debug.xcconfig"; path = "Target Support Files/Pods-SuperDemo/Pods-SuperDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		D404D0F03EC765D55D27723F /* Person+man.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+man.m"; sourceTree = "<group>"; };
-		D404D14973B60442FF067AEB /* Person+man.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person+man.h"; sourceTree = "<group>"; };
-		D404D96634B098650B491B8F /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
-		D404DBBF55D20C979DA96D7F /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		D404D0AA6C56049FD8C85ABC /* LoadTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadTest.h; sourceTree = "<group>"; };
+		D404D13B72C81F453A2F9030 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		D404D245BFFCBD70133FFD7C /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		D404D2519F7655E668096548 /* SubLoadTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubLoadTest.h; sourceTree = "<group>"; };
+		D404D29084976857B30A2E10 /* MessagesForwarding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagesForwarding.h; sourceTree = "<group>"; };
+		D404D4820B082149BE6CA01C /* Son.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Son.h; sourceTree = "<group>"; };
+		D404D4BB287F5E8A907EE6AF /* Son.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Son.m; sourceTree = "<group>"; };
+		D404D6AC65384BCB3F63E43A /* Person+man.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+man.m"; sourceTree = "<group>"; };
+		D404D6FA8592759062F367BF /* SubLoadTest+SubLoadTestCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SubLoadTest+SubLoadTestCategory.m"; sourceTree = "<group>"; };
+		D404D7DFDF809CE0749124C7 /* MessagesForwarding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagesForwarding.m; sourceTree = "<group>"; };
+		D404D80048A99469494624C8 /* SubLoadTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubLoadTest.m; sourceTree = "<group>"; };
+		D404DA69F70460BFF4873D63 /* SubLoadTest+SubLoadTestCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SubLoadTest+SubLoadTestCategory.h"; sourceTree = "<group>"; };
+		D404DC63ABFD4FF96D4C3C47 /* LoadTest+LoadTestCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LoadTest+LoadTestCategory.h"; sourceTree = "<group>"; };
+		D404DD1122F234CCE62B270E /* Person+man.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person+man.h"; sourceTree = "<group>"; };
+		D404DDD268D8443819B6D55E /* LoadTest+LoadTestCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LoadTest+LoadTestCategory.m"; sourceTree = "<group>"; };
+		D404DDDD457E8F0609E88566 /* LoadTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadTest.m; sourceTree = "<group>"; };
 		DEC6F2E43501D1A489DCE440 /* Pods-SuperDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperDemo.release.xcconfig"; path = "Target Support Files/Pods-SuperDemo/Pods-SuperDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,10 +157,6 @@
 				572E40FC249F062600D531B8 /* LaunchScreen.storyboard */,
 				572E40FF249F062600D531B8 /* Info.plist */,
 				572E4100249F062600D531B8 /* main.m */,
-				D404D96634B098650B491B8F /* Person.m */,
-				D404DBBF55D20C979DA96D7F /* Person.h */,
-				D404D0F03EC765D55D27723F /* Person+man.m */,
-				D404D14973B60442FF067AEB /* Person+man.h */,
 				84183D9E25626F0C007B7EB7 /* CategoryWeakProperty.h */,
 				84183D9F25626F0C007B7EB7 /* CategoryWeakProperty.m */,
 				849FD57325652339007D51BC /* MultithreadingViewController.h */,
@@ -155,6 +169,10 @@
 				84328D4925D770A50070E1AA /* BlockViewController.m */,
 				84328D4D25D7FAD30070E1AA /* BlockSubClassViewController.h */,
 				84328D4E25D7FAD30070E1AA /* BlockSubClassViewController.m */,
+				D404D020E3B967861C5BDBEA /* LoadAndInitialize */,
+				D404D7DFDF809CE0749124C7 /* MessagesForwarding.m */,
+				D404D29084976857B30A2E10 /* MessagesForwarding.h */,
+				D404D53C658BED83ED804C64 /* Inherit */,
 			);
 			path = SuperDemo;
 			sourceTree = "<group>";
@@ -209,6 +227,34 @@
 				41C1620D0217C7F519677217 /* Pods_SuperDemo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D404D020E3B967861C5BDBEA /* LoadAndInitialize */ = {
+			isa = PBXGroup;
+			children = (
+				D404D0AA6C56049FD8C85ABC /* LoadTest.h */,
+				D404DDDD457E8F0609E88566 /* LoadTest.m */,
+				D404D80048A99469494624C8 /* SubLoadTest.m */,
+				D404D2519F7655E668096548 /* SubLoadTest.h */,
+				D404DDD268D8443819B6D55E /* LoadTest+LoadTestCategory.m */,
+				D404DC63ABFD4FF96D4C3C47 /* LoadTest+LoadTestCategory.h */,
+				D404D6FA8592759062F367BF /* SubLoadTest+SubLoadTestCategory.m */,
+				D404DA69F70460BFF4873D63 /* SubLoadTest+SubLoadTestCategory.h */,
+			);
+			path = LoadAndInitialize;
+			sourceTree = "<group>";
+		};
+		D404D53C658BED83ED804C64 /* Inherit */ = {
+			isa = PBXGroup;
+			children = (
+				D404D4BB287F5E8A907EE6AF /* Son.m */,
+				D404D4820B082149BE6CA01C /* Son.h */,
+				D404DD1122F234CCE62B270E /* Person+man.h */,
+				D404D13B72C81F453A2F9030 /* Person.m */,
+				D404D6AC65384BCB3F63E43A /* Person+man.m */,
+				D404D245BFFCBD70133FFD7C /* Person.h */,
+			);
+			path = Inherit;
 			sourceTree = "<group>";
 		};
 		D62B8A2174D74A8E229659B5 /* Pods */ = {
@@ -365,12 +411,18 @@
 				572E4101249F062600D531B8 /* main.m in Sources */,
 				849FD57525652339007D51BC /* MultithreadingViewController.m in Sources */,
 				84328D4A25D770A50070E1AA /* BlockViewController.m in Sources */,
-				D404DC878079D897DCA9EDDD /* Person.m in Sources */,
-				D404D7269EC76FFE859E76FB /* Person+man.m in Sources */,
 				84C7A290256F526B007AF5B6 /* ManualKVO.m in Sources */,
 				84328D4F25D7FAD30070E1AA /* BlockSubClassViewController.m in Sources */,
 				84183DA025626F0C007B7EB7 /* CategoryWeakProperty.m in Sources */,
 				58603B72A399212B507E5E70 /* YHSafeMutableArray.m in Sources */,
+				D404DF931CCE3610A9830B8D /* LoadTest.m in Sources */,
+				D404DCEB9C9958E8D74BD5C6 /* SubLoadTest.m in Sources */,
+				D404DA9D700C16A3AAB79C4E /* LoadTest+LoadTestCategory.m in Sources */,
+				D404D32AE7F222298633495D /* SubLoadTest+SubLoadTestCategory.m in Sources */,
+				D404DC0800AE5D4F15573181 /* MessagesForwarding.m in Sources */,
+				D404D60ED7C524BDCFFA3D27 /* Son.m in Sources */,
+				D404DF7179345FD756131E43 /* Person.m in Sources */,
+				D404D2252501615548DC74DA /* Person+man.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

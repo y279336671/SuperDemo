@@ -8,4 +8,5 @@
 
 @interface Tools : NSObject
 -(void)printMethodListForIns:(Class)class;
++ (void)zb_betterMethodSwizzlingWithClass:(Class)cls oriSEL:(SEL)oriSEL swizzledSEL:(SEL)swizzledSEL;
 @end

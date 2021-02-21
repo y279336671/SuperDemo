@@ -8,14 +8,18 @@
 
 #import <objc/runtime.h>
 #import "ViewController.h"
-#import "Person.h"
+#import "Inherit/Person.h"
 #import "MemoryDemoViewController.h"
 #import "TaggedPointer/TaggedPointerViewController.h"
 #import "ManualKVO.h"
-#import "Person+man.h"
+#import "Inherit/Person+man.h"
 #import "MJTimer.h"
 #import "BlockViewController.h"
 #import "BlockSubClassViewController.h"
+#import "LoadAndInitialize/LoadTest.h"
+#import "SubLoadTest.h"
+#import "MessagesForwarding.h"
+#import "Inherit/Son.h"
 #import <malloc/malloc.h>
 #import <SDWebImage/UIImageView+WebCache.h>
 
@@ -45,13 +49,21 @@
 @implementation ViewController
 
 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-NSLog(@"%d", [NSObject isKindOfClass:[NSObject class]]); // 1  // 这句代码的方法调用者不管是哪个类（只要是NSObject体系下的），都返回YES
-NSLog(@"%d", [NSObject isMemberOfClass:[NSObject class]]); // 0   ？？？？
-NSLog(@"%d", [Person isKindOfClass:[Person class]]); // 0
-NSLog(@"%d", [Person isMemberOfClass:[Person class]]); // 0
+    Son *son = [[Son alloc] init];
+    [son performSelector:@selector(testExchangeA)];
+//    [self testLoad];
+
+// ------------------------------------------------------
+//NSLog(@"%d", [NSObject isKindOfClass:[NSObject class]]); // 1  // 这句代码的方法调用者不管是哪个类（只要是NSObject体系下的），都返回YES
+//NSLog(@"%d", [NSObject isMemberOfClass:[NSObject class]]); // 0   ？？？？
+//NSLog(@"%d", [Person isKindOfClass:[Person class]]); // 0
+//NSLog(@"%d", [Person isMemberOfClass:[Person class]]); // 0
+// ------------------------------------------------------
+
+
+
 
 // ------------------------------------------------------
     // 接口设计   // 这个位置传入 self 不会产生强引用，因为只是blcok强持有self，self没有强持有block
@@ -77,14 +89,6 @@ NSLog(@"%d", [Person isMemberOfClass:[Person class]]); // 0
 //    HTPerson * person = [HTPerson new];
 //    [person sayHello]; // 添加属性name后，
 // ------------------------------------------------------
-
-
-// ------------------------------------------------------
-//   测试分类添加weak属性
-
-
-// ------------------------------------------------------
-
 
 
 //    self.str = @"yy";
@@ -127,11 +131,24 @@ NSLog(@"%d", [Person isMemberOfClass:[Person class]]); // 0
 //    blockViewController.view.frame = CGRectMake(0, 0, UIScreen .mainScreen.bounds.size.width, UIScreen .mainScreen.bounds.size.height);
 //    [self.navigationController pushViewController:blockViewController animated:YES];
     [BlockSubClassViewController alloc];
-
-//
-
 }
 
+-(void)testLoad{
+//    [LoadTest load];//会走消息查找流程，就会调用分类LoadTest+LoadTestCategory的load的方法，因为同名分类中的方法“覆盖”类中的方法
+//    LoadTestCategory initialize    这行是因为分类接收到了load消息
+//    LoadTestCategory load
+
+//    [LoadTest initialize]; // 第一次接收消息，调用一次initialize ，主动调用initialize，一共调用两次initialize
+//    LoadTestCategory initialize
+//    LoadTestCategory initialize
+
+//    [SubLoadTest initialize]; //第一次接收消息，调用一次initialize ，主动调用initialize，由于是子类会自动调用一次父类的initialize
+//    LoadTestCategory initialize
+//    SubLoadTestCategory initialize
+//    SubLoadTestCategory initialize
+
+//    [SubLoadTest alloc]; //如果子类没有实现initialize ，但是父类实现了initialize，由于内部会自动调用父类的initialize加上消息查找机制会找到父类的initialize方法，所以当子类没有实现initialize方法的时候会调用两次父类的initialize
+}
 
 // 指针 64位系统占用8字节  32位系统占用4字节
 // iOS内存对齐是16的倍数

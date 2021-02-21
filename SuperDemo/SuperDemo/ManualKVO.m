@@ -7,7 +7,7 @@
 //
 
 #import "ManualKVO.h"
-#import "Person.h"
+#import "Inherit/Person.h"
 @interface ManualKVO ()
 @property(nonatomic, strong)Person *person;
 @end

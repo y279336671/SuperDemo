@@ -2,25 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d9ba4b5-bc7f-43c6-a209-6914afa02054" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/SuperDemo/Tools/YHSafeMutableArray.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SuperDemo/Tools/YHSafeMutableArray.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SuperDemo/Inherit/Son.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SuperDemo/Inherit/Son.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SuperDemo/LoadAndInitialize/LoadTest+LoadTestCategory.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SuperDemo/LoadAndInitialize/LoadTest+LoadTestCategory.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SuperDemo/LoadAndInitialize/LoadTest.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SuperDemo/LoadAndInitialize/LoadTest.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SuperDemo/LoadAndInitialize/SubLoadTest+SubLoadTestCategory.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SuperDemo/LoadAndInitialize/SubLoadTest+SubLoadTestCategory.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SuperDemo/LoadAndInitialize/SubLoadTest.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SuperDemo/LoadAndInitialize/SubLoadTest.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SuperDemo/MessagesForwarding.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SuperDemo/MessagesForwarding.m" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-
       <change beforePath="$PROJECT_DIR$/SuperDemo.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo.xcodeproj/xcuserdata/yanghe.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo.xcodeproj/xcuserdata/yanghe.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo.xcworkspace/xcuserdata/admin.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo.xcworkspace/xcuserdata/admin.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
-
+      <change beforePath="$PROJECT_DIR$/SuperDemo/BlockViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/BlockViewController.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/ManualKVO.cpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/SuperDemo/ManualKVO.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/ManualKVO.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo/MemoryDemoViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/MemoryDemoViewController.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo/Person.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Person.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo/Timers/MJTimer.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo/Timers/MJTimer.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo/Timers/YHProxyBetter.h" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Tools/YHProxyBetter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo/Timers/YHProxyBetter.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Tools/YHProxyBetter.m" afterDir="false" />
-
       <change beforePath="$PROJECT_DIR$/SuperDemo/MultithreadingViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/MultithreadingViewController.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo/Tools/Timers/YHProxy.h" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Tools/Timers/YHProxy.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo/Tools/Timers/YHProxy.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Tools/Timers/YHProxy.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/Person+man.h" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Inherit/Person+man.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/Person+man.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Inherit/Person+man.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/Person.h" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Inherit/Person.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/Person.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Inherit/Person.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/Tools/Tools.h" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Tools/Tools.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/Tools/Tools.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Tools/Tools.m" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SuperDemo/ViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/ViewController.m" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +33,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_E9113F39-426D-422C-963E-F5D499DC0F2A" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_1860F5AC-941B-4099-A6F4-9F72D6E2819A" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -62,7 +67,9 @@
     <property name="com.jetbrains.cidr.execution.build.XcodeBuildErrorTreeViewPanel.FilterMode" value="ErrorsOnly" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/SuperDemo" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.splitter.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -99,8 +106,43 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/SuperDemo/ViewController.m</url>
-          <line>40</line>
+          <line>44</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/SuperDemo/MessagesForwarding.m</url>
+          <line>31</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/SuperDemo/MessagesForwarding.m</url>
+          <line>27</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/SuperDemo/MessagesForwarding.m</url>
+          <line>41</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/SuperDemo/MessagesForwarding.m</url>
+          <line>21</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/SuperDemo/Tools/Tools.m</url>
+          <line>52</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/SuperDemo/Tools/Tools.m</url>
+          <line>54</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/SuperDemo/Tools/Tools.m</url>
+          <line>41</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
