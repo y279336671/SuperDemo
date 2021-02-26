@@ -1,27 +1,22 @@
 //
-//  BlockSubClassViewController.m
+//  SchemeTestViewController.m
 //  SuperDemo
 //
-//  Created by admin on 2021/2/13.
+//  Created by admin on 2021/2/26.
 //  Copyright © 2021 yanghe. All rights reserved.
 //
 
-#import "BlockSubClassViewController.h"
+#import "SchemeTestViewController.h"
 
-@interface BlockSubClassViewController ()
+@interface SchemeTestViewController ()
 
 @end
 
-@implementation BlockSubClassViewController
+@implementation SchemeTestViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-}
-
-+ (void)initialize {
-//    [super initialize];
-    NSLog(@"NSStringFromClass([self class]) = %@ initialize", NSStringFromClass([self class]));
 }
 
 /*

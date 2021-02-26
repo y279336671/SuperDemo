@@ -20,20 +20,11 @@
 #import "SubLoadTest.h"
 #import "MessagesForwarding.h"
 #import "Inherit/Son.h"
+#import "../../../../../../../Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h"
+#import "TRURLSchemeManager.h"
 #import <malloc/malloc.h>
 #import <SDWebImage/UIImageView+WebCache.h>
 
-@interface HTPerson : NSObject
-@property(nonatomic, copy) NSString *name;
-
-- (void)sayHello;
-@end
-
-@implementation HTPerson
-- (void)sayHello {
-    NSLog(@"%s: 你好,%@", __func__, self.name);
-}
-@end
 
 //#import "ExposureViewController.h"
 @interface ViewController ()
@@ -51,12 +42,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+
+
 //-----------------------method_exchangeImplementations-------------------------------
 //    Son *son = [[Son alloc] init];
 //    [son performSelector:@selector(testExchangeA)];
 //    Person *person = [[Person alloc] init];
 //    [Person performSelector:@selector(testExchangeA)];
-
 // ------------------------------------------------------
 
 //    [self testLoad];
@@ -132,11 +125,12 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [super touchesBegan:touches withEvent:event];
+    [[TRURLSchemeManager globalURLSchemeManager] openScheme:@"wzsdk://login/loginout?source=home"];
 //    BlockViewController *blockViewController = [[BlockViewController alloc] init];
 //    blockViewController.view.backgroundColor = [UIColor redColor];
 //    blockViewController.view.frame = CGRectMake(0, 0, UIScreen .mainScreen.bounds.size.width, UIScreen .mainScreen.bounds.size.height);
 //    [self.navigationController pushViewController:blockViewController animated:YES];
-    [BlockSubClassViewController alloc];
+//    [BlockSubClassViewController alloc];
 }
 
 -(void)testLoad{
