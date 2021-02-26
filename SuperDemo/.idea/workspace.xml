@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d9ba4b5-bc7f-43c6-a209-6914afa02054" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/SuperDemo/Scheme/SchemeTestViewController.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SuperDemo/Scheme/SchemeTestViewController.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SuperDemo/Scheme/Schemes.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SuperDemo/Tools/TRURLSchemeManager.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SuperDemo/Tools/TRURLSchemeManager.m" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo.xcodeproj/project.pbxproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SuperDemo.xcworkspace/xcuserdata/admin.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo.xcworkspace/xcuserdata/admin.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo/BlockSubClassViewController.h" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Block/BlockSubClassViewController.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo/BlockSubClassViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Block/BlockSubClassViewController.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo/BlockViewController.h" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Block/BlockViewController.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo/BlockViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Block/BlockViewController.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo/MemoryDemoViewController.h" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/MemoryDemoViewController.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo/MemoryDemoViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/MemoryDemoViewController.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/Tools/TRURLSchemeManager.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Tools/TRURLSchemeManager.m" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SuperDemo/ViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/ViewController.m" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -119,11 +108,6 @@
           <url>file://$PROJECT_DIR$/SuperDemo/MessagesForwarding.m</url>
           <line>21</line>
           <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/SuperDemo/Tools/TRURLSchemeManager.m</url>
-          <line>43</line>
-          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

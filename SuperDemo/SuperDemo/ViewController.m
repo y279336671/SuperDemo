@@ -132,7 +132,9 @@
 //    [self.navigationController pushViewController:blockViewController animated:YES];
 //    [BlockSubClassViewController alloc];
 }
+- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event{
 
+}
 -(void)testLoad{
 //    [LoadTest load];//会走消息查找流程，就会调用分类LoadTest+LoadTestCategory的load的方法，因为同名分类中的方法“覆盖”类中的方法
 //    LoadTestCategory initialize    这行是因为分类接收到了load消息

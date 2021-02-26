@@ -6,8 +6,9 @@
 //  Copyright (c) 2015年 AutoHome. All rights reserved.
 //
 #import "TRURLSchemeManager.h"
+#import "../../../../../../../../Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSProxy.h"
 #import <UIKit/UIKit.h>
-
+#import <objc/runtime.h>
 @interface TRURLSchemeManager ()
 //@property(nonatomic, weak) UIView *currentWV;
 //@property(nonatomic, strong) NSURL *currentUrl;
@@ -51,6 +52,15 @@
     Class aClass = NSClassFromString(className); //根据类名初始化对象
 
     //todo 给属性赋值
+    unsigned int propertyCount;
+    objc_property_t *property_list =  class_copyPropertyList([aClass class], &propertyCount);
+    for (int i = 0; i < propertyCount; ++i) {
+        objc_property_t property_t = property_list[i];
+
+    }
+    free(property_list);
+//    class_copyPropertyList(aClass, path);
+
     //todo 调用方法并且传递参数，注意基础数据类型和对象类型的参数
     //todo 本地native调用scheme需要拿到返回值
     //todo 服务器调用拿到返回值
