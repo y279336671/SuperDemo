@@ -6,7 +6,6 @@
 //  Copyright (c) 2015年 AutoHome. All rights reserved.
 //
 #import "TRURLSchemeManager.h"
-#import "../../../../../../../../Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSProxy.h"
 #import <UIKit/UIKit.h>
 #import <objc/runtime.h>
 @interface TRURLSchemeManager ()
