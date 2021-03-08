@@ -21,6 +21,7 @@
 #import "MessagesForwarding.h"
 #import "Inherit/Son.h"
 #import "TRURLSchemeManager.h"
+#import "CustomButton.h"
 #import <malloc/malloc.h>
 #import <SDWebImage/UIImageView+WebCache.h>
 
@@ -41,6 +42,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    CustomButton *button = [[CustomButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    button.userInteractionEnabled = YES;
+    [button setBackgroundColor:[UIColor redColor] ];
+    [self.view addSubview:button];
 
 //  id result =   [self performSelector:@selector(testreturnint)];
 //    NSLog(@"result = %@", result);
@@ -126,23 +131,24 @@
 //    NSLog(@"NSStringFromClass([self class]) dealloc = %@", NSStringFromClass([self class]));
 //}
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-//    [super touchesBegan:touches withEvent:event];
-//    [[TRURLSchemeManager globalURLSchemeManager] openScheme:@"wzsdk://login/loginout?source=home"];
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [super touchesEnded:touches withEvent:event];
 
+    ManualKVO *manualKvo = [[ManualKVO alloc] init];
+    [self.navigationController pushViewController:manualKvo animated:YES];
 
+//    self.manualKVO1.name = @"11";
+//    self.manualKVO2.name = @"22";
+//    [self printMethodListForIns:object_getClass(self.manualKVO1)];
+//    [self printMethodListForIns:object_getClass(self.manualKVO2)];
 
-    BlockViewController *blockViewController = [[BlockViewController alloc] init];
-    blockViewController.view.backgroundColor = [UIColor redColor];
-    blockViewController.view.frame = CGRectMake(0, 0, UIScreen .mainScreen.bounds.size.width, UIScreen .mainScreen.bounds.size.height);
-    [self.navigationController pushViewController:blockViewController animated:YES];
-//    [BlockSubClassViewController alloc];
+//    BlockViewController *blockViewController = [[BlockViewController alloc] init];
+//    blockViewController.view.backgroundColor = [UIColor redColor];
+//    blockViewController.view.frame = CGRectMake(0, 0, UIScreen .mainScreen.bounds.size.width, UIScreen .mainScreen.bounds.size.height);
+//    [self.navigationController pushViewController:blockViewController animated:YES];
 }
+
 -(void)testreturnint{
-
-}
-
-- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event{
 
 }
 -(void)testLoad{
@@ -192,15 +198,6 @@
 
 }
 
-- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [super touchesEnded:touches withEvent:event];
-    ManualKVO *manualKvo = [[ManualKVO alloc] init];
-    [self.navigationController pushViewController:manualKvo animated:YES];
-//    self.manualKVO1.name = @"11";
-//    self.manualKVO2.name = @"22";
-//    [self printMethodListForIns:object_getClass(self.manualKVO1)];
-//    [self printMethodListForIns:object_getClass(self.manualKVO2)];
-}
 
 - (void)printMethodListForIns:(Class)class {
     NSMutableArray *names = [[NSMutableArray alloc] init];

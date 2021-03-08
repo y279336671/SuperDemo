@@ -24,13 +24,13 @@ int a=1;
 - (void)viewDidLoad {
     [super viewDidLoad];
 //---------------------不会产生强引用-----------------------
-    _name=  @"yanghe";
-    NSString *tempName= _name;
-    self.block = ^{ // 这个位置如果是局部变量的block也不会产生强引用,由于arc下block被复制到堆上，避免被释放掉
-        NSLog(@"_name = %@", _name);// 会产生强引用，因为_name 相当于self->_name
-        NSLog(@"_name = %@", tempName);// 不会产生强引用，因为并没有截获self，tempName的内存地址和_name是同一个
-    };
-    self.block();
+//    _name=  @"yanghe";
+//    NSString *tempName= _name;
+//    self.block = ^{ // 这个位置如果是局部变量的block也不会产生强引用,由于arc下block被复制到堆上，避免被释放掉
+//        NSLog(@"_name = %@", _name);// 会产生强引用，因为_name 相当于self->_name
+//        NSLog(@"_name = %@", tempName);// 不会产生强引用，因为并没有截获self，tempName的内存地址和_name是同一个
+//    };
+//    self.block();
 //-----------------------------------------------------------
 
 //    NSLog(@"[block class] = %@", [block class]);

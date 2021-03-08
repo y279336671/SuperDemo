@@ -14,6 +14,7 @@
 		572E4101249F062600D531B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 572E4100249F062600D531B8 /* main.m */; };
 		57B525E424CDB149000F8D1D /* MemoryDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B525E324CDB149000F8D1D /* MemoryDemoViewController.m */; };
 		57FF280D24CFA2AA00BA4D41 /* TaggedPointerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FF280C24CFA2AA00BA4D41 /* TaggedPointerViewController.m */; };
+		586032C130BB20340E061C71 /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 58603A3D876443103EBF3C4C /* CustomButton.m */; };
 		586033A43C96CB089BDB189E /* BlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 586037505C9896A99D2737F0 /* BlockViewController.m */; };
 		58603B72A399212B507E5E70 /* YHSafeMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 58603254E095641670D6047D /* YHSafeMutableArray.m */; };
 		58603B9D446DAD1E7AF9443A /* BlockSubClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5860389EBF912CB7A9BE92B8 /* BlockSubClassViewController.m */; };
@@ -69,6 +70,8 @@
 		586037505C9896A99D2737F0 /* BlockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockViewController.m; sourceTree = "<group>"; };
 		5860380D117508FF0BB09ADB /* BlockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockViewController.h; sourceTree = "<group>"; };
 		5860389EBF912CB7A9BE92B8 /* BlockSubClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockSubClassViewController.m; sourceTree = "<group>"; };
+		58603A3D876443103EBF3C4C /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButton.m; sourceTree = "<group>"; };
+		58603AE4A849389466FC9F51 /* CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButton.h; sourceTree = "<group>"; };
 		58603CBE608F86285D353D2D /* BlockSubClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockSubClassViewController.h; sourceTree = "<group>"; };
 		58603E355E5567B29BEE1CD7 /* YHSafeMutableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHSafeMutableArray.h; sourceTree = "<group>"; };
 		84183D9C25626E82007B7EB7 /* SuperDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,6 +182,7 @@
 				D404D53C658BED83ED804C64 /* Inherit */,
 				58603F86B801C7DD317C0D7F /* Block */,
 				5860356B3AB1FE2DBEF0123D /* Scheme */,
+				586033A07E0641B6FD6B7DB2 /* CustomView */,
 			);
 			path = SuperDemo;
 			sourceTree = "<group>";
@@ -190,6 +194,15 @@
 				57FF280C24CFA2AA00BA4D41 /* TaggedPointerViewController.m */,
 			);
 			path = TaggedPointer;
+			sourceTree = "<group>";
+		};
+		586033A07E0641B6FD6B7DB2 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				58603A3D876443103EBF3C4C /* CustomButton.m */,
+				58603AE4A849389466FC9F51 /* CustomButton.h */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 		5860356B3AB1FE2DBEF0123D /* Scheme */ = {
@@ -455,6 +468,7 @@
 				D404D2252501615548DC74DA /* Person+man.m in Sources */,
 				58603B9D446DAD1E7AF9443A /* BlockSubClassViewController.m in Sources */,
 				586033A43C96CB089BDB189E /* BlockViewController.m in Sources */,
+				586032C130BB20340E061C71 /* CustomButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
