@@ -15,7 +15,7 @@
 //#import <Aspects.h>
 //#import <Aspects/Aspects.h>
 #import "MemoryDemoViewController.h"
-#import "ManualKVO.h"
+#import "AutoKVO/AutoKVO.h"
 
 @interface AppDelegate ()
 

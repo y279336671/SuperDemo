@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d9ba4b5-bc7f-43c6-a209-6914afa02054" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/SuperDemo/CustomView/CustomButton.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SuperDemo/CustomView/CustomButton.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SuperDemo/AutoKVO/NSObject+AutoRemoveKVO.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SuperDemo/AutoKVO/NSObject+AutoRemoveKVO.m" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SuperDemo.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo.xcworkspace/xcuserdata/admin.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo.xcworkspace/xcuserdata/admin.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/AppDelegate.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/AppDelegate.m" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SuperDemo/Block/BlockViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Block/BlockViewController.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/ManualKVO.h" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/AutoKVO/AutoKVO.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/ManualKVO.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/AutoKVO/AutoKVO.m" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SuperDemo/ViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/ViewController.m" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -14,7 +18,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_A0A32B6E-E024-4B71-B731-C1A454A99534" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_13D23C4A-FECB-4878-B1CF-06FFC9D4090B" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -47,7 +51,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="ObjectiveC" />
     <property name="com.jetbrains.cidr.execution.build.XcodeBuildErrorTreeViewPanel.FilterMode" value="ErrorsOnly" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/SuperDemo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -115,11 +119,6 @@
           <url>file://$PROJECT_DIR$/SuperDemo/CustomView/CustomButton.m</url>
           <line>25</line>
           <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/SuperDemo/ViewController.m</url>
-          <line>134</line>
-          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

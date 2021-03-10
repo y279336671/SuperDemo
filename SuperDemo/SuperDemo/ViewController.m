@@ -11,7 +11,7 @@
 #import "Inherit/Person.h"
 #import "MemoryDemoViewController.h"
 #import "TaggedPointer/TaggedPointerViewController.h"
-#import "ManualKVO.h"
+#import "AutoKVO/AutoKVO.h"
 #import "Inherit/Person+man.h"
 #import "MJTimer.h"
 #import "BlockViewController.h"
@@ -32,9 +32,10 @@
 //@property(nonatomic, copy) int (^testBlcok)(int n);
 @property(nonatomic, strong) Person *personNSTimer;
 @property(copy, nonatomic) dispatch_block_t block;
-@property(nonatomic, strong) ManualKVO *manualKVO1;
-@property(nonatomic, strong) ManualKVO *manualKVO2;
+//@property(nonatomic, strong) AutoKVO *manualKVO1;
+//@property(nonatomic, strong) AutoKVO *manualKVO2;
 @property(nonatomic, strong) NSString *timerName;
+@property(nonatomic, strong) NSArray *testMutableArray ;
 @end
 
 @implementation ViewController
@@ -42,10 +43,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    CustomButton *button = [[CustomButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
-    button.userInteractionEnabled = YES;
-    [button setBackgroundColor:[UIColor redColor] ];
-    [self.view addSubview:button];
+//    CustomButton *button = [[CustomButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+//    button.userInteractionEnabled = YES;
+//    [button setBackgroundColor:[UIColor redColor] ];
+//    [self.view addSubview:button];
+//-----------------------测试copy  storng array-------------------------------
+
+
+//self.testMutableArray addObject[]
+
+//-----------------------测试copy  storng array-------------------------------
 
 //  id result =   [self performSelector:@selector(testreturnint)];
 //    NSLog(@"result = %@", result);
@@ -57,7 +64,8 @@
 // ------------------------------------------------------
 
 //    [self testLoad];
-
+    NSLog(@"%d", [Person isKindOfClass:[NSObject class]]);
+    NSLog(@"%d", [NSObject isMemberOfClass:[NSObject class]]);
 // ------------------------------------------------------
 //NSLog(@"%d", [NSObject isKindOfClass:[NSObject class]]); // 1  // 这句代码的方法调用者不管是哪个类（只要是NSObject体系下的），都返回YES
 //NSLog(@"%d", [NSObject isMemberOfClass:[NSObject class]]); // 0   ？？？？
@@ -134,18 +142,18 @@
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [super touchesEnded:touches withEvent:event];
 
-    ManualKVO *manualKvo = [[ManualKVO alloc] init];
-    [self.navigationController pushViewController:manualKvo animated:YES];
+//    AutoKVO *manualKvo = [[AutoKVO alloc] init];
+//    [self.navigationController pushViewController:manualKvo animated:YES];
 
 //    self.manualKVO1.name = @"11";
 //    self.manualKVO2.name = @"22";
 //    [self printMethodListForIns:object_getClass(self.manualKVO1)];
 //    [self printMethodListForIns:object_getClass(self.manualKVO2)];
 
-//    BlockViewController *blockViewController = [[BlockViewController alloc] init];
-//    blockViewController.view.backgroundColor = [UIColor redColor];
-//    blockViewController.view.frame = CGRectMake(0, 0, UIScreen .mainScreen.bounds.size.width, UIScreen .mainScreen.bounds.size.height);
-//    [self.navigationController pushViewController:blockViewController animated:YES];
+    BlockViewController *blockViewController = [[BlockViewController alloc] init];
+    blockViewController.view.backgroundColor = [UIColor redColor];
+    blockViewController.view.frame = CGRectMake(0, 0, UIScreen .mainScreen.bounds.size.width, UIScreen .mainScreen.bounds.size.height);
+    [self.navigationController pushViewController:blockViewController animated:YES];
 }
 
 -(void)testreturnint{

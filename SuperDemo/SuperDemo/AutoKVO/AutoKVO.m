@@ -1,14 +1,14 @@
 //
-//  ManualKVO.m
+//  AutoKVO.m
 //  SuperDemo
 //
 //  Created by admin on 2020/11/26.
 //  Copyright © 2020 yanghe. All rights reserved.
 //
 
-#import "ManualKVO.h"
-#import "Inherit/Person.h"
-@interface ManualKVO ()
+#import "AutoKVO.h"
+#import "Person.h"
+@interface AutoKVO ()
 @property(nonatomic, strong)Person *person;
 @end
 //多次添加会进入多次
@@ -24,7 +24,7 @@
 //3. 在remove的时候在字典中进行判断，是否已经remove了避免过度remove
 //4. hook住的dealloc当对应的对象释放的时候，可以在字典中查找未正常remove的通知或者kvo。注意也要调用一下原来的dealloc方法
 //------------------------------------------------
-@implementation ManualKVO
+@implementation AutoKVO
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor whiteColor]];

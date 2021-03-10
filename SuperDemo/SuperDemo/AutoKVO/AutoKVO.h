@@ -1,5 +1,5 @@
 //
-//  ManualKVO.h
+//  AutoKVO.h
 //  SuperDemo
 //
 //  Created by admin on 2020/11/26.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ManualKVO : UIViewController
+@interface AutoKVO : UIViewController
 
 @end
 
