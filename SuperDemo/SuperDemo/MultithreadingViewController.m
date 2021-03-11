@@ -26,24 +26,21 @@
 //    [self interview4];
 //    [self interview5];
 //    [self interview55];
-//    [self interview555];
 //    [self interview6];
 //    [self interview7];
 //    [self interview8];
 //    [self interview9];
 //    [self interview10];
-
-// [self interview12];
-
 //    [self interview12];
+//    [self interview13];
 //    [self interview14];
-//    [self interview15];
+    [self interview15];
 }
 
 - (void)interview1 {
 
     NSLog(@"0---%@", [NSThread currentThread]);
-    dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
+    dispatch_queue_t queue = dispatch_get_global_queue(0, 0);// 全局队列是并发队列
     dispatch_async(queue, ^{
         NSLog(@"1---%@", [NSThread currentThread]);
         //GNUstep  -> NSFuncation  源码
@@ -71,9 +68,9 @@
 - (void)interview2 {
     NSThread *thread = [[NSThread alloc] initWithBlock:^{
         NSLog(@"1---%@", [NSThread currentThread]);
-        //        // 添加以下两行才能执行
+//        //        // 添加以下两行才能执行
         [[NSRunLoop currentRunLoop] addPort:[[NSPort alloc] init] forMode:NSDefaultRunLoopMode];
-//         只添加这一行也可以，因为performSelector底层已经被加入runloop，只是没有启动
+////         只添加这一行也可以，因为performSelector底层已经被加入runloop，只是没有启动
         [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
     }];
     [thread start];
@@ -290,6 +287,7 @@
     });
 }
 
+// 重点
 - (void)interview14 {
     dispatch_queue_t serialQueue = dispatch_queue_create("test", DISPATCH_QUEUE_SERIAL);
     NSLog(@"1");

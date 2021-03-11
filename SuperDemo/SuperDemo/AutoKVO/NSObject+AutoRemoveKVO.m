@@ -17,6 +17,9 @@ static const char KVOArrayKey;
 @implementation WTKVOItem
 @end
 
+
+
+
 @implementation NSObject (AutoRemoveKVO)
 /** 大致思路
  1. 写一个分类，在load方法里面换掉原来的addObserver方法
