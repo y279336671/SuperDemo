@@ -36,13 +36,27 @@
 //@property(nonatomic, strong) AutoKVO *manualKVO2;
 @property(nonatomic, strong) NSString *timerName;
 @property(nonatomic, strong) NSArray *testMutableArray ;
+@property(nonatomic, strong) UIButton *testGesCoverButtonTap;
 @end
 
 @implementation ViewController
 
-
+-(void)testGes{
+    NSLog(@"testGes");
+}
+-(void)testGes1{
+    NSLog(@"testGes1");
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
+//-----------------------测试手势覆盖-------------------------------
+    self.testGesCoverButtonTap = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    [self.testGesCoverButtonTap setBackgroundColor:[UIColor redColor] ];
+    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(testGes1)]; //GestureRecognizer 会覆盖 uibutton的手势
+    [self.testGesCoverButtonTap addGestureRecognizer:tapGestureRecognizer];
+    [self.view addSubview:self.testGesCoverButtonTap];
+    [self.testGesCoverButtonTap addTarget:self action:@selector(testGes) forControlEvents:UIControlEventTouchUpInside];
+//------------------------------------------------------------------
 //    CustomButton *button = [[CustomButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
 //    button.userInteractionEnabled = YES;
 //    [button setBackgroundColor:[UIColor redColor] ];
