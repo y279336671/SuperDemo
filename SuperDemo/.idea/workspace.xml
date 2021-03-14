@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d9ba4b5-bc7f-43c6-a209-6914afa02054" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo/MultithreadingViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/MultithreadingViewController.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo/ViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/ViewController.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/Block/BlockViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Block/BlockViewController.m" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_1642a884fc46dbc070dad7090d7f7b0b866da359" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_1860F5AC-941B-4099-A6F4-9F72D6E2819A" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
