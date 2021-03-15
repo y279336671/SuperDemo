@@ -16,6 +16,7 @@ typedef void (^TestBlock)(void);
     NSString *_name;
 }
 @property(nonatomic, copy) TestBlock block;
+@property(nonatomic, strong) NSString *title;
 @end
 
 @implementation BlockViewController
@@ -23,6 +24,10 @@ typedef void (^TestBlock)(void);
 int a=1;
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    self.title = @"测试NSOperationQueue mainQueue 是否能释放";
+//    [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+//        NSLog(@"self.na = %@", self.title);
+//    }];
 //---------------------不会产生强引用-----------------------
 //    _name=  @"yanghe";
 //    NSString *tempName= _name;
