@@ -4,14 +4,13 @@
     <list default="true" id="4d9ba4b5-bc7f-43c6-a209-6914afa02054" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SuperDemo/MultithreadingViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/MultithreadingViewController.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo/ViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/ViewController.m" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_1642a884fc46dbc070dad7090d7f7b0b866da359" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_A51D97FB-18CD-41AC-A035-382081D52C5D" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -24,7 +23,7 @@
     </file-type-list>
   </component>
   <component name="OCResolveContextSettings">
-    <option name="configuration" value="Pods-331-8E5946E32E072A69F1964AF40712FF8E-iphoneos14.3:null:14.3-arm64" />
+    <option name="configuration" value="Pods-113594-06B7964B40CDCFCB1A6327D8FEE8075F-macosx11.1:iosmac:11.1-x86_64" />
   </component>
   <component name="ProjectId" id="1jo7sRFjzt7WqeCux1NjsWwrUKE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
