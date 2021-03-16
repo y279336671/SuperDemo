@@ -18,9 +18,11 @@
 		58603149A5CF1D39C89F84D8 /* YHProxyBetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 586038864EAD08487D47175D /* YHProxyBetter.m */; };
 		586032C130BB20340E061C71 /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 58603A3D876443103EBF3C4C /* CustomButton.m */; };
 		586033A43C96CB089BDB189E /* BlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 586037505C9896A99D2737F0 /* BlockViewController.m */; };
+		586038C4EDE02DF2BA86B82C /* YHThreadSafeMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 58603EF9AFE46E579D522C04 /* YHThreadSafeMutableArray.m */; };
 		586039F976587CEF599EA11A /* NSObject+AutoRemoveKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 58603278D6EF0275A172161D /* NSObject+AutoRemoveKVO.m */; };
 		58603B72A399212B507E5E70 /* YHSafeMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 58603254E095641670D6047D /* YHSafeMutableArray.m */; };
 		58603B9D446DAD1E7AF9443A /* BlockSubClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5860389EBF912CB7A9BE92B8 /* BlockSubClassViewController.m */; };
+		58603DC2083CABF7F18050D9 /* MultithreadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58603E7C48A0AF644C315D24 /* MultithreadingViewController.m */; };
 		58603DD1183E4D72B9F48E70 /* AutoKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 58603D9734D3EF922E8F50F1 /* AutoKVO.m */; };
 		84183DA025626F0C007B7EB7 /* CategoryWeakProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 84183D9F25626F0C007B7EB7 /* CategoryWeakProperty.m */; };
 		842C71F525ABED5500AB0219 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 842C71F425ABED5500AB0219 /* main.m */; };
@@ -29,7 +31,6 @@
 		8458CA0925E889260021D2A0 /* TRURLSchemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8458CA0725E889260021D2A0 /* TRURLSchemeManager.m */; };
 		846FE51525AC35AD004BF2ED /* MJPermenantThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 846FE51025AC35AD004BF2ED /* MJPermenantThread.m */; };
 		846FE51625AC35AD004BF2ED /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 846FE51225AC35AD004BF2ED /* Tools.m */; };
-		849FD57525652339007D51BC /* MultithreadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849FD57425652339007D51BC /* MultithreadingViewController.m */; };
 		84C7A264256B5C10007AF5B6 /* CYLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C7A263256B5C10007AF5B6 /* CYLUser.m */; };
 		9F7047070C9F9A6343ACB509 /* Pods_SuperDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C1620D0217C7F519677217 /* Pods_SuperDemo.framework */; };
 		D404D2252501615548DC74DA /* Person+man.m in Sources */ = {isa = PBXBuildFile; fileRef = D404D6AC65384BCB3F63E43A /* Person+man.m */; };
@@ -69,6 +70,8 @@
 		57FF280B24CFA2AA00BA4D41 /* TaggedPointerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaggedPointerViewController.h; sourceTree = "<group>"; };
 		57FF280C24CFA2AA00BA4D41 /* TaggedPointerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaggedPointerViewController.m; sourceTree = "<group>"; };
 		586030A25C1F1014E488FDF0 /* MJTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJTimer.m; sourceTree = "<group>"; };
+		586030E6486493796A92087B /* MultithreadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultithreadingViewController.h; sourceTree = "<group>"; };
+		586031C0278C34DD782B535B /* YHThreadSafeMutableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHThreadSafeMutableArray.h; sourceTree = "<group>"; };
 		586031E1A21937DC49C5C4F5 /* YHProxyBetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHProxyBetter.h; sourceTree = "<group>"; };
 		5860320768E47231EB9A72FF /* AutoKVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoKVO.h; sourceTree = "<group>"; };
 		58603254E095641670D6047D /* YHSafeMutableArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHSafeMutableArray.m; sourceTree = "<group>"; };
@@ -84,6 +87,8 @@
 		58603CBE608F86285D353D2D /* BlockSubClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockSubClassViewController.h; sourceTree = "<group>"; };
 		58603D9734D3EF922E8F50F1 /* AutoKVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoKVO.m; sourceTree = "<group>"; };
 		58603E355E5567B29BEE1CD7 /* YHSafeMutableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHSafeMutableArray.h; sourceTree = "<group>"; };
+		58603E7C48A0AF644C315D24 /* MultithreadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultithreadingViewController.m; sourceTree = "<group>"; };
+		58603EF9AFE46E579D522C04 /* YHThreadSafeMutableArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHThreadSafeMutableArray.m; sourceTree = "<group>"; };
 		84183D9C25626E82007B7EB7 /* SuperDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84183D9E25626F0C007B7EB7 /* CategoryWeakProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryWeakProperty.h; sourceTree = "<group>"; };
 		84183D9F25626F0C007B7EB7 /* CategoryWeakProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryWeakProperty.m; sourceTree = "<group>"; };
@@ -99,8 +104,6 @@
 		846FE51225AC35AD004BF2ED /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
 		846FE51325AC35AD004BF2ED /* MJPermenantThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPermenantThread.h; sourceTree = "<group>"; };
 		846FE51425AC35AD004BF2ED /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
-		849FD57325652339007D51BC /* MultithreadingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultithreadingViewController.h; sourceTree = "<group>"; };
-		849FD57425652339007D51BC /* MultithreadingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultithreadingViewController.m; sourceTree = "<group>"; };
 		84C3EC9525BA7CA000142A68 /* TYRZResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TYRZResource.bundle; sourceTree = "<group>"; };
 		84C3EC9625BA7CA000142A68 /* TYRZUISDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TYRZUISDK.framework; sourceTree = "<group>"; };
 		84C3EC9825BA7CA000142A68 /* uni_account_login_res.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = uni_account_login_res.bundle; sourceTree = "<group>"; };
@@ -176,8 +179,6 @@
 				572E4100249F062600D531B8 /* main.m */,
 				84183D9E25626F0C007B7EB7 /* CategoryWeakProperty.h */,
 				84183D9F25626F0C007B7EB7 /* CategoryWeakProperty.m */,
-				849FD57325652339007D51BC /* MultithreadingViewController.h */,
-				849FD57425652339007D51BC /* MultithreadingViewController.m */,
 				84C7A262256B5C10007AF5B6 /* CYLUser.h */,
 				84C7A263256B5C10007AF5B6 /* CYLUser.m */,
 				D404D020E3B967861C5BDBEA /* LoadAndInitialize */,
@@ -188,6 +189,7 @@
 				5860356B3AB1FE2DBEF0123D /* Scheme */,
 				586033A07E0641B6FD6B7DB2 /* CustomView */,
 				5860324530124BF44461C507 /* AutoKVO */,
+				58603268E0518985FFFA3BD0 /* Multithread */,
 			);
 			path = SuperDemo;
 			sourceTree = "<group>";
@@ -210,6 +212,17 @@
 				586035865B3EC800F912E5B3 /* NSObject+AutoRemoveKVO.h */,
 			);
 			path = AutoKVO;
+			sourceTree = "<group>";
+		};
+		58603268E0518985FFFA3BD0 /* Multithread */ = {
+			isa = PBXGroup;
+			children = (
+				586030E6486493796A92087B /* MultithreadingViewController.h */,
+				58603E7C48A0AF644C315D24 /* MultithreadingViewController.m */,
+				58603EF9AFE46E579D522C04 /* YHThreadSafeMutableArray.m */,
+				586031C0278C34DD782B535B /* YHThreadSafeMutableArray.h */,
+			);
+			path = Multithread;
 			sourceTree = "<group>";
 		};
 		586033A07E0641B6FD6B7DB2 /* CustomView */ = {
@@ -479,7 +492,6 @@
 				8430E90F25E8C6C700120D73 /* SchemeTestViewController.m in Sources */,
 				8458CA0925E889260021D2A0 /* TRURLSchemeManager.m in Sources */,
 				572E4101249F062600D531B8 /* main.m in Sources */,
-				849FD57525652339007D51BC /* MultithreadingViewController.m in Sources */,
 				84183DA025626F0C007B7EB7 /* CategoryWeakProperty.m in Sources */,
 				58603B72A399212B507E5E70 /* YHSafeMutableArray.m in Sources */,
 				D404DF931CCE3610A9830B8D /* LoadTest.m in Sources */,
@@ -497,6 +509,8 @@
 				586039F976587CEF599EA11A /* NSObject+AutoRemoveKVO.m in Sources */,
 				58603075B0BB9290C262CB5A /* MJTimer.m in Sources */,
 				58603149A5CF1D39C89F84D8 /* YHProxyBetter.m in Sources */,
+				58603DC2083CABF7F18050D9 /* MultithreadingViewController.m in Sources */,
+				586038C4EDE02DF2BA86B82C /* YHThreadSafeMutableArray.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,7 +6,7 @@
 //  Copyright © 2020 yanghe. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "../../../../../../../../Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -9,6 +9,7 @@
 #import <NSArray+YYAdd.h>
 #import "MultithreadingViewController.h"
 #import "YHSafeMutableArray.h"
+#import "YHThreadSafeMutableArray.h"
 
 @interface MultithreadingViewController ()
 @property(nonatomic, strong) NSString *name;
@@ -43,9 +44,32 @@
     //[self interview18]; //利用NSOperation   NSOperationQueue -> NSBlockOperation1 NSBlockOperation2 NSBlockOperation3 ->  NSBlockOperation3 addDependency 1和2 -> 1 2 3 都加入到NSOpertaion的队列中
     //[self interview19]; //信号量
 
-    //todo 线程安全数组    dispatch_barrier_async  dispatch_semaphore_t
+   //线程安全数组的几种实现方式
+    [self interview20];
+    [self interview21];
+    [self interview22];
 }
+-(void)interview22{
+    //串行队列 ，就是把数组所有方法都加到 串行队列中
+//    dispatch_queue_t serialQueue = dispatch_queue_create("Dan-serial", DISPATCH_QUEUE_SERIAL);
 
+//        dispatch_async(serialQueue, ^{
+//            // 这里面放入数组操作内容
+//        });
+
+}
+-(void)interview21{
+// 信号量加锁的方式,如 YYThreadSafeArray
+// 在初始化方法里面初始化一个_lock = dispatch_semaphore_create(1);的锁，
+// 然后每个方法里面都加锁  dispatch_semaphore_wait()   和 dispatch_semaphore_signal()
+
+}
+-(void)interview20{
+// dispatch_barrier_async实现    关键点是
+// 读取操作是用dispatch_sync(concurrentQueue,block)
+// 写操作是dispatch_barrier_async(concurrentQueue,block)  必须在同一个队列中。
+
+}
 -(void)interview19{
     dispatch_queue_t globalQueue = dispatch_get_global_queue(0, 0);
     dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
@@ -62,7 +86,9 @@
     });
 
 }
+-(void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
 
+}
 /**
  * 使用NSOperation到达多任务同步
  * 1. 声明一个operation queue
