@@ -2,20 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d9ba4b5-bc7f-43c6-a209-6914afa02054" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/SuperDemo/Multithread/YHThreadSafeMutableArray.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SuperDemo/Multithread/YHThreadSafeMutableArray.m" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo/AppDelegate.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/AppDelegate.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo/MultithreadingViewController.h" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Multithread/MultithreadingViewController.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo/MultithreadingViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Multithread/MultithreadingViewController.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/Block/BlockViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Block/BlockViewController.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/Inherit/Person.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Inherit/Person.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/Multithread/MultithreadingViewController.h" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Multithread/MultithreadingViewController.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/ViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/ViewController.m" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_00008101-001A25301E78001E" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_1860F5AC-941B-4099-A6F4-9F72D6E2819A" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -116,6 +114,16 @@
           <url>file://$PROJECT_DIR$/SuperDemo/CustomView/CustomButton.m</url>
           <line>25</line>
           <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/SuperDemo/Block/BlockViewController.m</url>
+          <line>30</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/SuperDemo/ViewController.m</url>
+          <line>87</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

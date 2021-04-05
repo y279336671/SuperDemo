@@ -9,6 +9,10 @@
 #import "BlockViewController.h"
 #import "Person.h"
 #import "ViewController.h"
+#import <objc/runtime.h>
+#import <malloc/malloc.h>
+
+
 typedef void (^TestBlock)(void);
 //typedef void(^TRPopupCompletionBlock)(TRPopupView *popupView, BOOL finished);
 @interface BlockViewController ()
@@ -24,6 +28,13 @@ typedef void (^TestBlock)(void);
 int a=1;
 - (void)viewDidLoad {
     [super viewDidLoad];
+    Person *person = [[Person alloc] init];
+//    size_t szie = class_getInstanceSize([NSObject class]);
+//
+//    size_t szie1 = malloc_size((__bridge const void *)NSObject);
+//
+//    NSLog(@"szie = %lu", szie);
+//    NSLog(@"szie1 = %lu", szie1);
 //    self.title = @"测试NSOperationQueue mainQueue 是否能释放";
 //    [[NSOperationQueue mainQueue] addOperationWithBlock:^{
 //        NSLog(@"self.na = %@", self.title);
