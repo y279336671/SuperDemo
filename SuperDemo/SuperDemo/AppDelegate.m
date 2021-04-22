@@ -14,7 +14,7 @@
 //#import "ExposureViewController.h"
 //#import <Aspects.h>
 //#import <Aspects/Aspects.h>
-#import "MemoryDemoViewController.h"
+#import "Memory/MemoryDemoViewController.h"
 #import "AutoKVO/AutoKVO.h"
 
 @interface AppDelegate ()

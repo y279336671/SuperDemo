@@ -9,7 +9,7 @@
 #import <objc/runtime.h>
 #import "ViewController.h"
 #import "Inherit/Person.h"
-#import "MemoryDemoViewController.h"
+#import "Memory/MemoryDemoViewController.h"
 #import "TaggedPointer/TaggedPointerViewController.h"
 #import "AutoKVO/AutoKVO.h"
 #import "Inherit/Person+man.h"
@@ -47,13 +47,51 @@
 -(void)testGes1{
     NSLog(@"testGes1");
 }
+
+
+-(void)test:(UIView*)view{
+    [view.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if(!obj){
+            return;
+        }
+        NSLog(@"%@",obj);
+        [self test:obj];
+    }];
+    
+    
+}
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 //-----------------------测试手势覆盖-------------------------------
     self.testGesCoverButtonTap = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
     [self.testGesCoverButtonTap setBackgroundColor:[UIColor redColor] ];
+
     UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(testGes1)]; //GestureRecognizer 会覆盖 uibutton的手势
     [self.testGesCoverButtonTap addGestureRecognizer:tapGestureRecognizer];
+
     [self.view addSubview:self.testGesCoverButtonTap];
     [self.testGesCoverButtonTap addTarget:self action:@selector(testGes) forControlEvents:UIControlEventTouchUpInside];
 //------------------------------------------------------------------

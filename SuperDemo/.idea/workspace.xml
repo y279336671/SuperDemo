@@ -2,20 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d9ba4b5-bc7f-43c6-a209-6914afa02054" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/SuperDemo/Multithread/YHThreadSafeMutableArray.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SuperDemo/Multithread/YHThreadSafeMutableArray.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SuperDemo/Memory/MemorySubViewController.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SuperDemo/Memory/MemorySubViewController.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SuperDemo/Memory/VideoDownLoader.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SuperDemo/Memory/VideoDownLoader.m" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SuperDemo.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo.xcworkspace/xcuserdata/admin.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo.xcworkspace/xcuserdata/admin.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SuperDemo/AppDelegate.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/AppDelegate.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo/MultithreadingViewController.h" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Multithread/MultithreadingViewController.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo/MultithreadingViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Multithread/MultithreadingViewController.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/Block/BlockViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Block/BlockViewController.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/MemoryDemoViewController.h" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Memory/MemoryDemoViewController.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/MemoryDemoViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Memory/MemoryDemoViewController.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/Multithread/MultithreadingViewController.h" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Multithread/MultithreadingViewController.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/ViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/ViewController.m" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_00008101-001A25301E78001E" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_1642a884fc46dbc070dad7090d7f7b0b866da359" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -28,7 +34,7 @@
     </file-type-list>
   </component>
   <component name="OCResolveContextSettings">
-    <option name="configuration" value="Pods-113594-06B7964B40CDCFCB1A6327D8FEE8075F-macosx11.1:iosmac:11.1-x86_64" />
+    <option name="configuration" value="Pods-107895-87265ED847C04DBD854164CCD8E46CCB-macosx11.1:iosmac:11.1-x86_64" />
   </component>
   <component name="ProjectId" id="1jo7sRFjzt7WqeCux1NjsWwrUKE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -70,8 +76,8 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.SuperDemo" />
       <item itemvalue="Application.SuperDemoCommand" />
+      <item itemvalue="Application.SuperDemo" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
