@@ -119,10 +119,10 @@
     NSLog(@"%d", [Person isKindOfClass:[NSObject class]]);
     NSLog(@"%d", [NSObject isMemberOfClass:[NSObject class]]);
 // ------------------------------------------------------
-//NSLog(@"%d", [NSObject isKindOfClass:[NSObject class]]); // 1  // 这句代码的方法调用者不管是哪个类（只要是NSObject体系下的），都返回YES
-//NSLog(@"%d", [NSObject isMemberOfClass:[NSObject class]]); // 0   ？？？？
-//NSLog(@"%d", [Person isKindOfClass:[Person class]]); // 0
-//NSLog(@"%d", [Person isMemberOfClass:[Person class]]); // 0
+NSLog(@"%d", [NSObject isKindOfClass:[NSObject class]]); // 1  // 这句代码的方法调用者不管是哪个类（只要是NSObject体系下的），都返回YES
+NSLog(@"%d", [NSObject isMemberOfClass:[NSObject class]]); // 0   ？？？？
+NSLog(@"%d", [Person isKindOfClass:[Person class]]); // 0
+NSLog(@"%d", [Person isMemberOfClass:[Person class]]); // 0
 // ------------------------------------------------------
 
 
