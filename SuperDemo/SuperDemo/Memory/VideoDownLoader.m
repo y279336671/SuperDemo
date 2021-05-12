@@ -4,6 +4,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <YYDispatchQueuePool.h>
 #import "VideoDownLoader.h"
 @interface VideoDownLoader ()
 @property(nonatomic, strong)  NSMutableArray *downloadingURLs;
@@ -12,13 +13,21 @@
 
 @implementation VideoDownLoader
 
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationWillShutdown) name:UIApplicationWillTerminateNotification object:nil];// 杀死app的时候清空所有视频缓存
+    }
+    return self;
+}
+
 static id _sharedInstance = nil;
 + (instancetype)sharedInstance {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationWillTerminate) name:UIApplicationWillTerminateNotification object:nil];// 杀死app的时候清空所有视频缓存
-        _sharedInstance = [[super allocWithZone:nil] init];
+        _sharedInstance = [[self alloc] init];
     });
+
     return _sharedInstance;
 }
 
@@ -36,7 +45,7 @@ static id _sharedInstance = nil;
 -(NSString *)createFilePath{
     //判断本地是否已经下载完成，如果是下载中这个方法也返回  @""
     NSFileManager *fileManager = [NSFileManager defaultManager];
-    NSString *documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
+    NSString *documentsPath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject];
     NSString *dataFilePath = [documentsPath stringByAppendingPathComponent:@"videofiles"];
     BOOL isDir = NO;
     BOOL existed = [fileManager fileExistsAtPath:dataFilePath isDirectory:&isDir];
@@ -56,6 +65,7 @@ static id _sharedInstance = nil;
     @autoreleasepool {
         NSURLSession *session = [NSURLSession sharedSession];
         __weak typeof(self) weakSelf = self;
+
         for (int i = 0; i < urls.count; ++i) {
             NSString *url = urls[i];
 
@@ -75,7 +85,7 @@ static id _sharedInstance = nil;
                             [fileManager moveItemAtURL:location toURL:fileURL error:NULL];
                         }
                     }
-                    NSLog(@"[NSThread currentThread] = %@", [NSThread currentThread]);
+                    NSLog(@"response absoluteString= %@", response.URL.absoluteString);
                     dispatch_semaphore_wait(weakSelf.semaphore,DISPATCH_TIME_FOREVER);
                     [weakSelf.downloadingURLs removeObject:url]; //下载完成后移除
                     NSLog(@"weakSelf.downloadingURLs.count = %lu", weakSelf.downloadingURLs.count);
@@ -103,8 +113,10 @@ static id _sharedInstance = nil;
     return downloading;
 }
 
--(void)applicationWillTerminate{
-// todo 杀死app的时候清空所有视频缓存
+-(void)applicationWillShutdown{
+    //  杀死app的时候清空所有视频缓存
+    BOOL removeScuess =[[NSFileManager defaultManager] removeItemAtPath:[self createFilePath] error:NULL];
+    NSLog(@"removeScuess = %d", removeScuess);
 }
 
 - (NSMutableArray *)downloadingURLs {
@@ -121,8 +133,5 @@ static id _sharedInstance = nil;
     return _semaphore;
 }
 
-+ (instancetype)allocWithZone:(struct _NSZone *)zone {
-    return _sharedInstance;
-}
 
 @end

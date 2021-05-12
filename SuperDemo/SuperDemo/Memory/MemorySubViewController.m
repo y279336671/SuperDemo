@@ -49,11 +49,13 @@ NSArray *array1 = @[  @"https://n35-pl-agv.autohome.com.cn/video-13/9C9DF5843CD6
         @"https://vc9-al1-pl-agv.autohome.com.cn/video-17/9C9DF5843CD64975/2021-04-28/A408CC2CB90651C06F15C4841F4F2CE2-200.mp4",
         @"https://vc9-al1-pl-agv.autohome.com.cn/video-49/9C9DF5843CD64975/2021-03-25/97B9830752BC3C346F15C4841F4F2CE2-200.mp4",
         @"https://n13-pl-agv.autohome.com.cn/video-47/9C9DF5843CD64975/2019-08-21/B86331ADD895F6DD6F15C4841F4F2CE2-200.mp4"];
+
      VideoDownLoader *downLoader = [VideoDownLoader sharedInstance];
     [downLoader startWithUrls:array];
     [downLoader startWithUrls:array1];
 //    [downLoader startWithUrl:@"https://vc9-al1-pl-agv.autohome.com.cn/video-49/9C9DF5843CD64975/2021-03-25/97B9830752BC3C346F15C4841F4F2CE2-200.mp4"];
-    NSLog(@"downLoader = %@", [downLoader filePathWithUrl:@"https://vc9-al1-pl-agv.autohome.com.cn/video-49/9C9DF5843CD64975/2021-03-25/97B9830752BC3C346F15C4841F4F2CE2-200.mp4"]);
+//    NSLog(@"downLoader = %@", [downLoader filePathWithUrl:@"https://vc9-al1-pl-agv.autohome.com.cn/video-49/9C9DF5843CD64975/2021-03-25/97B9830752BC3C346F15C4841F4F2CE2-200.mp4"]);
+
 }
 
 

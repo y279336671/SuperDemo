@@ -35,59 +35,66 @@
 //@property(nonatomic, strong) AutoKVO *manualKVO1;
 //@property(nonatomic, strong) AutoKVO *manualKVO2;
 @property(nonatomic, strong) NSString *timerName;
-@property(nonatomic, strong) NSArray *testMutableArray ;
+@property(nonatomic, strong) NSArray *testMutableArray;
 @property(nonatomic, strong) UIButton *testGesCoverButtonTap;
 @end
 
 @implementation ViewController
 
--(void)testGes{
+- (void)testGes {
     NSLog(@"testGes");
 }
--(void)testGes1{
+
+- (void)testGes1 {
     NSLog(@"testGes1");
 }
 
 
--(void)test:(UIView*)view{
-    [view.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if(!obj){
+- (void)test:(UIView *)view {
+    [view.subviews enumerateObjectsUsingBlock:^(__kindof UIView *_Nonnull obj, NSUInteger idx, BOOL *_Nonnull stop) {
+        if (!obj) {
             return;
         }
-        NSLog(@"%@",obj);
+        NSLog(@"%@", obj);
         [self test:obj];
     }];
-    
-    
+
+
 }
 
+- (void)testDengIsEqual {
+    int i = 65;
+    float f = 65.0f;
+    char ch = 'A';
+    NSString *s1 = @"我是007"; // 常量区 只保存一份
+    NSString *s2 = @"我是007"; // 常量区 只保存一份
+    NSString *str1 = [NSString stringWithFormat:@"我是007"];
+    NSString *str2 = [NSString stringWithFormat:@"我是007"];
+    NSString *stra1 =[[NSString alloc] initWithFormat:@"我是007"];
+    NSString *strb2 =[[NSString alloc] initWithFormat:@"我是007"];
+    NSLog(@"str1 = %@ %@", str1,str2);
+    NSLog(@"str1 = %@ %@", stra1,strb2);
+    NSLog(@"(stra1==strb2) = %d", (stra1==strb2));
+    NSLog(@"[stra1 isEqual:strb2] = %d", [stra1 isEqual:strb2]);
+    NSLog(@"65和'A'是否相等?:%d", (i == ch));
+    NSLog(@"65和65.0f是否相等?:%d", (i == f));//1
+    NSLog(@"\nstr1==str2结果:%d", (str1 == str2));//0
+    NSLog(@"\nstr1 isEqual str2结果:%d", [str1 isEqual:str2]);//1   已经被重写
+    NSLog(@"\nstr1 isEqualToString str2结果:%d", [str1 isEqualToString:str2]);//1
+    NSLog(@"\ns1与s2是否相等%d", (s1 == s2));//1
+    NSLog(@"\ns1与str1是否相等%d", (s1 == str1));//0
 
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+    [self testDengIsEqual];
+
 //-----------------------测试手势覆盖-------------------------------
     self.testGesCoverButtonTap = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
-    [self.testGesCoverButtonTap setBackgroundColor:[UIColor redColor] ];
+    [self.testGesCoverButtonTap setBackgroundColor:[UIColor redColor]];
 
     UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(testGes1)]; //GestureRecognizer 会覆盖 uibutton的手势
     [self.testGesCoverButtonTap addGestureRecognizer:tapGestureRecognizer];
@@ -119,10 +126,10 @@
     NSLog(@"%d", [Person isKindOfClass:[NSObject class]]);
     NSLog(@"%d", [NSObject isMemberOfClass:[NSObject class]]);
 // ------------------------------------------------------
-NSLog(@"%d", [NSObject isKindOfClass:[NSObject class]]); // 1  // 这句代码的方法调用者不管是哪个类（只要是NSObject体系下的），都返回YES
-NSLog(@"%d", [NSObject isMemberOfClass:[NSObject class]]); // 0   ？？？？
-NSLog(@"%d", [Person isKindOfClass:[Person class]]); // 0
-NSLog(@"%d", [Person isMemberOfClass:[Person class]]); // 0
+    NSLog(@"%d", [NSObject isKindOfClass:[NSObject class]]); // 1  // 这句代码的方法调用者不管是哪个类（只要是NSObject体系下的），都返回YES
+    NSLog(@"%d", [NSObject isMemberOfClass:[NSObject class]]); // 0   ？？？？
+    NSLog(@"%d", [Person isKindOfClass:[Person class]]); // 0
+    NSLog(@"%d", [Person isMemberOfClass:[Person class]]); // 0
 // ------------------------------------------------------
 
 
@@ -204,14 +211,15 @@ NSLog(@"%d", [Person isMemberOfClass:[Person class]]); // 0
 
     BlockViewController *blockViewController = [[BlockViewController alloc] init];
     blockViewController.view.backgroundColor = [UIColor redColor];
-    blockViewController.view.frame = CGRectMake(0, 0, UIScreen .mainScreen.bounds.size.width, UIScreen .mainScreen.bounds.size.height);
+    blockViewController.view.frame = CGRectMake(0, 0, UIScreen.mainScreen.bounds.size.width, UIScreen.mainScreen.bounds.size.height);
     [self.navigationController pushViewController:blockViewController animated:YES];
 }
 
--(void)testreturnint{
+- (void)testreturnint {
 
 }
--(void)testLoad{
+
+- (void)testLoad {
 //    [LoadTest load];//会走消息查找流程，就会调用分类LoadTest+LoadTestCategory的load的方法，因为同名分类中的方法“覆盖”类中的方法
 //    LoadTestCategory initialize    这行是因为分类接收到了load消息
 //    LoadTestCategory load
