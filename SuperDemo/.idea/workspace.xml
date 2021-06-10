@@ -4,6 +4,11 @@
     <list default="true" id="4d9ba4b5-bc7f-43c6-a209-6914afa02054" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SuperDemo.xcodeproj/xcuserdata/yanghe.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo.xcodeproj/xcuserdata/yanghe.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo.xcworkspace/xcuserdata/admin.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo.xcworkspace/xcuserdata/admin.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/Memory/MemorySubViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Memory/MemorySubViewController.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/Memory/VideoDownLoader.h" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Memory/VideoDownLoader.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/Memory/VideoDownLoader.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Memory/VideoDownLoader.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/ViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/ViewController.m" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,6 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_F1468C60-49DC-4663-AF73-C070B8365321" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_1642a884fc46dbc070dad7090d7f7b0b866da359" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -23,7 +29,7 @@
     </file-type-list>
   </component>
   <component name="OCResolveContextSettings">
-    <option name="configuration" value="Pods-113594-06B7964B40CDCFCB1A6327D8FEE8075F-macosx11.1:iosmac:11.1-x86_64" />
+    <option name="configuration" value="Pods-107895-87265ED847C04DBD854164CCD8E46CCB-macosx11.1:iosmac:11.1-x86_64" />
   </component>
   <component name="ProjectId" id="1jo7sRFjzt7WqeCux1NjsWwrUKE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -48,7 +54,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/SuperDemo" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
     <property name="settings.editor.splitter.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
@@ -120,9 +126,24 @@
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Pods/YYKit/YYKit/Utility/YYDispatchQueuePool.m</url>
+          <line>161</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/SuperDemo/Memory/VideoDownLoader.m</url>
+          <line>117</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/SuperDemo/ViewController.m</url>
-          <line>87</line>
-          <option name="timeStamp" value="16" />
+          <line>65</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/SuperDemo/ViewController.m</url>
+          <line>78</line>
+          <option name="timeStamp" value="41" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

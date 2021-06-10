@@ -8,6 +8,8 @@
 
 #import "MemoryDemoViewController.h"
 #import "MJTimer.h"
+#import "BlockViewController.h"
+#import "MemorySubViewController.h"
 
 
 @implementation HTPerson
@@ -75,9 +77,14 @@
 //                            async:NO];
 }
 
-
+-(void)testCircle{
+    NSLog(@"test Circle");
+}
 -(void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    NSLog(@"%s", sel_getName(_cmd));
+    MemorySubViewController *memorySubViewController = [[MemorySubViewController alloc] init];
+    memorySubViewController.view.backgroundColor = [UIColor redColor];
+    memorySubViewController.view.frame = CGRectMake(0, 0, UIScreen .mainScreen.bounds.size.width, UIScreen .mainScreen.bounds.size.height);
+    [self.navigationController pushViewController:memorySubViewController animated:YES];
 }
 
 - (void)timerTest

@@ -25,9 +25,12 @@ typedef void (^TestBlock)(void);
 
 @implementation BlockViewController
 
+
+
 int a=1;
 - (void)viewDidLoad {
     [super viewDidLoad];
+
     Person *person = [[Person alloc] init];
 //    size_t szie = class_getInstanceSize([NSObject class]);
 //
@@ -35,6 +38,7 @@ int a=1;
 //
 //    NSLog(@"szie = %lu", szie);
 //    NSLog(@"szie1 = %lu", szie1);
+
 //    self.title = @"测试NSOperationQueue mainQueue 是否能释放";
 //    [[NSOperationQueue mainQueue] addOperationWithBlock:^{
 //        NSLog(@"self.na = %@", self.title);
