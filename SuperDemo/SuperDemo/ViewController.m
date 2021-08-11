@@ -89,7 +89,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-
+    [self.view setBackgroundColor:[UIColor whiteColor]];
     [self testDengIsEqual];
 
 //-----------------------测试手势覆盖-------------------------------
