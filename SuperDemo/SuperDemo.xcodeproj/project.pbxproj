@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		570C7337265C98BA005C6870 /* List.m in Sources */ = {isa = PBXBuildFile; fileRef = 570C7336265C98BA005C6870 /* List.m */; };
-		570C733A265C9C2D005C6870 /* Room.m in Sources */ = {isa = PBXBuildFile; fileRef = 570C7339265C9C2D005C6870 /* Room.m */; };
 		572E40F0249F062500D531B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 572E40EF249F062500D531B8 /* AppDelegate.m */; };
 		572E40F6249F062500D531B8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 572E40F5249F062500D531B8 /* ViewController.m */; };
 		572E40FB249F062600D531B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 572E40FA249F062600D531B8 /* Assets.xcassets */; };
@@ -61,10 +59,6 @@
 
 /* Begin PBXFileReference section */
 		41C1620D0217C7F519677217 /* Pods_SuperDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		570C7335265C98BA005C6870 /* List.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
-		570C7336265C98BA005C6870 /* List.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = List.m; sourceTree = "<group>"; };
-		570C7338265C9C2D005C6870 /* Room.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Room.h; sourceTree = "<group>"; };
-		570C7339265C9C2D005C6870 /* Room.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Room.m; sourceTree = "<group>"; };
 		572E40EE249F062500D531B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		572E40EF249F062500D531B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		572E40F4249F062500D531B8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -182,10 +176,6 @@
 				572E40EE249F062500D531B8 /* AppDelegate.h */,
 				572E40EF249F062500D531B8 /* AppDelegate.m */,
 				572E40F4249F062500D531B8 /* ViewController.h */,
-				570C7335265C98BA005C6870 /* List.h */,
-				570C7338265C9C2D005C6870 /* Room.h */,
-				570C7339265C9C2D005C6870 /* Room.m */,
-				570C7336265C98BA005C6870 /* List.m */,
 				572E40F5249F062500D531B8 /* ViewController.m */,
 				572E40FA249F062600D531B8 /* Assets.xcassets */,
 				572E40FC249F062600D531B8 /* LaunchScreen.storyboard */,
@@ -524,12 +514,10 @@
 				D404DF931CCE3610A9830B8D /* LoadTest.m in Sources */,
 				D404DCEB9C9958E8D74BD5C6 /* SubLoadTest.m in Sources */,
 				D404DA9D700C16A3AAB79C4E /* LoadTest+LoadTestCategory.m in Sources */,
-				570C7337265C98BA005C6870 /* List.m in Sources */,
 				D404D32AE7F222298633495D /* SubLoadTest+SubLoadTestCategory.m in Sources */,
 				D404DC0800AE5D4F15573181 /* MessagesForwarding.m in Sources */,
 				D404D60ED7C524BDCFFA3D27 /* Son.m in Sources */,
 				D404DF7179345FD756131E43 /* Person.m in Sources */,
-				570C733A265C9C2D005C6870 /* Room.m in Sources */,
 				D404D2252501615548DC74DA /* Person+man.m in Sources */,
 				58603B9D446DAD1E7AF9443A /* BlockSubClassViewController.m in Sources */,
 				586033A43C96CB089BDB189E /* BlockViewController.m in Sources */,
