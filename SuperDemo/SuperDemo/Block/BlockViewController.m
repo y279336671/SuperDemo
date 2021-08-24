@@ -9,6 +9,7 @@
 #import "BlockViewController.h"
 #import "Person.h"
 #import "ViewController.h"
+#import "BlockSubClassViewController.h"
 #import <objc/runtime.h>
 #import <malloc/malloc.h>
 
@@ -20,7 +21,7 @@ typedef void (^TestBlock)(void);
     NSString *_name;
 }
 @property(nonatomic, copy) TestBlock block;
-@property(nonatomic, strong) NSString *title;
+@property(nonatomic, copy) NSString *title;
 @end
 
 @implementation BlockViewController
@@ -30,8 +31,12 @@ typedef void (^TestBlock)(void);
 int a=1;
 - (void)viewDidLoad {
     [super viewDidLoad];
-
     Person *person = [[Person alloc] init];
+    BlockSubClassViewController *blockViewController = [[BlockSubClassViewController alloc] init];
+    blockViewController.videoViewDisMiss = ^(BOOL agree) {
+        NSLog(@"%@",self.title);
+    };
+
 //    size_t szie = class_getInstanceSize([NSObject class]);
 //
 //    size_t szie1 = malloc_size((__bridge const void *)NSObject);

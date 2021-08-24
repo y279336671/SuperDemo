@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d9ba4b5-bc7f-43c6-a209-6914afa02054" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo.xcodeproj/xcuserdata/yanghe.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo.xcodeproj/xcuserdata/yanghe.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo.xcworkspace/xcuserdata/admin.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo.xcworkspace/xcuserdata/admin.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo/Memory/MemorySubViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Memory/MemorySubViewController.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo/Memory/VideoDownLoader.h" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Memory/VideoDownLoader.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperDemo/Memory/VideoDownLoader.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Memory/VideoDownLoader.m" afterDir="false" />
+    <list default="true" id="4d9ba4b5-bc7f-43c6-a209-6914afa02054" name="Default Changelist" comment="Default Changelist">
+      <change afterPath="$PROJECT_DIR$/SuperDemo.xcworkspace/xcuserdata/yanghe04.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/yanghe04.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/yanghe04.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo.xcodeproj/xcshareddata/xcschemes/SuperDemoCommand.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo.xcodeproj/xcuserdata/yanghe04.xcuserdatad/xcschemes/SuperDemo.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo.xcodeproj/xcuserdata/yanghe04.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo.xcodeproj/xcuserdata/yanghe04.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo.xcworkspace/xcuserdata/yanghe04.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo.xcworkspace/xcuserdata/yanghe04.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/AppDelegate.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/AppDelegate.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/Block/BlockSubClassViewController.h" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Block/BlockSubClassViewController.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/Block/BlockSubClassViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Block/BlockSubClassViewController.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemo/Block/BlockViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/Block/BlockViewController.m" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SuperDemo/ViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/SuperDemo/ViewController.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperDemoCommand/main.m" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_F1468C60-49DC-4663-AF73-C070B8365321" />
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_1642a884fc46dbc070dad7090d7f7b0b866da359" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_43EDCBAF-3860-44CD-887F-150E012AE375" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -27,9 +34,6 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
-  </component>
-  <component name="OCResolveContextSettings">
-    <option name="configuration" value="Pods-107895-87265ED847C04DBD854164CCD8E46CCB-macosx11.1:iosmac:11.1-x86_64" />
   </component>
   <component name="ProjectId" id="1jo7sRFjzt7WqeCux1NjsWwrUKE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -62,7 +66,7 @@
       <recent name="$PROJECT_DIR$/SuperDemo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SuperDemo">
+  <component name="RunManager">
     <configuration name="SuperDemo" type="AppleRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="SuperDemo" TARGET_NAME="SuperDemo" CONFIG_NAME="Debug" SCHEME_NAME="SuperDemo" IS_LOCATION_SIMULATION_ALLOWED="true" LOCATION_SCENARIO_ID="com.apple.dt.IDEFoundation.CurrentLocationScenarioIdentifier" LOCATION_SCENARIO_TYPE="1" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" RUN_TARGET_PROJECT_NAME="SuperDemo" RUN_TARGET_NAME="SuperDemo" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
       <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
         <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
@@ -72,13 +76,18 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.SuperDemoCommand" />
-      <item itemvalue="Application.SuperDemo" />
-    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
@@ -122,7 +131,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/SuperDemo/Block/BlockViewController.m</url>
-          <line>30</line>
+          <line>31</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">

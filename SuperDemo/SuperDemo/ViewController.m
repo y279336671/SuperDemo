@@ -89,18 +89,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [self.view setBackgroundColor:[UIColor whiteColor]];
-    [self testDengIsEqual];
+    [self.navigationController pushViewController:[[BlockViewController alloc] init] animated:YES];
+//    [self.view setBackgroundColor:[UIColor whiteColor]];
+//    [self testDengIsEqual];
 
 //-----------------------测试手势覆盖-------------------------------
-    self.testGesCoverButtonTap = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
-    [self.testGesCoverButtonTap setBackgroundColor:[UIColor redColor]];
-
-    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(testGes1)]; //GestureRecognizer 会覆盖 uibutton的手势
-    [self.testGesCoverButtonTap addGestureRecognizer:tapGestureRecognizer];
-
-    [self.view addSubview:self.testGesCoverButtonTap];
-    [self.testGesCoverButtonTap addTarget:self action:@selector(testGes) forControlEvents:UIControlEventTouchUpInside];
+//    self.testGesCoverButtonTap = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+//    [self.testGesCoverButtonTap setBackgroundColor:[UIColor redColor]];
+//
+//    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(testGes1)]; //GestureRecognizer 会覆盖 uibutton的手势
+//    [self.testGesCoverButtonTap addGestureRecognizer:tapGestureRecognizer];
+//
+//    [self.view addSubview:self.testGesCoverButtonTap];
+//    [self.testGesCoverButtonTap addTarget:self action:@selector(testGes) forControlEvents:UIControlEventTouchUpInside];
 //------------------------------------------------------------------
 //    CustomButton *button = [[CustomButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
 //    button.userInteractionEnabled = YES;
@@ -123,13 +124,13 @@
 // ------------------------------------------------------
 
 //    [self testLoad];
-    NSLog(@"%d", [Person isKindOfClass:[NSObject class]]);
-    NSLog(@"%d", [NSObject isMemberOfClass:[NSObject class]]);
+//    NSLog(@"%d", [Person isKindOfClass:[NSObject class]]);
+//    NSLog(@"%d", [NSObject isMemberOfClass:[NSObject class]]);
 // ------------------------------------------------------
-    NSLog(@"%d", [NSObject isKindOfClass:[NSObject class]]); // 1  // 这句代码的方法调用者不管是哪个类（只要是NSObject体系下的），都返回YES
-    NSLog(@"%d", [NSObject isMemberOfClass:[NSObject class]]); // 0   ？？？？
-    NSLog(@"%d", [Person isKindOfClass:[Person class]]); // 0
-    NSLog(@"%d", [Person isMemberOfClass:[Person class]]); // 0
+//    NSLog(@"%d", [NSObject isKindOfClass:[NSObject class]]); // 1  // 这句代码的方法调用者不管是哪个类（只要是NSObject体系下的），都返回YES
+//    NSLog(@"%d", [NSObject isMemberOfClass:[NSObject class]]); // 0   ？？？？
+//    NSLog(@"%d", [Person isKindOfClass:[Person class]]); // 0
+//    NSLog(@"%d", [Person isMemberOfClass:[Person class]]); // 0
 // ------------------------------------------------------
 
 
@@ -194,9 +195,9 @@
 
 }
 
-//- (void)dealloc {
-//    NSLog(@"NSStringFromClass([self class]) dealloc = %@", NSStringFromClass([self class]));
-//}
+- (void)dealloc {
+    NSLog(@"NSStringFromClass([self class]) dealloc = %@", NSStringFromClass([self class]));
+}
 
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [super touchesEnded:touches withEvent:event];

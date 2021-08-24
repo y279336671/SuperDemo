@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BlockSubClassViewController : BlockViewController
-
+@property (nonatomic, copy) void (^videoViewDisMiss)(BOOL agree);
 @end
 
 NS_ASSUME_NONNULL_END

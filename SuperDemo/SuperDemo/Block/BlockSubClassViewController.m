@@ -14,9 +14,23 @@
 
 @implementation BlockSubClassViewController
 
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    if (self.videoViewDisMiss) {
+        self.videoViewDisMiss(YES);
+    }
     // Do any additional setup after loading the view.
+}
+- (void)dealloc {
+    NSLog(@"%@   dealloc", NSStringFromClass([self class]));
 }
 
 /*
