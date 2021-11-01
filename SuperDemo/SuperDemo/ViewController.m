@@ -89,7 +89,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [self.navigationController pushViewController:[[BlockViewController alloc] init] animated:YES];
+//    [self.navigationController pushViewController:[[BlockViewController alloc] init] animated:YES];
 //    [self.view setBackgroundColor:[UIColor whiteColor]];
 //    [self testDengIsEqual];
 

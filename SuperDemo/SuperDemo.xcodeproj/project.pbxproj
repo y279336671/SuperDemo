@@ -57,7 +57,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		214EEBC426D3BA8200F30277 /* SuperDemoCommand */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = SuperDemoCommand; path = /Users/yanghe04/Documents/code/superdemo/SuperDemo/build/Debug/SuperDemoCommand; sourceTree = "<absolute>"; };
+		210CF46B272F929000E730DA /* SuperDemoCommand */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SuperDemoCommand; sourceTree = BUILT_PRODUCTS_DIR; };
 		41C1620D0217C7F519677217 /* Pods_SuperDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		572E40EE249F062500D531B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		572E40EF249F062500D531B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -161,6 +161,7 @@
 				B2C1EC489D5B42F6A229DDA2 /* Frameworks */,
 				84183D9C25626E82007B7EB7 /* SuperDemo.app */,
 				8487FE2F25BE93DB0079C397 /* Recovered References */,
+				210CF46B272F929000E730DA /* SuperDemoCommand */,
 			);
 			sourceTree = "<group>";
 		};
@@ -389,7 +390,7 @@
 			);
 			name = SuperDemoCommand;
 			productName = SuperDemoCommand;
-			productReference = 214EEBC426D3BA8200F30277 /* SuperDemoCommand */;
+			productReference = 210CF46B272F929000E730DA /* SuperDemoCommand */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -668,7 +669,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = yh.SuperDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yanghe.AppSigner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -690,7 +691,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = yh.SuperDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yanghe.AppSigner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
