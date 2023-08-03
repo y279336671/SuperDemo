@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		212909D12A7A8CD400A82395 /* TBCToolsItemBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 212909D02A7A8CD400A82395 /* TBCToolsItemBaseView.m */; };
+		212909D52A7A8E3500A82395 /* TBCImgToolsItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 212909D42A7A8E3500A82395 /* TBCImgToolsItemView.m */; };
+		212909D82A7A8E8600A82395 /* TBCToolsBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 212909D72A7A8E8600A82395 /* TBCToolsBarView.m */; };
 		572E40F0249F062500D531B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 572E40EF249F062500D531B8 /* AppDelegate.m */; };
 		572E40F6249F062500D531B8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 572E40F5249F062500D531B8 /* ViewController.m */; };
 		572E40FB249F062600D531B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 572E40FA249F062600D531B8 /* Assets.xcassets */; };
@@ -58,6 +61,12 @@
 
 /* Begin PBXFileReference section */
 		210CF46B272F929000E730DA /* SuperDemoCommand */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SuperDemoCommand; sourceTree = BUILT_PRODUCTS_DIR; };
+		212909CF2A7A8CD400A82395 /* TBCToolsItemBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBCToolsItemBaseView.h; sourceTree = "<group>"; };
+		212909D02A7A8CD400A82395 /* TBCToolsItemBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBCToolsItemBaseView.m; sourceTree = "<group>"; };
+		212909D32A7A8E3500A82395 /* TBCImgToolsItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBCImgToolsItemView.h; sourceTree = "<group>"; };
+		212909D42A7A8E3500A82395 /* TBCImgToolsItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBCImgToolsItemView.m; sourceTree = "<group>"; };
+		212909D62A7A8E8600A82395 /* TBCToolsBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBCToolsBarView.h; sourceTree = "<group>"; };
+		212909D72A7A8E8600A82395 /* TBCToolsBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBCToolsBarView.m; sourceTree = "<group>"; };
 		41C1620D0217C7F519677217 /* Pods_SuperDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		572E40EE249F062500D531B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		572E40EF249F062500D531B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -153,6 +162,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		212909CA2A7A857300A82395 /* TBCToolsBarView */ = {
+			isa = PBXGroup;
+			children = (
+				212909D22A7A8E2200A82395 /* TBCImgToolsItemView */,
+				212909CE2A7A8CD400A82395 /* TBCToolsItemBaseView */,
+				212909D62A7A8E8600A82395 /* TBCToolsBarView.h */,
+				212909D72A7A8E8600A82395 /* TBCToolsBarView.m */,
+			);
+			path = TBCToolsBarView;
+			sourceTree = "<group>";
+		};
+		212909CE2A7A8CD400A82395 /* TBCToolsItemBaseView */ = {
+			isa = PBXGroup;
+			children = (
+				212909CF2A7A8CD400A82395 /* TBCToolsItemBaseView.h */,
+				212909D02A7A8CD400A82395 /* TBCToolsItemBaseView.m */,
+			);
+			path = TBCToolsItemBaseView;
+			sourceTree = "<group>";
+		};
+		212909D22A7A8E2200A82395 /* TBCImgToolsItemView */ = {
+			isa = PBXGroup;
+			children = (
+				212909D32A7A8E3500A82395 /* TBCImgToolsItemView.h */,
+				212909D42A7A8E3500A82395 /* TBCImgToolsItemView.m */,
+			);
+			path = TBCImgToolsItemView;
+			sourceTree = "<group>";
+		};
 		572E40E2249F062500D531B8 = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +206,7 @@
 		572E40ED249F062500D531B8 /* SuperDemo */ = {
 			isa = PBXGroup;
 			children = (
+				212909CA2A7A857300A82395 /* TBCToolsBarView */,
 				846FE50F25AC357F004BF2ED /* Tools */,
 				57FF280A24CFA28F00BA4D41 /* TaggedPointer */,
 				572E40EE249F062500D531B8 /* AppDelegate.h */,
@@ -499,6 +538,7 @@
 				8458CA0925E889260021D2A0 /* TRURLSchemeManager.m in Sources */,
 				572E4101249F062600D531B8 /* main.m in Sources */,
 				84183DA025626F0C007B7EB7 /* CategoryWeakProperty.m in Sources */,
+				212909D12A7A8CD400A82395 /* TBCToolsItemBaseView.m in Sources */,
 				58603B72A399212B507E5E70 /* YHSafeMutableArray.m in Sources */,
 				D404DF931CCE3610A9830B8D /* LoadTest.m in Sources */,
 				D404DCEB9C9958E8D74BD5C6 /* SubLoadTest.m in Sources */,
@@ -508,7 +548,9 @@
 				D404D60ED7C524BDCFFA3D27 /* Son.m in Sources */,
 				D404DF7179345FD756131E43 /* Person.m in Sources */,
 				D404D2252501615548DC74DA /* Person+man.m in Sources */,
+				212909D52A7A8E3500A82395 /* TBCImgToolsItemView.m in Sources */,
 				58603B9D446DAD1E7AF9443A /* BlockSubClassViewController.m in Sources */,
+				212909D82A7A8E8600A82395 /* TBCToolsBarView.m in Sources */,
 				586033A43C96CB089BDB189E /* BlockViewController.m in Sources */,
 				586032C130BB20340E061C71 /* CustomButton.m in Sources */,
 				58603DD1183E4D72B9F48E70 /* AutoKVO.m in Sources */,

@@ -24,6 +24,7 @@
 #import "CustomButton.h"
 #import <malloc/malloc.h>
 #import <SDWebImage/UIImageView+WebCache.h>
+#import "TBCToolsBarView.h"
 
 
 //#import "ExposureViewController.h"
@@ -37,6 +38,7 @@
 @property(nonatomic, strong) NSString *timerName;
 @property(nonatomic, strong) NSArray *testMutableArray;
 @property(nonatomic, strong) UIButton *testGesCoverButtonTap;
+@property(nonatomic, strong) TBCToolsBarView *toolsBarView;
 @end
 
 @implementation ViewController
@@ -88,7 +90,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    self.toolsBarView = [[TBCToolsBarView alloc] init];
+    [self.view addSubview:self.toolsBarView];
 //    [self.navigationController pushViewController:[[BlockViewController alloc] init] animated:YES];
 //    [self.view setBackgroundColor:[UIColor whiteColor]];
 //    [self testDengIsEqual];
