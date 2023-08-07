@@ -8,11 +8,12 @@
 
 #import "TBCToolsBarView.h"
 #import "TBCImgToolsItemView.h"
+#import "TBCBubbleToolsItemView.h"
 
 @interface TBCToolsBarView () <TBCToolsItemBaseViewDelegate>
 
 @property (nonatomic, strong)TBCImgToolsItemView *imgItemView;
-
+@property (nonatomic, strong)TBCBubbleToolsItemView *bubbleToolsItemView;
 @end
 
 
@@ -34,6 +35,7 @@
 
 - (void)setupSubViews {
     [self addSubview:self.imgItemView];
+    [self addSubview:self.bubbleToolsItemView];
 }
 
 
@@ -51,12 +53,18 @@
 
 - (TBCImgToolsItemView *)imgItemView {
     if (!_imgItemView) {
-        _imgItemView = [[TBCImgToolsItemView alloc] init];
+        _imgItemView = [[TBCImgToolsItemView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
         _imgItemView.delegate = self;
     }
     return _imgItemView;
 }
 
-
+- (TBCBubbleToolsItemView *)bubbleToolsItemView {
+    if (!_bubbleToolsItemView) {
+        _bubbleToolsItemView = [[TBCBubbleToolsItemView alloc] initWithFrame:CGRectMake(200, 200, 200, 200)];
+        _bubbleToolsItemView.delegate = self;
+    }
+    return _bubbleToolsItemView;
+}
 
 @end

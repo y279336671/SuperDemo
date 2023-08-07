@@ -29,10 +29,8 @@
 }
 
 - (void)initToolsItemBaseViewSubViews {
-    self.frame = CGRectMake(100, 100, [self itemSize].width, [self itemSize].height);
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(itemClicked)];
     [self addGestureRecognizer:tap];
-    [self setBackgroundColor:[UIColor yellowColor]];
 }
 
 - (void)itemClicked {
@@ -41,10 +39,6 @@
 
 - (NSString *)itemBgImgName {
     return @"";
-}
-
-- (CGSize)itemSize {
-    return CGSizeZero;
 }
 
 - (BOOL)enable {
