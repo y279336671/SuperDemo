@@ -9,15 +9,9 @@
 #import "TBCToolsItemBaseView.h"
 
 NS_ASSUME_NONNULL_BEGIN
-//@protocol TBCImgToolsItemViewProtocol <NSObject>
-//
-//@required
-//- (void)itemView:(TBCToolsItemBaseView *)itemView businessData:(id)data;
-//
-//@end
 
 @interface TBCImgToolsItemView : TBCToolsItemBaseView
-//@property (nonatomic, weak) id<TBCImgToolsItemViewProtocol> delegate;
+//@property (nonatomic, weak) id <TBCToolsItemDelegate> itemDelegate;
 @end
 
 NS_ASSUME_NONNULL_END

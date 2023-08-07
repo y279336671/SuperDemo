@@ -10,15 +10,6 @@
 
 @interface TBCToolsItemBaseView()
 
-/// 可用状态
-@property (nonatomic, assign) BOOL enable;
-
-/// 背景图片name
-@property (nonatomic, strong) NSString *itemBgImgName;
-
-/// item size
-@property (nonatomic, assign) CGSize itemSize;
-
 @end
 
 @implementation TBCToolsItemBaseView
@@ -37,15 +28,27 @@
     return self;
 }
 
-- ( void)initToolsItemBaseViewSubViews {
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewClicked)];
+- (void)initToolsItemBaseViewSubViews {
+    self.frame = CGRectMake(100, 100, [self itemSize].width, [self itemSize].height);
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(itemClicked)];
     [self addGestureRecognizer:tap];
-    
-    NSLog(@"??????%@", self.itemBgImgName);
+    [self setBackgroundColor:[UIColor yellowColor]];
 }
 
-- (void)viewClicked {
-    self.delegate 
+- (void)itemClicked {
+    NSLog(@">>>>>>> %@", NSStringFromClass([self class]));
+}
+
+- (NSString *)itemBgImgName {
+    return @"";
+}
+
+- (CGSize)itemSize {
+    return CGSizeZero;
+}
+
+- (BOOL)enable {
+    return YES;
 }
 
 @end

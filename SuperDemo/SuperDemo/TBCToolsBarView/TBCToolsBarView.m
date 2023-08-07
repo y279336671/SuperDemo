@@ -9,7 +9,7 @@
 #import "TBCToolsBarView.h"
 #import "TBCImgToolsItemView.h"
 
-@interface TBCToolsBarView ()<TBCToolsItemBaseViewProtocol>
+@interface TBCToolsBarView () <TBCToolsItemBaseViewDelegate>
 
 @property (nonatomic, strong)TBCImgToolsItemView *imgItemView;
 
@@ -37,9 +37,15 @@
 }
 
 
-#pragma mark -- TBCImgToolsItemViewProtocol
+#pragma mark -- TBCToolsItemBaseViewProtocol
 
+- (void)itemView:(TBCToolsItemBaseView *)itemView businessData:(id)data {
+    NSLog(@"%@,%@", itemView, data);
+}
 
+- (void)itemViewClicked:(TBCToolsItemBaseView *)itemView {
+    NSLog(@"%@", itemView);
+}
 
 #pragma mark -- init
 
@@ -50,5 +56,7 @@
     }
     return _imgItemView;
 }
+
+
 
 @end

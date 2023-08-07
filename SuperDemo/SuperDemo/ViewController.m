@@ -28,7 +28,7 @@
 
 
 //#import "ExposureViewController.h"
-@interface ViewController ()
+@interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 @property(nonatomic, strong) Person *person;
 //@property(nonatomic, copy) int (^testBlcok)(int n);
 @property(nonatomic, strong) Person *personNSTimer;
@@ -39,9 +39,34 @@
 @property(nonatomic, strong) NSArray *testMutableArray;
 @property(nonatomic, strong) UIButton *testGesCoverButtonTap;
 @property(nonatomic, strong) TBCToolsBarView *toolsBarView;
+
+@property(nonatomic, strong) UITableView *tableView;
 @end
 
 @implementation ViewController
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 100;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [[UITableViewCell alloc] init];
+    cell.backgroundColor = [UIColor redColor];
+    return cell;
+}
+
+- (UITableView *)tableView {
+    if (!_tableView) {
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height) style:UITableViewStylePlain];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+    }
+    return _tableView;
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    NSLog(@">>>>>>%@", scrollView);
+}
 
 - (void)testGes {
     NSLog(@"testGes");
@@ -88,12 +113,59 @@
 
 }
 
+- (NSArray *)regularPlusString:(NSString *)content {
+    
+    NSString *pattern = @"<(tpcl|tpcc)>([^<]*?)\\^![^!]*?\\^!</(tpcl|tpcc)>";
+
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:pattern options:NSRegularExpressionCaseInsensitive error:nil];
+    NSArray<NSTextCheckingResult *> *matches = [regex matchesInString:content options:0 range:NSMakeRange(0, [content length])];
+    NSMutableArray *results = [[NSMutableArray alloc] init];
+    for (NSTextCheckingResult *match in matches) {
+        NSString *result = [content substringWithRange:[match rangeAtIndex:2]];
+        NSLog(@"匹配结果：%@", result);
+        [results addObject:result];
+    }
+    return [results copy];
+}
+
+
+- (void)test {
+//    NSString *text = @"这是一个示例文本，其中包含#adfadsfds##需要匹配的内容111###。";
+//    NSString *pattern = @"#([^#]*?)#";
+//
+//    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:pattern options:NSRegularExpressionCaseInsensitive error:nil];
+//    NSArray<NSTextCheckingResult *> *matches = [regex matchesInString:text options:0 range:NSMakeRange(0, [text length])];
+//
+//    for (NSTextCheckingResult *match in matches) {
+//        NSString *result = [text substringWithRange:[match rangeAtIndex:1]];
+//        NSLog(@"匹配结果：%@", result);
+//    }
+//
+    NSString *text = @"这是一个示例文本，其中包含###需要匹配的内容###和##另一个匹配内容##。";
+    NSString *pattern = @"#([^#]*?)#";
+
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:pattern options:NSRegularExpressionCaseInsensitive error:nil];
+    NSArray<NSTextCheckingResult *> *matches = [regex matchesInString:text options:0 range:NSMakeRange(0, [text length])];
+
+    for (NSTextCheckingResult *match in matches) {
+        NSString *result = [text substringWithRange:[match range]];
+        NSLog(@"匹配结果：%@", result);
+    }
+
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    
     self.toolsBarView = [[TBCToolsBarView alloc] init];
     [self.view addSubview:self.toolsBarView];
+//    [self.view addSubview:self.tableView];
+//    NSString *text = @"<tpcl>这是一个示例文本^!2456^!</tpcl><tpcc>这是另一个示例文本^!1234^!</tpcc><tpcl>这是一个示例文本^!2456^!</tpcl><tpcl>这是一个示例文本^!2456^!</tpcl>";
+
+//    NSLog(@"%@",  [self regularPlusString:text]);
+    
+    
+//    [self test];
 //    [self.navigationController pushViewController:[[BlockViewController alloc] init] animated:YES];
 //    [self.view setBackgroundColor:[UIColor whiteColor]];
 //    [self testDengIsEqual];
@@ -209,7 +281,7 @@
 
 //    AutoKVO *manualKvo = [[AutoKVO alloc] init];
 //    [self.navigationController pushViewController:manualKvo animated:YES];
-
+//
 //    self.manualKVO1.name = @"11";
 //    self.manualKVO2.name = @"22";
 //    [self printMethodListForIns:object_getClass(self.manualKVO1)];

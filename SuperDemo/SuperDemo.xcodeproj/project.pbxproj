@@ -67,6 +67,7 @@
 		212909D42A7A8E3500A82395 /* TBCImgToolsItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBCImgToolsItemView.m; sourceTree = "<group>"; };
 		212909D62A7A8E8600A82395 /* TBCToolsBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBCToolsBarView.h; sourceTree = "<group>"; };
 		212909D72A7A8E8600A82395 /* TBCToolsBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBCToolsBarView.m; sourceTree = "<group>"; };
+		219E17B12A7EA5F500C004DF /* TBCToolsItemBaseViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBCToolsItemBaseViewDelegate.h; sourceTree = "<group>"; };
 		41C1620D0217C7F519677217 /* Pods_SuperDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		572E40EE249F062500D531B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		572E40EF249F062500D531B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -176,6 +177,7 @@
 		212909CE2A7A8CD400A82395 /* TBCToolsItemBaseView */ = {
 			isa = PBXGroup;
 			children = (
+				219E17B12A7EA5F500C004DF /* TBCToolsItemBaseViewDelegate.h */,
 				212909CF2A7A8CD400A82395 /* TBCToolsItemBaseView.h */,
 				212909D02A7A8CD400A82395 /* TBCToolsItemBaseView.m */,
 			);
