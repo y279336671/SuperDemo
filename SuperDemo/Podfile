@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '16.0'
 
 target 'SuperDemo' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -8,7 +8,7 @@ target 'SuperDemo' do
   # Pods for SuperDemo
 #  pod "Aspects"
 #  pod "MLeaksFinder"
-    pod 'YYKit', '~> 1.0.9'
-    pod 'SDWebImage', '~> 5.10.1'
-
+#    pod 'YYKit', '~> 1.0.9'
+#    pod 'SDWebImage', '~> 5.10.1'
+    pod 'YogaKit', '~> 2.0.1'
 end

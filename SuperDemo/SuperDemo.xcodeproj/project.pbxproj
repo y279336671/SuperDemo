@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,17 +20,11 @@
 		572E4101249F062600D531B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 572E4100249F062600D531B8 /* main.m */; };
 		57FF280D24CFA2AA00BA4D41 /* TaggedPointerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FF280C24CFA2AA00BA4D41 /* TaggedPointerViewController.m */; };
 		58603075B0BB9290C262CB5A /* MJTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 586030A25C1F1014E488FDF0 /* MJTimer.m */; };
-		586030E3CEEB03E9A6F5E2A2 /* MemoryDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58603094964659981B6EE07D /* MemoryDemoViewController.m */; };
 		58603149A5CF1D39C89F84D8 /* YHProxyBetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 586038864EAD08487D47175D /* YHProxyBetter.m */; };
-		586031A0D84FC6AB9166AB5F /* MemorySubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5860383968220F1461C6BE98 /* MemorySubViewController.m */; };
 		586032C130BB20340E061C71 /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 58603A3D876443103EBF3C4C /* CustomButton.m */; };
 		586033A43C96CB089BDB189E /* BlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 586037505C9896A99D2737F0 /* BlockViewController.m */; };
-		586038C4EDE02DF2BA86B82C /* YHThreadSafeMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 58603EF9AFE46E579D522C04 /* YHThreadSafeMutableArray.m */; };
 		586039F976587CEF599EA11A /* NSObject+AutoRemoveKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 58603278D6EF0275A172161D /* NSObject+AutoRemoveKVO.m */; };
-		58603B31115D2F8308DB1224 /* VideoDownLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 58603C5369116D1E483524D9 /* VideoDownLoader.m */; };
-		58603B72A399212B507E5E70 /* YHSafeMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 58603254E095641670D6047D /* YHSafeMutableArray.m */; };
 		58603B9D446DAD1E7AF9443A /* BlockSubClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5860389EBF912CB7A9BE92B8 /* BlockSubClassViewController.m */; };
-		58603DC2083CABF7F18050D9 /* MultithreadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58603E7C48A0AF644C315D24 /* MultithreadingViewController.m */; };
 		58603DD1183E4D72B9F48E70 /* AutoKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 58603D9734D3EF922E8F50F1 /* AutoKVO.m */; };
 		84183DA025626F0C007B7EB7 /* CategoryWeakProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 84183D9F25626F0C007B7EB7 /* CategoryWeakProperty.m */; };
 		8430E90A25E8C66C00120D73 /* Schemes.json in Resources */ = {isa = PBXBuildFile; fileRef = 8430E90925E8C66C00120D73 /* Schemes.json */; };
@@ -88,32 +82,20 @@
 		572E4100249F062600D531B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		57FF280B24CFA2AA00BA4D41 /* TaggedPointerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaggedPointerViewController.h; sourceTree = "<group>"; };
 		57FF280C24CFA2AA00BA4D41 /* TaggedPointerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaggedPointerViewController.m; sourceTree = "<group>"; };
-		58603094964659981B6EE07D /* MemoryDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryDemoViewController.m; sourceTree = "<group>"; };
 		586030A25C1F1014E488FDF0 /* MJTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJTimer.m; sourceTree = "<group>"; };
-		586030E6486493796A92087B /* MultithreadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultithreadingViewController.h; sourceTree = "<group>"; };
-		586031C0278C34DD782B535B /* YHThreadSafeMutableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHThreadSafeMutableArray.h; sourceTree = "<group>"; };
 		586031E1A21937DC49C5C4F5 /* YHProxyBetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHProxyBetter.h; sourceTree = "<group>"; };
 		5860320768E47231EB9A72FF /* AutoKVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoKVO.h; sourceTree = "<group>"; };
-		58603254E095641670D6047D /* YHSafeMutableArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHSafeMutableArray.m; sourceTree = "<group>"; };
 		58603278D6EF0275A172161D /* NSObject+AutoRemoveKVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AutoRemoveKVO.m"; sourceTree = "<group>"; };
-		586033E63614D9C24CB32C77 /* MemoryDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryDemoViewController.h; sourceTree = "<group>"; };
 		586035865B3EC800F912E5B3 /* NSObject+AutoRemoveKVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AutoRemoveKVO.h"; sourceTree = "<group>"; };
 		586037505C9896A99D2737F0 /* BlockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockViewController.m; sourceTree = "<group>"; };
 		5860380D117508FF0BB09ADB /* BlockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockViewController.h; sourceTree = "<group>"; };
-		5860383968220F1461C6BE98 /* MemorySubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemorySubViewController.m; sourceTree = "<group>"; };
 		586038864EAD08487D47175D /* YHProxyBetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHProxyBetter.m; sourceTree = "<group>"; };
 		5860389EBF912CB7A9BE92B8 /* BlockSubClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockSubClassViewController.m; sourceTree = "<group>"; };
 		58603A3D876443103EBF3C4C /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButton.m; sourceTree = "<group>"; };
 		58603A87EEF4764433F1BEBB /* MJTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJTimer.h; sourceTree = "<group>"; };
 		58603AE4A849389466FC9F51 /* CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButton.h; sourceTree = "<group>"; };
-		58603C5369116D1E483524D9 /* VideoDownLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoDownLoader.m; sourceTree = "<group>"; };
 		58603CBE608F86285D353D2D /* BlockSubClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockSubClassViewController.h; sourceTree = "<group>"; };
 		58603D9734D3EF922E8F50F1 /* AutoKVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoKVO.m; sourceTree = "<group>"; };
-		58603E355E5567B29BEE1CD7 /* YHSafeMutableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHSafeMutableArray.h; sourceTree = "<group>"; };
-		58603E7C48A0AF644C315D24 /* MultithreadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultithreadingViewController.m; sourceTree = "<group>"; };
-		58603E7EAF824BE0C28F3178 /* MemorySubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemorySubViewController.h; sourceTree = "<group>"; };
-		58603EF6E6ED6F595E0AEDD3 /* VideoDownLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoDownLoader.h; sourceTree = "<group>"; };
-		58603EF9AFE46E579D522C04 /* YHThreadSafeMutableArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHThreadSafeMutableArray.m; sourceTree = "<group>"; };
 		84183D9C25626E82007B7EB7 /* SuperDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84183D9E25626F0C007B7EB7 /* CategoryWeakProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryWeakProperty.h; sourceTree = "<group>"; };
 		84183D9F25626F0C007B7EB7 /* CategoryWeakProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryWeakProperty.m; sourceTree = "<group>"; };
@@ -262,8 +244,6 @@
 				5860356B3AB1FE2DBEF0123D /* Scheme */,
 				586033A07E0641B6FD6B7DB2 /* CustomView */,
 				5860324530124BF44461C507 /* AutoKVO */,
-				58603268E0518985FFFA3BD0 /* Multithread */,
-				586039459B659BCDE068038D /* Memory */,
 			);
 			path = SuperDemo;
 			sourceTree = "<group>";
@@ -286,17 +266,6 @@
 				586035865B3EC800F912E5B3 /* NSObject+AutoRemoveKVO.h */,
 			);
 			path = AutoKVO;
-			sourceTree = "<group>";
-		};
-		58603268E0518985FFFA3BD0 /* Multithread */ = {
-			isa = PBXGroup;
-			children = (
-				586030E6486493796A92087B /* MultithreadingViewController.h */,
-				58603E7C48A0AF644C315D24 /* MultithreadingViewController.m */,
-				58603EF9AFE46E579D522C04 /* YHThreadSafeMutableArray.m */,
-				586031C0278C34DD782B535B /* YHThreadSafeMutableArray.h */,
-			);
-			path = Multithread;
 			sourceTree = "<group>";
 		};
 		586033A07E0641B6FD6B7DB2 /* CustomView */ = {
@@ -329,19 +298,6 @@
 			path = Timers;
 			sourceTree = "<group>";
 		};
-		586039459B659BCDE068038D /* Memory */ = {
-			isa = PBXGroup;
-			children = (
-				586033E63614D9C24CB32C77 /* MemoryDemoViewController.h */,
-				58603094964659981B6EE07D /* MemoryDemoViewController.m */,
-				5860383968220F1461C6BE98 /* MemorySubViewController.m */,
-				58603E7EAF824BE0C28F3178 /* MemorySubViewController.h */,
-				58603C5369116D1E483524D9 /* VideoDownLoader.m */,
-				58603EF6E6ED6F595E0AEDD3 /* VideoDownLoader.h */,
-			);
-			path = Memory;
-			sourceTree = "<group>";
-		};
 		58603F86B801C7DD317C0D7F /* Block */ = {
 			isa = PBXGroup;
 			children = (
@@ -363,8 +319,6 @@
 				846FE51025AC35AD004BF2ED /* MJPermenantThread.m */,
 				846FE51425AC35AD004BF2ED /* Tools.h */,
 				846FE51225AC35AD004BF2ED /* Tools.m */,
-				58603254E095641670D6047D /* YHSafeMutableArray.m */,
-				58603E355E5567B29BEE1CD7 /* YHSafeMutableArray.h */,
 				586036F588041A91942EEB31 /* Timers */,
 			);
 			path = Tools;
@@ -573,7 +527,6 @@
 				84183DA025626F0C007B7EB7 /* CategoryWeakProperty.m in Sources */,
 				219E17BA2A811B2E00C004DF /* TBCHybridSendThreadViewController.m in Sources */,
 				212909D12A7A8CD400A82395 /* TBCToolsItemBaseView.m in Sources */,
-				58603B72A399212B507E5E70 /* YHSafeMutableArray.m in Sources */,
 				D404DF931CCE3610A9830B8D /* LoadTest.m in Sources */,
 				D404DCEB9C9958E8D74BD5C6 /* SubLoadTest.m in Sources */,
 				D404DA9D700C16A3AAB79C4E /* LoadTest+LoadTestCategory.m in Sources */,
@@ -593,11 +546,6 @@
 				586039F976587CEF599EA11A /* NSObject+AutoRemoveKVO.m in Sources */,
 				58603075B0BB9290C262CB5A /* MJTimer.m in Sources */,
 				58603149A5CF1D39C89F84D8 /* YHProxyBetter.m in Sources */,
-				58603DC2083CABF7F18050D9 /* MultithreadingViewController.m in Sources */,
-				586038C4EDE02DF2BA86B82C /* YHThreadSafeMutableArray.m in Sources */,
-				586030E3CEEB03E9A6F5E2A2 /* MemoryDemoViewController.m in Sources */,
-				586031A0D84FC6AB9166AB5F /* MemorySubViewController.m in Sources */,
-				58603B31115D2F8308DB1224 /* VideoDownLoader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -742,7 +690,7 @@
 				DEVELOPMENT_TEAM = QQGC6FGPZU;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = SuperDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -764,7 +712,7 @@
 				DEVELOPMENT_TEAM = QQGC6FGPZU;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = SuperDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

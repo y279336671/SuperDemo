@@ -9,7 +9,6 @@
 #import <objc/runtime.h>
 #import "ViewController.h"
 #import "Inherit/Person.h"
-#import "Memory/MemoryDemoViewController.h"
 #import "TaggedPointer/TaggedPointerViewController.h"
 #import "AutoKVO/AutoKVO.h"
 #import "Inherit/Person+man.h"
@@ -23,7 +22,7 @@
 #import "TRURLSchemeManager.h"
 #import "CustomButton.h"
 #import <malloc/malloc.h>
-#import <SDWebImage/UIImageView+WebCache.h>
+
 #import "TBCToolsBarView.h"
 
 
@@ -419,17 +418,4 @@
     [self.navigationController pushViewController:tg animated:YES];
 }
 
-//测试timer
-- (void)memoryDemo {
-    UIButton *memoryDemo = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
-    [memoryDemo addTarget:self action:@selector(showMemoryDemo) forControlEvents:UIControlEventTouchUpInside];
-    [memoryDemo setTitle:@"memory" forState:UIControlStateNormal];
-    [self.view addSubview:memoryDemo];
-}
-
-- (void)showMemoryDemo {
-    MemoryDemoViewController *memoryDemo = [[MemoryDemoViewController alloc] init];
-    [memoryDemo.view setBackgroundColor:UIColor.yellowColor];
-    [self.navigationController pushViewController:memoryDemo animated:YES];
-}
 @end

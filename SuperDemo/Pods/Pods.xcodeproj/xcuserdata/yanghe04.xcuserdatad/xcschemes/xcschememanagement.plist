@@ -7,26 +7,20 @@
 		<key>Pods-SuperDemo.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<false />
-			<key>orderHint</key>
-			<integer>0</integer>
+			<false/>
 		</dict>
-		<key>SDWebImage.xcscheme</key>
+		<key>Yoga.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<false />
-			<key>orderHint</key>
-			<integer>1</integer>
+			<false/>
 		</dict>
-		<key>YYKit.xcscheme</key>
+		<key>YogaKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<false />
-			<key>orderHint</key>
-			<integer>2</integer>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict />
+	<dict/>
 </dict>
 </plist>
