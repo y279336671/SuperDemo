@@ -7,22 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TBCToolsItemBaseViewDelegate.h"
+#import "TBCToolsItemBaseViewProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TBCToolsItemBaseView : UIView
 
-@property (nonatomic, weak, nullable) id<TBCToolsItemBaseViewDelegate> delegate;
+@property (nonatomic, assign) BOOL enable;
 
-
-//- (NSString *)itemBgImgName;
-//
-//- (CGSize)itemSize;
-//
-//- (BOOL)enable;
-//
-//- (void)itemClicked;
 @end
 
 NS_ASSUME_NONNULL_END

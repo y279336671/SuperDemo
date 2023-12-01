@@ -27,20 +27,13 @@
 
 #pragma mark -- 重写下面方法定制界面
 
-- (NSString *)itemBgImgName {
+- (NSString *)setItemBgImgName {
+    NSLog(@"22222");
     return @"22222";
 }
 
-//- (CGSize)itemSize {
-//    return CGSizeMake(200, 200);
-//}
-
-- (BOOL)enable {
-    return YES;
-}
-
 - (void)itemClicked {
-    NSLog(@">>>>>>itemClicked");
+    NSLog(@">>>>>>>11 %@", NSStringFromClass([self class]));
 }
 
 @end

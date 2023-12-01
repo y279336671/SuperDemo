@@ -1,7 +1,7 @@
 //
 //  TBCToolsBarView.m
 //  SuperDemo
-//
+//	只做页面展示
 //  Created by yanghe04 on 2023/8/2.
 //  Copyright © 2023 yanghe. All rights reserved.
 //
@@ -10,10 +10,11 @@
 #import "TBCImgToolsItemView.h"
 #import "TBCBubbleToolsItemView.h"
 
-@interface TBCToolsBarView () <TBCToolsItemBaseViewDelegate>
+@interface TBCToolsBarView ()
 
 @property (nonatomic, strong)TBCImgToolsItemView *imgItemView;
 @property (nonatomic, strong)TBCBubbleToolsItemView *bubbleToolsItemView;
+
 @end
 
 
@@ -38,23 +39,12 @@
     [self addSubview:self.bubbleToolsItemView];
 }
 
-
-#pragma mark -- TBCToolsItemBaseViewProtocol
-
-- (void)itemView:(TBCToolsItemBaseView *)itemView businessData:(id)data {
-    NSLog(@"%@,%@", itemView, data);
-}
-
-- (void)itemViewClicked:(TBCToolsItemBaseView *)itemView {
-    NSLog(@"%@", itemView);
-}
-
 #pragma mark -- init
 
 - (TBCImgToolsItemView *)imgItemView {
     if (!_imgItemView) {
         _imgItemView = [[TBCImgToolsItemView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
-        _imgItemView.delegate = self;
+        [_imgItemView setItemBgImgName];
     }
     return _imgItemView;
 }
@@ -62,7 +52,7 @@
 - (TBCBubbleToolsItemView *)bubbleToolsItemView {
     if (!_bubbleToolsItemView) {
         _bubbleToolsItemView = [[TBCBubbleToolsItemView alloc] initWithFrame:CGRectMake(200, 200, 200, 200)];
-        _bubbleToolsItemView.delegate = self;
+        [_bubbleToolsItemView setItemBgImgName];
     }
     return _bubbleToolsItemView;
 }

@@ -11,6 +11,8 @@
 		212909D52A7A8E3500A82395 /* TBCImgToolsItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 212909D42A7A8E3500A82395 /* TBCImgToolsItemView.m */; };
 		212909D82A7A8E8600A82395 /* TBCToolsBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 212909D72A7A8E8600A82395 /* TBCToolsBarView.m */; };
 		219E17B62A8099B100C004DF /* TBCBubbleToolsItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 219E17B52A8099B100C004DF /* TBCBubbleToolsItemView.m */; };
+		219E17BA2A811B2E00C004DF /* TBCHybridSendThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 219E17B92A811B2E00C004DF /* TBCHybridSendThreadViewController.m */; };
+		21F8FFAB2A81DF9800E02A3A /* TBCImgToolsItemPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F8FFAA2A81DF9800E02A3A /* TBCImgToolsItemPresenter.m */; };
 		572E40F0249F062500D531B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 572E40EF249F062500D531B8 /* AppDelegate.m */; };
 		572E40F6249F062500D531B8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 572E40F5249F062500D531B8 /* ViewController.m */; };
 		572E40FB249F062600D531B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 572E40FA249F062600D531B8 /* Assets.xcassets */; };
@@ -68,9 +70,13 @@
 		212909D42A7A8E3500A82395 /* TBCImgToolsItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBCImgToolsItemView.m; sourceTree = "<group>"; };
 		212909D62A7A8E8600A82395 /* TBCToolsBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBCToolsBarView.h; sourceTree = "<group>"; };
 		212909D72A7A8E8600A82395 /* TBCToolsBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBCToolsBarView.m; sourceTree = "<group>"; };
-		219E17B12A7EA5F500C004DF /* TBCToolsItemBaseViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBCToolsItemBaseViewDelegate.h; sourceTree = "<group>"; };
+		219E17B12A7EA5F500C004DF /* TBCToolsItemBaseViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBCToolsItemBaseViewProtocol.h; sourceTree = "<group>"; };
 		219E17B42A8099B100C004DF /* TBCBubbleToolsItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBCBubbleToolsItemView.h; sourceTree = "<group>"; };
 		219E17B52A8099B100C004DF /* TBCBubbleToolsItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBCBubbleToolsItemView.m; sourceTree = "<group>"; };
+		219E17B82A811B2E00C004DF /* TBCHybridSendThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBCHybridSendThreadViewController.h; sourceTree = "<group>"; };
+		219E17B92A811B2E00C004DF /* TBCHybridSendThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBCHybridSendThreadViewController.m; sourceTree = "<group>"; };
+		21F8FFA92A81DF9800E02A3A /* TBCImgToolsItemPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBCImgToolsItemPresenter.h; sourceTree = "<group>"; };
+		21F8FFAA2A81DF9800E02A3A /* TBCImgToolsItemPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBCImgToolsItemPresenter.m; sourceTree = "<group>"; };
 		41C1620D0217C7F519677217 /* Pods_SuperDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		572E40EE249F062500D531B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		572E40EF249F062500D531B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -169,6 +175,7 @@
 		212909CA2A7A857300A82395 /* TBCToolsBarView */ = {
 			isa = PBXGroup;
 			children = (
+				21F8FFA82A81DF3100E02A3A /* TBCBubbleToolsItem */,
 				212909D22A7A8E2200A82395 /* TBCImgToolsItemView */,
 				212909CE2A7A8CD400A82395 /* TBCToolsItemBaseView */,
 				212909D62A7A8E8600A82395 /* TBCToolsBarView.h */,
@@ -180,7 +187,7 @@
 		212909CE2A7A8CD400A82395 /* TBCToolsItemBaseView */ = {
 			isa = PBXGroup;
 			children = (
-				219E17B12A7EA5F500C004DF /* TBCToolsItemBaseViewDelegate.h */,
+				219E17B12A7EA5F500C004DF /* TBCToolsItemBaseViewProtocol.h */,
 				212909CF2A7A8CD400A82395 /* TBCToolsItemBaseView.h */,
 				212909D02A7A8CD400A82395 /* TBCToolsItemBaseView.m */,
 			);
@@ -192,10 +199,29 @@
 			children = (
 				212909D32A7A8E3500A82395 /* TBCImgToolsItemView.h */,
 				212909D42A7A8E3500A82395 /* TBCImgToolsItemView.m */,
+				21F8FFA92A81DF9800E02A3A /* TBCImgToolsItemPresenter.h */,
+				21F8FFAA2A81DF9800E02A3A /* TBCImgToolsItemPresenter.m */,
+			);
+			path = TBCImgToolsItemView;
+			sourceTree = "<group>";
+		};
+		219E17B72A80F1EC00C004DF /* TBCHybridSendThread */ = {
+			isa = PBXGroup;
+			children = (
+				212909CA2A7A857300A82395 /* TBCToolsBarView */,
+				219E17B82A811B2E00C004DF /* TBCHybridSendThreadViewController.h */,
+				219E17B92A811B2E00C004DF /* TBCHybridSendThreadViewController.m */,
+			);
+			path = TBCHybridSendThread;
+			sourceTree = "<group>";
+		};
+		21F8FFA82A81DF3100E02A3A /* TBCBubbleToolsItem */ = {
+			isa = PBXGroup;
+			children = (
 				219E17B42A8099B100C004DF /* TBCBubbleToolsItemView.h */,
 				219E17B52A8099B100C004DF /* TBCBubbleToolsItemView.m */,
 			);
-			path = TBCImgToolsItemView;
+			path = TBCBubbleToolsItem;
 			sourceTree = "<group>";
 		};
 		572E40E2249F062500D531B8 = {
@@ -213,7 +239,7 @@
 		572E40ED249F062500D531B8 /* SuperDemo */ = {
 			isa = PBXGroup;
 			children = (
-				212909CA2A7A857300A82395 /* TBCToolsBarView */,
+				219E17B72A80F1EC00C004DF /* TBCHybridSendThread */,
 				846FE50F25AC357F004BF2ED /* Tools */,
 				57FF280A24CFA28F00BA4D41 /* TaggedPointer */,
 				572E40EE249F062500D531B8 /* AppDelegate.h */,
@@ -545,6 +571,7 @@
 				8458CA0925E889260021D2A0 /* TRURLSchemeManager.m in Sources */,
 				572E4101249F062600D531B8 /* main.m in Sources */,
 				84183DA025626F0C007B7EB7 /* CategoryWeakProperty.m in Sources */,
+				219E17BA2A811B2E00C004DF /* TBCHybridSendThreadViewController.m in Sources */,
 				212909D12A7A8CD400A82395 /* TBCToolsItemBaseView.m in Sources */,
 				58603B72A399212B507E5E70 /* YHSafeMutableArray.m in Sources */,
 				D404DF931CCE3610A9830B8D /* LoadTest.m in Sources */,
@@ -552,6 +579,7 @@
 				D404DA9D700C16A3AAB79C4E /* LoadTest+LoadTestCategory.m in Sources */,
 				D404D32AE7F222298633495D /* SubLoadTest+SubLoadTestCategory.m in Sources */,
 				D404DC0800AE5D4F15573181 /* MessagesForwarding.m in Sources */,
+				21F8FFAB2A81DF9800E02A3A /* TBCImgToolsItemPresenter.m in Sources */,
 				D404D60ED7C524BDCFFA3D27 /* Son.m in Sources */,
 				D404DF7179345FD756131E43 /* Person.m in Sources */,
 				D404D2252501615548DC74DA /* Person+man.m in Sources */,

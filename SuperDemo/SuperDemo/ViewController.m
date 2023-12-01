@@ -154,14 +154,51 @@
 
 }
 
+- (void)test1:(UIView *)view {
+    // 弹簧动画，参数分别为：时长，延时，弹性（越小弹性越大），初始速度
+    [UIView animateWithDuration: 0.7 delay:0 usingSpringWithDamping:0.22 initialSpringVelocity:5.5 options:0 animations:^{
+        // 放大
+        view.frame = CGRectMake(view.frame.origin.x, view.frame.origin.y - 60, view.frame.size.width, view.frame.size.height);
+    } completion:nil];
+    
+//    CASpringAnimation *sp = [CASpringAnimation animationWithKeyPath:@"position.y"];
+//    sp.mass = 0.1; //质量，影响图层运动时的弹簧惯性,质量越大，弹簧拉伸和压缩的幅度越大,默认1
+//    sp.stiffness = 100.0f; //弹性系数，弹性系数越大，形变产生的力就越大，运动越快，默认100
+//    sp.damping = 0.3f; //阻尼系数，阻止弹簧伸缩的系数，阻尼系数越大，停止越快，默认10
+//    sp.initialVelocity = 10.0f; //动画视图的初始速度大小，默认0
+//    sp.duration = sp.settlingDuration; //结算时间 返回弹簧动画到停止时的估算时间
+//    sp.fillMode = kCAFillModeRemoved; //动画结束后复原
+//    sp.autoreverses = NO; //不做逆动画
+//    sp.removedOnCompletion = YES; //动画结束后移除
+//
+//    sp.fromValue = @(view.layer.position.y);
+//    sp.toValue = @(view.layer.position.y - 50);
+////    view.frame = CGRectMake(view.frame.origin.x, view.layer.position.y - 60, view.frame.size.width, view.frame.size.height);
+//    [view.layer addAnimation:sp forKey:@"spring"];
+//    [view setNeedsDisplay];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    self.toolsBarView = [[TBCToolsBarView alloc] init];
-    [self.view addSubview:self.toolsBarView];
+    
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(100, 300, 100, 100)];
+    [view setBackgroundColor:[UIColor redColor]];
+    [self.view addSubview:view];
+    [self performSelector:@selector(test1:) withObject:view afterDelay:3];
+    
+//    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(100, 300, 100, 100)];
+    
+    
+    
+    
+    
+//    self.toolsBarView = [[TBCToolsBarView alloc] initWithFrame:CGRectMake(0, 0, 1000, 1000)];
+//    [self.toolsBarView setBackgroundColor:[UIColor redColor]];
+//    [self.view addSubview:self.toolsBarView];
 //    [self.view addSubview:self.tableView];
 //    NSString *text = @"<tpcl>这是一个示例文本^!2456^!</tpcl><tpcc>这是另一个示例文本^!1234^!</tpcc><tpcl>这是一个示例文本^!2456^!</tpcl><tpcl>这是一个示例文本^!2456^!</tpcl>";
-
+//
 //    NSLog(@"%@",  [self regularPlusString:text]);
     
     
@@ -276,22 +313,22 @@
     NSLog(@"NSStringFromClass([self class]) dealloc = %@", NSStringFromClass([self class]));
 }
 
-- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [super touchesEnded:touches withEvent:event];
-
-//    AutoKVO *manualKvo = [[AutoKVO alloc] init];
-//    [self.navigationController pushViewController:manualKvo animated:YES];
+//- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+//    [super touchesEnded:touches withEvent:event];
 //
-//    self.manualKVO1.name = @"11";
-//    self.manualKVO2.name = @"22";
-//    [self printMethodListForIns:object_getClass(self.manualKVO1)];
-//    [self printMethodListForIns:object_getClass(self.manualKVO2)];
-
-    BlockViewController *blockViewController = [[BlockViewController alloc] init];
-    blockViewController.view.backgroundColor = [UIColor redColor];
-    blockViewController.view.frame = CGRectMake(0, 0, UIScreen.mainScreen.bounds.size.width, UIScreen.mainScreen.bounds.size.height);
-    [self.navigationController pushViewController:blockViewController animated:YES];
-}
+////    AutoKVO *manualKvo = [[AutoKVO alloc] init];
+////    [self.navigationController pushViewController:manualKvo animated:YES];
+////
+////    self.manualKVO1.name = @"11";
+////    self.manualKVO2.name = @"22";
+////    [self printMethodListForIns:object_getClass(self.manualKVO1)];
+////    [self printMethodListForIns:object_getClass(self.manualKVO2)];
+//
+//    BlockViewController *blockViewController = [[BlockViewController alloc] init];
+//    blockViewController.view.backgroundColor = [UIColor redColor];
+//    blockViewController.view.frame = CGRectMake(0, 0, UIScreen.mainScreen.bounds.size.width, UIScreen.mainScreen.bounds.size.height);
+//    [self.navigationController pushViewController:blockViewController animated:YES];
+//}
 
 - (void)testreturnint {
 

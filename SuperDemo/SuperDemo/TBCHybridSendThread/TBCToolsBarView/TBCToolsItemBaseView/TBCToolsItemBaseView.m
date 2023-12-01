@@ -31,18 +31,12 @@
 - (void)initToolsItemBaseViewSubViews {
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(itemClicked)];
     [self addGestureRecognizer:tap];
+    
+    [self setBackgroundColor:[UIColor yellowColor]];
 }
 
 - (void)itemClicked {
-    NSLog(@">>>>>>> %@", NSStringFromClass([self class]));
-}
-
-- (NSString *)itemBgImgName {
-    return @"";
-}
-
-- (BOOL)enable {
-    return YES;
+    NSLog(@">>>>>>> 请实现协议中的itemClicked");
 }
 
 @end
