@@ -22,7 +22,7 @@
 #import "TRURLSchemeManager.h"
 #import "CustomButton.h"
 #import <malloc/malloc.h>
-
+#import "TBCHybridSendThreadViewController.h"
 #import "TBCToolsBarView.h"
 
 
@@ -177,14 +177,39 @@
 //    [view setNeedsDisplay];
 }
 
+- (void)injected{
+
+    [self viewWillAppear:YES];
+
+    [self viewDidLoad];
+}
+
+
+
+- (void)test7968 {
+    TBCHybridSendThreadViewController *vc = [[TBCHybridSendThreadViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
+    [self.view setBackgroundColor:[UIColor whiteColor]];
     
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(100, 300, 100, 100)];
-    [view setBackgroundColor:[UIColor redColor]];
-    [self.view addSubview:view];
-    [self performSelector:@selector(test1:) withObject:view afterDelay:3];
+
+    
+    
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 200, 100, 100)];
+    [button setTitle:@"hahah" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(test7968) forControlEvents:UIControlEventTouchUpInside];
+    [button setBackgroundColor:[UIColor redColor]];
+    [self.view addSubview:button];
+    
+//    self.view.backgroundColor = [UIColor whiteColor];
+//    
+//    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(100, 300, 100, 100)];
+//    [view setBackgroundColor:[UIColor redColor]];
+//    [self.view addSubview:view];
+//    [self performSelector:@selector(test1:) withObject:view afterDelay:3];
     
 //    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(100, 300, 100, 100)];
     

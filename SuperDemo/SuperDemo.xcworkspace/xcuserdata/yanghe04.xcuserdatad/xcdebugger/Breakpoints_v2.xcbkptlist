@@ -18,6 +18,132 @@
             endingLineNumber = "92"
             landmarkName = "-testDengIsEqual"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AE1AF74F-9C3B-43D8-8AA0-AB98F065C633 - 876573e859596bd2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ViewController testDengIsEqual]"
+                  moduleName = "SuperDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yanghe04/code/SuperDemo/SuperDemo/SuperDemo/ViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "AE1AF74F-9C3B-43D8-8AA0-AB98F065C633 - 658200b3483587c6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ViewController testDengIsEqual]"
+                  moduleName = "eval101.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yanghe04/code/SuperDemo/SuperDemo/SuperDemo/ViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "AE1AF74F-9C3B-43D8-8AA0-AB98F065C633 - e35aa92e8dc2aec5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ViewController testDengIsEqual]"
+                  moduleName = "eval111.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yanghe04/code/SuperDemo/SuperDemo/SuperDemo/ViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "AE1AF74F-9C3B-43D8-8AA0-AB98F065C633 - e153b3eea107c6c1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ViewController testDengIsEqual]"
+                  moduleName = "eval115.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yanghe04/code/SuperDemo/SuperDemo/SuperDemo/ViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "477BA248-C0CC-4CE6-8B55-B6A5A14DEBD0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SuperDemo/TBCHybridSendThread/TBCHybridSendThreadViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A6E670BA-716C-4D4A-B519-C44B98F4BB9F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SuperDemo/ViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "198"
+            endingLineNumber = "198"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7D78C265-97EB-4B79-BDA6-E02B786AD21F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SuperDemo/AppDelegate.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "-application:didFinishLaunchingWithOptions:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D235CAC6-D1C4-452E-A46A-938DD9B7524D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SuperDemo/TBCHybridSendThread/TBCHybridSendThreadViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
